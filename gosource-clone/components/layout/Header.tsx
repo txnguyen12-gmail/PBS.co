@@ -40,15 +40,6 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
-            {/* AI Assistant — featured link */}
-            <Link
-              href="/ai-assistant"
-              className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-accent-orange hover:text-accent-gold transition-colors"
-            >
-              <Sparkles className="w-4 h-4" />
-              AI Assistant
-            </Link>
-
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label} className="relative group">
@@ -117,16 +108,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-navy border-t border-white/10">
           <div className="px-4 py-4 space-y-1">
-            {/* AI Assistant — top of mobile menu */}
-            <Link
-              href="/ai-assistant"
-              className="flex items-center gap-2 px-3 py-3 text-sm font-semibold text-accent-orange"
-              onClick={() => setMobileOpen(false)}
-            >
-              <Sparkles className="w-4 h-4" />
-              AI Assistant
-            </Link>
-
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
