@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm Industrial palette */
+  --color-charcoal: #1A2332;
+  --color-charcoal-light: #2C3E50;
+  --color-slate: #CBD5E1;
+  --color-orange-accent: #FFF3E8;
+  --color-accent-orange: #D97337;
+  --color-accent-gold: #D4A574;
+  --color-accent-green: #4A6B5E;
+  /* Legacy aliases — instant migration for 190+ usages */
+  --color-navy: #1A2332;
+  --color-navy-light: #2C3E50;
+  --color-lavender: #CBD5E1;
+  --color-yellow-accent: #FFF3E8;
+  /* Unchanged */
+  --color-text-dark: #111827;
+  --color-text-gray: #6B7280;
+  --color-surface-light: #F8F9FA;
+  --color-surface-lighter: #F3F4F6;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left-slow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left-slow {
+  animation: scroll-left-slow 40s linear infinite;
+}
