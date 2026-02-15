@@ -22,7 +22,7 @@ const cards = [
 
 export default function CTACards() {
   return (
-    <section className="py-20 bg-surface-light">
+    <section className="pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cards.map((card, index) => (
@@ -48,12 +48,30 @@ export default function CTACards() {
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">{card.title}</h3>
+                  {/* Logo */}
+                  <div className="mb-3">
+                    <span className="text-sm font-bold text-white/80 tracking-tight">
+                      Tan<span className="text-accent-orange">Win</span>Win
+                    </span>
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                    {card.title}
+                  </h3>
                   <p className="text-white/80 mb-4">{card.description}</p>
                   <span className="inline-flex items-center text-white font-semibold group-hover:gap-3 gap-2 transition-all">
                     {card.cta}
-                    <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </span>
                 </div>
