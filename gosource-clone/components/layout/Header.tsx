@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 
 const navLinks = [
   {
@@ -40,6 +40,15 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
+            {/* AI Assistant — featured link */}
+            <Link
+              href="/ai-assistant"
+              className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-accent-orange hover:text-accent-gold transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              AI Assistant
+            </Link>
+
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label} className="relative group">
@@ -74,6 +83,13 @@ export default function Header() {
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-3">
             <Link
+              href="/ai-assistant"
+              className="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-accent-orange to-accent-gold text-white rounded-full hover:opacity-90 transition-all active:scale-[0.98] shadow-md shadow-accent-orange/20 flex items-center gap-1.5"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              Try AI
+            </Link>
+            <Link
               href="/sign-up"
               className="px-5 py-2 text-sm font-semibold bg-white text-navy rounded-full hover:bg-gray-100 transition-colors"
             >
@@ -101,6 +117,16 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-navy border-t border-white/10">
           <div className="px-4 py-4 space-y-1">
+            {/* AI Assistant — top of mobile menu */}
+            <Link
+              href="/ai-assistant"
+              className="flex items-center gap-2 px-3 py-3 text-sm font-semibold text-accent-orange"
+              onClick={() => setMobileOpen(false)}
+            >
+              <Sparkles className="w-4 h-4" />
+              AI Assistant
+            </Link>
+
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
@@ -138,6 +164,14 @@ export default function Header() {
               )
             )}
             <div className="pt-4 flex flex-col gap-2">
+              <Link
+                href="/ai-assistant"
+                className="flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-accent-orange to-accent-gold text-white rounded-full"
+                onClick={() => setMobileOpen(false)}
+              >
+                <Sparkles className="w-4 h-4" />
+                Try AI Assistant
+              </Link>
               <Link
                 href="/sign-up"
                 className="block text-center px-5 py-2.5 text-sm font-semibold bg-white text-navy rounded-full"

@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 export default function HeroSection() {
@@ -34,6 +36,13 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
+          <Link
+            href="/ai-assistant"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-full hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-accent-orange/25 text-lg"
+          >
+            <Sparkles className="w-5 h-5" />
+            Try AI Assistant
+          </Link>
           <Button href="/surfaces" variant="white" size="lg">
             Explore Surfaces
           </Button>

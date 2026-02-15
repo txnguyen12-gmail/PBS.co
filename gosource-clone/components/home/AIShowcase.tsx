@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Sparkles, Zap, Shield, BarChart3 } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -67,7 +68,7 @@ export default function AIShowcase() {
         </div>
 
         {/* Prompt cards */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
           {promptCards.map((prompt, i) => (
             <motion.div
               key={i}
@@ -81,6 +82,23 @@ export default function AIShowcase() {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA to AI Assistant */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="text-center mb-16"
+        >
+          <Link
+            href="/ai-assistant"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-full hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-accent-orange/25 text-lg"
+          >
+            <Sparkles className="w-5 h-5" />
+            Try AI Assistant
+          </Link>
+        </motion.div>
 
         {/* Feature grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
