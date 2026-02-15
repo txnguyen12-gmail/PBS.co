@@ -22,12 +22,12 @@ const segments = [
 
 export default function TradeProSegments() {
   return (
-    <section className="py-20 bg-surface-light">
+    <section className="py-20 bg-charcoal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
           Built for Trade Professionals
         </h2>
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
           Whether you fabricate, design, or build — TanClub is made for you
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -38,7 +38,7 @@ export default function TradeProSegments() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="bg-charcoal-light rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-black/30 transition-shadow group"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -48,8 +48,8 @@ export default function TradeProSegments() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-navy mb-3">{segment.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{segment.description}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{segment.title}</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">{segment.description}</p>
               </div>
             </motion.div>
           ))}

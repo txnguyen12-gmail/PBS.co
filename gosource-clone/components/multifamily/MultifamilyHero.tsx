@@ -27,7 +27,7 @@ export default function MultifamilyHero() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-bold text-white mb-6 max-w-3xl"
+          className="text-4xl md:text-6xl font-bold text-white mb-8 max-w-3xl"
         >
           The Future of Multifamily Renovations
         </motion.h1>
@@ -36,35 +36,26 @@ export default function MultifamilyHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap gap-6 md:gap-12 mb-10"
+          className="mb-10"
         >
-          {metrics.map((metric, i) => (
-            <div key={metric.label} className="text-white">
-              <div className="text-sm text-white/50 uppercase tracking-wider mb-1">{metric.label}</div>
-              <div className="text-3xl md:text-4xl font-bold">{metric.value}</div>
-              <div className="text-white/60 text-sm">{metric.suffix}</div>
-            </div>
-          ))}
+          <Button href="#contact" variant="accent" size="lg">
+            Schedule a Walk Through
+          </Button>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
+          className="flex flex-wrap gap-8 md:gap-16"
         >
-          <Button href="#contact" variant="white" size="lg">
-            Schedule a Walk Through
-          </Button>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-12 flex gap-8 text-white/50"
-        >
-          <span>Hundreds of properties</span>
-          <span>Thousands of projects</span>
+          {metrics.map((metric) => (
+            <div key={metric.label} className="text-white">
+              <div className="text-sm text-white/50 uppercase tracking-wider mb-1">{metric.label}</div>
+              <div className="text-3xl md:text-4xl font-bold">{metric.value}</div>
+              <div className="text-white/60 text-sm">{metric.suffix}</div>
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>

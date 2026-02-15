@@ -28,10 +28,10 @@ export default function GoClubPage() {
             What Stone Fabricators & Trade Professionals Are Saying
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            Hear from professionals who are growing with TanClub
+            See why pros choose TanWinWin for their projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tanclubTestimonials.slice(0, 3).map((testimonial, i) => (
+            {tanclubTestimonials.slice(0, 5).map((testimonial, i) => (
               <TestimonialCard key={i} testimonial={testimonial} />
             ))}
           </div>

@@ -4,15 +4,25 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import type { FAQItem } from "@/data/faq";
 
-export default function FAQAccordion({ items }: { items: FAQItem[] }) {
+export default function FAQAccordion({ items, title, category, description }: { items: FAQItem[]; title?: string; category?: string; description?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-12">
-          Frequently Asked Questions
+        {category && (
+          <p className="text-center text-accent-orange font-semibold text-sm uppercase tracking-wider mb-4">
+            {category}
+          </p>
+        )}
+        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+          {title || "Frequently Asked Questions"}
         </h2>
+        {description && (
+          <p className="text-gray-600 text-center mb-12 max-w-xl mx-auto">
+            {description}
+          </p>
+        )}
         <div className="space-y-3">
           {items.map((item, index) => (
             <div

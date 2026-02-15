@@ -24,26 +24,26 @@ export default function SurfacesHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-charcoal/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-        <motion.div
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white mb-6"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 max-w-3xl leading-tight"
         >
-          🇺🇸 America&apos;s #1 Fastest-Growing Surfaces Marketplace
-        </motion.div>
+          America&apos;s #1 Fastest-Growing Surfaces Marketplace
+        </motion.h1>
 
-        <div className="flex flex-wrap gap-8 md:gap-16 mb-10">
+        <div className="flex flex-wrap gap-6 md:gap-12 mb-10">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-              className="text-white"
+              className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-5 py-3"
             >
-              <div className="text-4xl md:text-5xl font-bold">{stat.value}</div>
-              <div className="text-white/60 text-sm mt-1">{stat.label}</div>
+              <span className="text-2xl md:text-3xl font-bold text-white">{stat.value}</span>
+              <span className="text-white/70 text-sm font-medium">{stat.label}</span>
             </motion.div>
           ))}
         </div>
@@ -54,7 +54,7 @@ export default function SurfacesHero() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <Button href="/sign-up" variant="white" size="lg">
+          <Button href="/sign-up" variant="accent" size="lg">
             Create An Account
           </Button>
           <Button href="tel:+14242507795" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">

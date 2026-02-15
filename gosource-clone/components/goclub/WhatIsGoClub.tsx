@@ -12,18 +12,28 @@ export default function WhatIsGoClub() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
+            <span className="text-sm text-accent-orange uppercase tracking-wider font-medium mb-3 block">
+              What is TanClub?
+            </span>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
               Loyalty That Pays Off
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              TanClub is designed for trade professionals who want more from their sourcing.
-              Get member-exclusive pricing, earn rewards on every purchase, and enjoy
-              priority support that scales with your business.
+              TanClub members receive <strong className="text-navy">exclusive discounts</strong>,{" "}
+              <strong className="text-navy">TanCash rewards</strong> on every purchase,{" "}
+              <strong className="text-navy">priority support</strong>, and access to{" "}
+              <strong className="text-navy">qualified leads</strong> — all designed to help
+              stone fabricators and trade professionals grow their business.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              Whether you are a fabricator sourcing slabs daily or a designer specifying
+              materials for a client project, TanClub gives you the tools, pricing, and
+              support to stay ahead.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              As you grow with TanWinWin, your benefits grow too. Advance through
-              membership tiers to unlock even greater savings, faster service, and
-              access to qualified leads.
+              As you grow with TanWinWin, your benefits grow too. Advance through{" "}
+              <strong className="text-navy">tier-based rewards</strong> to unlock even greater
+              savings, faster service, and dedicated account management.
             </p>
           </motion.div>
           <motion.div

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { DollarSign, Coins, Headphones, Package } from "lucide-react";
+import Button from "@/components/ui/Button";
 
 const features = [
   {
@@ -36,7 +37,7 @@ export default function FeaturesGrid() {
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
           Everything you need to source surfaces smarter, faster, and more profitably.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
@@ -53,6 +54,11 @@ export default function FeaturesGrid() {
               <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
+        </div>
+        <div className="text-center">
+          <Button href="/sign-up" variant="accent" size="lg">
+            Create an Account
+          </Button>
         </div>
       </div>
     </section>

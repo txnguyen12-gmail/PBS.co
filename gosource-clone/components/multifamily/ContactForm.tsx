@@ -55,16 +55,17 @@ export default function ContactForm() {
     <section id="contact" className="py-20 bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left column - heading and description */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Transform Your Properties?
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Get In Touch
             </h2>
-            <p className="text-white/70 mb-8 text-lg">
-              Schedule a free consultation with our renovation experts. We&apos;ll walk through your property and provide a detailed plan.
+            <p className="text-white/70 mb-8 text-lg leading-relaxed">
+              Be part of something bigger &mdash; apply now and help us build the future of multifamily renovations. We&apos;re always looking for talented people to join our team.
             </p>
             <div className="flex items-center gap-4 p-4 bg-white/10 rounded-xl">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
@@ -73,12 +74,13 @@ export default function ContactForm() {
                 </svg>
               </div>
               <div>
-                <p className="font-semibold">Schedule via Calendly</p>
+                <p className="font-semibold">Schedule Free Consultation</p>
                 <p className="text-sm text-white/60">Book a time that works for you</p>
               </div>
             </div>
           </motion.div>
 
+          {/* Right column - form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -99,7 +101,6 @@ export default function ContactForm() {
                 onSubmit={handleSubmit}
                 className="bg-white text-navy rounded-2xl p-8 shadow-xl"
               >
-                <h3 className="text-xl font-bold mb-6">Get in Touch</h3>
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium mb-1.5">Full Name</label>
@@ -150,8 +151,14 @@ export default function ContactForm() {
                     type="submit"
                     className="w-full py-3 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-xl hover:opacity-90 transition-all cursor-pointer active:scale-[0.98]"
                   >
-                    Schedule Free Consultation
+                    Join Now
                   </button>
+                  <a
+                    href="#contact"
+                    className="block w-full py-3 text-center border-2 border-navy text-navy font-semibold rounded-xl hover:bg-navy hover:text-white transition-all"
+                  >
+                    Schedule Free Consultation
+                  </a>
                 </div>
               </form>
             )}

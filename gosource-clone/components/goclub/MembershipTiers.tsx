@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -10,44 +11,77 @@ const tiers = [
   { name: "TanClub Platinum", volume: "Above $100K" },
 ];
 
-const features = [
+interface FeatureRow {
+  name: string;
+  values: (string | boolean)[];
+}
+
+interface FeatureCategory {
+  category: string;
+  features: FeatureRow[];
+}
+
+const featureCategories: FeatureCategory[] = [
   {
-    name: "TanCash Cashback",
-    values: ["2%", "3%", "5%"],
+    category: "Price & Value",
+    features: [
+      {
+        name: "TanCash Cashback",
+        values: ["2%", "3%", "5%"],
+      },
+      {
+        name: "Lock Price Protection",
+        values: ["7 Days", "10 Days", "14 Days"],
+      },
+      {
+        name: "Special Discounts",
+        values: ["Best wholesale guaranteed", "Gold discounts on wholesale", "Exclusive Platinum discounts"],
+      },
+    ],
   },
   {
-    name: "Lock Price Protection",
-    values: ["7 Days", "10 Days", "14 Days"],
+    category: "Leads & Growth",
+    features: [
+      {
+        name: "New Business Leads",
+        values: [true, true, true],
+      },
+    ],
   },
   {
-    name: "Special Discounts",
-    values: ["Best wholesale guaranteed", "Gold discounts on wholesale", "Exclusive Platinum discounts"],
+    category: "Service & Operations",
+    features: [
+      {
+        name: "Same-day Quotes",
+        values: ["Standard", "Priority handling", "Top Priority handling"],
+      },
+      {
+        name: "Priority Support",
+        values: ["Standard", "24/7 Dedicated account exec", "24/7 Dedicated account exec"],
+      },
+      {
+        name: "Free Samples",
+        values: [false, true, true],
+      },
+    ],
   },
   {
-    name: "New Business Leads",
-    values: [true, true, true],
-  },
-  {
-    name: "Same-day Quotes",
-    values: ["Standard", "Priority handling", "Top Priority handling"],
-  },
-  {
-    name: "Priority Support",
-    values: ["Standard", "24/7 Dedicated account exec", "24/7 Dedicated account exec"],
-  },
-  {
-    name: "Free Samples",
-    values: [false, true, true],
-  },
-  {
-    name: "Split Payments",
-    values: [false, "50/50 upfront/delivery", "50/50 upfront/delivery"],
-  },
-  {
-    name: "Flexible Payment Terms",
-    values: [false, false, "Net 30"],
+    category: "Payments & Financial Flexibility",
+    features: [
+      {
+        name: "Split Payments",
+        values: [false, "50/50 upfront/delivery", "50/50 upfront/delivery"],
+      },
+      {
+        name: "Flexible Payment Terms",
+        values: [false, false, "Net 30"],
+      },
+    ],
   },
 ];
+
+// Flattened features for mobile cards
+const allFeatures = featureCategories.flatMap((cat) => cat.features);
 
 function CellValue({ value }: { value: string | boolean }) {
   if (typeof value === "boolean") {
@@ -61,14 +95,19 @@ function CellValue({ value }: { value: string | boolean }) {
 }
 
 export default function MembershipTiers() {
+  let rowIndex = 0;
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span className="text-sm text-accent-orange uppercase tracking-wider font-medium mb-3 block text-center">
+          TanClub Benefits
+        </span>
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
-          Membership Tiers
+          Membership Tiers — Built for Every Trade
         </h2>
         <p className="text-gray-600 text-center mb-12">
-          Your benefits grow as your business grows
+          Benefits grow as your volume grows
         </p>
 
         {/* Desktop Table */}
@@ -91,15 +130,31 @@ export default function MembershipTiers() {
               </tr>
             </thead>
             <tbody>
-              {features.map((feature, i) => (
-                <tr key={feature.name} className={i % 2 === 0 ? "bg-surface-light" : ""}>
-                  <td className="p-4 text-sm font-medium text-navy">{feature.name}</td>
-                  {feature.values.map((value, j) => (
-                    <td key={j} className="p-4 text-center text-gray-700">
-                      <CellValue value={value} />
+              {featureCategories.map((category) => (
+                <Fragment key={category.category}>
+                  <tr>
+                    <td
+                      colSpan={4}
+                      className="px-4 pt-6 pb-2 text-xs font-semibold uppercase tracking-wider text-accent-orange"
+                    >
+                      {category.category}
                     </td>
-                  ))}
-                </tr>
+                  </tr>
+                  {category.features.map((feature) => {
+                    const isEven = rowIndex % 2 === 0;
+                    rowIndex++;
+                    return (
+                      <tr key={feature.name} className={isEven ? "bg-surface-light" : ""}>
+                        <td className="p-4 text-sm font-medium text-navy">{feature.name}</td>
+                        {feature.values.map((value, j) => (
+                          <td key={j} className="p-4 text-center text-gray-700">
+                            <CellValue value={value} />
+                          </td>
+                        ))}
+                      </tr>
+                    );
+                  })}
+                </Fragment>
               ))}
             </tbody>
           </table>
@@ -119,7 +174,7 @@ export default function MembershipTiers() {
               <h3 className="font-bold text-navy text-lg mb-1">{tier.name}</h3>
               <p className="text-sm text-gray-500 mb-4">{tier.volume}</p>
               <ul className="space-y-3">
-                {features.map((feature) => (
+                {allFeatures.map((feature) => (
                   <li key={feature.name} className="flex items-start justify-between gap-2 text-sm">
                     <span className="text-gray-600">{feature.name}</span>
                     <span className="text-right text-navy font-medium flex-shrink-0">

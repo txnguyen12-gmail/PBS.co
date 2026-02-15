@@ -2,15 +2,23 @@
 
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  title?: string;
+  subtitle?: string;
+}
+
+export default function ContactSection({
+  title = "Want to learn more? Contact our team",
+  subtitle = "Our team of TanWinWin pros is ready to help you.",
+}: ContactSectionProps) {
   return (
     <section className="py-16 bg-surface-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
-          Want to learn more? Contact our team
+          {title}
         </h2>
-        <p className="text-center text-gray-600 mb-12">
-          Our club experts are ready to onboard you!
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          {subtitle}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <a

@@ -21,10 +21,10 @@ export default function BlogGrid() {
   );
 
   return (
-    <section className="py-16 bg-white">
+    <section className="pb-16 pt-4 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Category Filters */}
-        <div className="flex flex-wrap gap-2 mb-12 justify-center">
+        {/* Category Filter Pills */}
+        <div className="flex flex-wrap gap-2 mb-10">
           {blogCategories.map((category) => (
             <button
               key={category}
@@ -32,13 +32,13 @@ export default function BlogGrid() {
                 setActiveCategory(category);
                 setCurrentPage(1);
               }}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer ${
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer border ${
                 activeCategory === category
-                  ? "bg-navy text-white"
-                  : "bg-surface-light text-gray-600 hover:bg-gray-200"
+                  ? "bg-gray-900 text-white border-gray-900"
+                  : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50 hover:border-gray-300"
               }`}
             >
-              {category}
+              {category === "All" ? "ALL" : category}
             </button>
           ))}
         </div>
@@ -63,9 +63,9 @@ export default function BlogGrid() {
             <button
               onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
               disabled={currentPage === 1}
-              className="px-4 py-2 rounded-lg text-sm font-medium bg-surface-light text-gray-600 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
             >
-              Previous
+              &larr; Previous
             </button>
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
@@ -73,8 +73,8 @@ export default function BlogGrid() {
                 onClick={() => setCurrentPage(i + 1)}
                 className={`w-10 h-10 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
                   currentPage === i + 1
-                    ? "bg-navy text-white"
-                    : "bg-surface-light text-gray-600 hover:bg-gray-200"
+                    ? "bg-gray-900 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
                 {i + 1}
@@ -83,9 +83,9 @@ export default function BlogGrid() {
             <button
               onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 rounded-lg text-sm font-medium bg-surface-light text-gray-600 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
             >
-              Next
+              Next &rarr;
             </button>
           </div>
         )}

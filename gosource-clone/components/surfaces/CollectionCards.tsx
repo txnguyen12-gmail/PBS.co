@@ -28,9 +28,12 @@ export default function CollectionCards() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-12">
-          Shop Our Collections
+        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+          Surfaces Crafted for Living
         </h2>
+        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Curated to elevate every environment with enduring style.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {collections.map((collection, i) => (
             <motion.div

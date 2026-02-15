@@ -8,8 +8,11 @@ export default function TeamSection() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold text-center mb-4">
+          Built by Experts
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
-          Built by Experts, Delivered by Pros
+          Where Craft Meets Execution
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-xl mx-auto">
           Our team of experienced professionals is ready to transform your properties

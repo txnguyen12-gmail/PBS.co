@@ -38,11 +38,28 @@ export default function GoCashSteps() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative rounded-2xl overflow-hidden aspect-video bg-navy order-2 lg:order-1"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="https://gs-web.cdn.prismic.io/gs-web/aU1KmnNYClf9oo9Z__model_veo3_202512251619_d079i.mp4" type="video/mp4" />
+            </video>
+          </motion.div>
+
+          <div className="space-y-8 order-1 lg:order-2">
             {steps.map((step, i) => (
               <motion.div
                 key={step.number}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
@@ -65,23 +82,6 @@ export default function GoCashSteps() {
               </Button>
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative rounded-2xl overflow-hidden aspect-video bg-navy"
-          >
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="https://gs-web.cdn.prismic.io/gs-web/aU1KmnNYClf9oo9Z__model_veo3_202512251619_d079i.mp4" type="video/mp4" />
-            </video>
-          </motion.div>
         </div>
       </div>
     </section>
