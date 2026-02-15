@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 
 const navLinks = [
@@ -26,6 +27,9 @@ const navLinks = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [shopOpen, setShopOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === "/ai-assistant") return null;
 
   return (
     <header className="sticky top-0 z-50 bg-navy text-white">
