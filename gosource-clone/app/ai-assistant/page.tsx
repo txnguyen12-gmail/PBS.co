@@ -414,20 +414,107 @@ const suggestionChips = [
   "White marble slabs",
 ];
 
+// ── Mock Conversation ──────────────────────────────────────────
+
+const mockConversation: ChatMessage[] = [
+  {
+    id: "mock-1",
+    role: "user",
+    content: "Hi, I'm a fabricator in Austin. I have a client who wants quartz countertops for a full kitchen remodel — about 45 sq ft with a waterfall island edge. What do you recommend?",
+    timestamp: new Date(Date.now() - 600000),
+  },
+  {
+    id: "mock-2",
+    role: "assistant",
+    content: `Great project! For a 45 sq ft kitchen with a waterfall island, here are my top recommendations:\n\n**Premium Picks:**\n• **Calacatta Laza (MSI)** — Warm white base with dramatic gold veining. Perfect for waterfall edges where the vein pattern continues down the side. Very popular in Austin right now.\n• **Taj Mahal Quartzite** — Natural stone with a soft gold tone. The #1 most-requested surface this quarter. Stunning on waterfall islands.\n• **Brittanicca Warm (Cambria)** — Rich warm veining on white, zero maintenance. Lifetime warranty.\n\n**Great Value Options:**\n• **Calacatta Verona (Silestone)** — Marble-look quartz at a mid-range price point. HybriQ+ technology for superior stain resistance.\n• **Empira White (Caesarstone)** — Clean white with subtle veining. Budget-friendly without sacrificing quality.\n\nFor 45 sq ft + waterfall edge, you'll want approximately **55-60 sq ft of material** to account for cuts and waste.\n\nWould you like pricing on any of these? I can also check current inventory at our Texas warehouse.`,
+    timestamp: new Date(Date.now() - 540000),
+  },
+  {
+    id: "mock-3",
+    role: "user",
+    content: "The client likes the marble look but wants zero maintenance. How does Calacatta Laza compare to Brittanicca Warm? And what's the price difference?",
+    timestamp: new Date(Date.now() - 480000),
+  },
+  {
+    id: "mock-4",
+    role: "assistant",
+    content: `Great question — both are excellent choices for a marble-look with zero maintenance. Here's a side-by-side:\n\n**Calacatta Laza (MSI)**\n• Material: Engineered quartz\n• Look: Warm white with bold gold/gray veining\n• Finish: Polished\n• Thickness: 2cm and 3cm available\n• Maintenance: Non-porous, no sealing required\n• Price range: $$$ (mid-premium)\n• Best for: Clients who want dramatic veining on a budget\n\n**Brittanicca Warm (Cambria)**\n• Material: Natural quartz surface\n• Look: Warm white with rich brown and gold veins\n• Finish: High Gloss or Matte\n• Thickness: 2cm and 3cm available\n• Maintenance: Non-porous, lifetime warranty from Cambria\n• Price range: $$$$ (premium)\n• Best for: Clients who want the highest quality + warranty\n\n**Price difference:** Brittanicca Warm typically runs **15-25% higher** than Calacatta Laza. For your 55 sq ft project, that could mean a difference of **$800-$1,200** in material cost.\n\n**My recommendation:** If your client prioritizes vein pattern on the waterfall edge, go with **Calacatta Laza** — MSI's bookmatching is excellent. If they want the lifetime warranty and name-brand confidence, **Brittanicca Warm** is worth the premium.\n\nWant me to pull live pricing for both?`,
+    timestamp: new Date(Date.now() - 420000),
+  },
+  {
+    id: "mock-5",
+    role: "user",
+    content: "Let's go with Calacatta Laza. Can you check inventory in Texas and get me a quote for 55 sq ft in 3cm polished?",
+    timestamp: new Date(Date.now() - 360000),
+  },
+  {
+    id: "mock-6",
+    role: "assistant",
+    content: `Excellent choice! Here's what I found for **Calacatta Laza (MSI) — 3cm Polished**:\n\n**Inventory Status:**\n• Dallas warehouse: 12 slabs in stock\n• Houston warehouse: 8 slabs in stock\n• Average slab size: ~52 sq ft\n• You'll need 2 slabs for 55 sq ft (with bookmatching for the waterfall)\n\n**Estimated Pricing:**\n• Trade price: Competitive wholesale pricing available for TanClub members\n• Includes: Material only (fabrication quoted separately)\n• Delivery to Austin: Available within 3-5 business days from Dallas\n\n**TanClub Savings:**\n• As a member, you'd earn **2-5% TanCash** on this order\n• Gold members get **10-day price lock** so your quote holds\n\nTo get your **exact personalized pricing**, I just need a few details so our sourcing team can prepare a formal quote. This takes less than 30 seconds.\n\nCould you share your **name** to get started?`,
+    timestamp: new Date(Date.now() - 300000),
+  },
+  {
+    id: "mock-7",
+    role: "user",
+    content: "Marcus Rivera",
+    timestamp: new Date(Date.now() - 240000),
+  },
+  {
+    id: "mock-8",
+    role: "assistant",
+    content: "Thanks, Marcus! What's the best **email** to reach you at?",
+    timestamp: new Date(Date.now() - 200000),
+  },
+  {
+    id: "mock-9",
+    role: "user",
+    content: "marcus@riverastoneworks.com",
+    timestamp: new Date(Date.now() - 160000),
+  },
+  {
+    id: "mock-10",
+    role: "assistant",
+    content: "And your **phone number**? This helps our team reach you faster for time-sensitive quotes.",
+    timestamp: new Date(Date.now() - 120000),
+  },
+  {
+    id: "mock-11",
+    role: "user",
+    content: "(512) 555-0147",
+    timestamp: new Date(Date.now() - 80000),
+  },
+  {
+    id: "mock-12",
+    role: "assistant",
+    content: `You're all set, Marcus!\n\nHere's a summary of your quote request:\n\n**Material:** Calacatta Laza (MSI) — 3cm Polished\n**Quantity:** 55 sq ft (2 slabs, bookmatched)\n**Application:** Kitchen countertops + waterfall island edge\n**Delivery:** Austin, TX\n**Source:** Dallas warehouse (3-5 business day delivery)\n\nOur sourcing team will reach out within **1 business hour** with your personalized pricing. They'll also confirm slab availability and can arrange a virtual slab viewing if you'd like to approve the exact pieces before ordering.\n\nIn the meantime, you can also call us directly: **(424) 250-7795**\n\nIs there anything else I can help you with?`,
+    timestamp: new Date(Date.now() - 40000),
+  },
+];
+
+// ── Previous Chat History (sidebar) ────────────────────────────
+
+const previousChats = [
+  { title: "Calacatta Laza quote — 55 sq ft", active: true },
+  { title: "LVT flooring for multifamily units" },
+  { title: "Taj Mahal quartzite availability" },
+  { title: "Appliance package for 12-unit reno" },
+  { title: "TanClub Gold membership benefits" },
+];
+
 // ── Page Component ──────────────────────────────────────────────
 
 export default function AIAssistantPage() {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [messages, setMessages] = useState<ChatMessage[]>(mockConversation);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
-  const [leadStep, setLeadStep] = useState<LeadStep>("idle");
+  const [leadStep, setLeadStep] = useState<LeadStep>("submitted");
   const [leadData, setLeadData] = useState<LeadData>({
-    name: "",
-    email: "",
-    phone: "",
+    name: "Marcus Rivera",
+    email: "marcus@riverastoneworks.com",
+    phone: "(512) 555-0147",
   });
-  const [messageCount, setMessageCount] = useState(0);
-  const [leadCaptured, setLeadCaptured] = useState(false);
+  const [messageCount, setMessageCount] = useState(6);
+  const [leadCaptured, setLeadCaptured] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -597,6 +684,7 @@ export default function AIAssistantPage() {
     setLeadData({ name: "", email: "", phone: "" });
     setMessageCount(0);
     setLeadCaptured(false);
+    setSidebarOpen(false);
     inputRef.current?.focus();
   };
 
@@ -670,23 +758,26 @@ export default function AIAssistantPage() {
 
           {/* Chats section */}
           <div className="pt-4">
-            <p className="px-3 text-xs font-medium text-gray-400 uppercase tracking-wider">
+            <p className="px-3 text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">
               Chats
             </p>
-            {messages.length > 0 && (
-              <div className="mt-2 space-y-0.5">
-                <div className="flex items-center gap-2 px-3 py-2 text-sm text-gray-500 bg-gray-50 rounded-lg">
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
-                  <span className="truncate">
-                    {messages.find((m) => m.role === "user")?.content.slice(0, 24) ||
-                      "Current chat"}
-                    {(messages.find((m) => m.role === "user")?.content.length ?? 0) > 24
-                      ? "..."
-                      : ""}
-                  </span>
-                </div>
-              </div>
-            )}
+            <div className="space-y-0.5">
+              {previousChats.map((chat) => (
+                <button
+                  key={chat.title}
+                  className={`flex items-center gap-2 w-full px-3 py-2 text-sm rounded-lg transition-colors cursor-pointer text-left ${
+                    chat.active
+                      ? "text-gray-800 bg-gray-100 font-medium"
+                      : "text-gray-500 hover:bg-gray-50"
+                  }`}
+                >
+                  {chat.active && (
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent-orange flex-shrink-0" />
+                  )}
+                  <span className="truncate">{chat.title}</span>
+                </button>
+              ))}
+            </div>
           </div>
         </nav>
 
