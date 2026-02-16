@@ -1,15 +1,101 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Sparkles, User, ShoppingCart, Search } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Sparkles, User, ShoppingCart, Search } from "lucide-react";
 
-const categoryNav = [
-  { label: "Slabs", href: "/collections/slabs" },
-  { label: "Tiles", href: "/collections/tile" },
-  { label: "Flooring", href: "/collections/all-flooring" },
-  { label: "More Categories", href: "/surfaces" },
+interface SubMenuItem {
+  label: string;
+  href: string;
+}
+
+interface SubMenuGroup {
+  title?: string;
+  items: SubMenuItem[];
+}
+
+interface CategoryNavItem {
+  label: string;
+  href: string;
+  submenu?: SubMenuGroup[];
+}
+
+const categoryNav: CategoryNavItem[] = [
+  {
+    label: "Slabs",
+    href: "/collections/slabs",
+    submenu: [
+      {
+        title: "By Type",
+        items: [
+          { label: "All Slabs", href: "/collections/slabs" },
+          { label: "Quartz", href: "/collections/quartz" },
+          { label: "Quartzite", href: "/collections/quartzite" },
+          { label: "Marble", href: "/collections/marble" },
+          { label: "Granite", href: "/collections/granite" },
+          { label: "Porcelain Slabs", href: "/collections/porcelain-slabs" },
+        ],
+      },
+      {
+        title: "By Brand",
+        items: [
+          { label: "MSI", href: "/collections/slabs?brand=msi" },
+          { label: "Caesarstone", href: "/collections/slabs?brand=caesarstone" },
+          { label: "Cambria", href: "/collections/slabs?brand=cambria" },
+          { label: "Silestone", href: "/collections/slabs?brand=silestone" },
+          { label: "Dekton", href: "/collections/slabs?brand=dekton" },
+          { label: "Daltile", href: "/collections/slabs?brand=daltile" },
+          { label: "Raphael Stone", href: "/collections/slabs?brand=raphael-stone" },
+          { label: "LX Hausys", href: "/collections/slabs?brand=lx-hausys" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Tiles",
+    href: "/collections/tile",
+    submenu: [
+      {
+        items: [
+          { label: "All Tiles", href: "/collections/tile" },
+          { label: "Porcelain", href: "/collections/porcelain-tile" },
+          { label: "Ceramic", href: "/collections/ceramic-tile" },
+          { label: "Mosaic", href: "/collections/mosaic-tile" },
+          { label: "Wall Tiles", href: "/collections/wall-tile" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Flooring",
+    href: "/collections/all-flooring",
+    submenu: [
+      {
+        items: [
+          { label: "All Flooring", href: "/collections/all-flooring" },
+          { label: "Hardwood", href: "/collections/hardwood" },
+          { label: "Vinyl", href: "/collections/vinyl" },
+          { label: "Laminate", href: "/collections/laminate" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "More Categories",
+    href: "/surfaces",
+    submenu: [
+      {
+        items: [
+          { label: "Appliances", href: "/collections/appliance" },
+          { label: "Plumbing", href: "/collections/plumbing" },
+          { label: "Lighting", href: "/collections/lighting" },
+          { label: "Accessories", href: "/collections/accessories" },
+          { label: "Artificial Turf", href: "/collections/artificial-turf" },
+        ],
+      },
+    ],
+  },
   { label: "Price Drops", href: "/collections/price-drops" },
   { label: "New Arrivals", href: "/collections/new-arrivals" },
 ];
@@ -23,9 +109,26 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const [mobileExpandedCategory, setMobileExpandedCategory] = useState<string | null>(null);
+  const submenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
 
   if (pathname === "/ai-assistant") return null;
+
+  const handleSubmenuEnter = useCallback((label: string) => {
+    if (submenuTimeout.current) {
+      clearTimeout(submenuTimeout.current);
+      submenuTimeout.current = null;
+    }
+    setActiveSubmenu(label);
+  }, []);
+
+  const handleSubmenuLeave = useCallback(() => {
+    submenuTimeout.current = setTimeout(() => {
+      setActiveSubmenu(null);
+    }, 150);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
@@ -53,7 +156,7 @@ export default function Header() {
 
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
-            {/* AI Mode pill — yellow like GoSource */}
+            {/* AI Mode pill */}
             <Link
               href="/ai-assistant"
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal bg-yellow-300 border border-yellow-400 rounded-full hover:bg-yellow-200 transition-colors"
@@ -146,14 +249,64 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between h-10">
             <div className="flex items-center gap-1">
-              {categoryNav.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
+              {categoryNav.map((item) => (
+                <div
+                  key={item.label}
+                  className="relative"
+                  onMouseEnter={() => item.submenu && handleSubmenuEnter(item.label)}
+                  onMouseLeave={handleSubmenuLeave}
                 >
-                  {link.label}
-                </Link>
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 px-3 py-1.5 text-sm font-medium transition-colors ${
+                      activeSubmenu === item.label
+                        ? "text-white"
+                        : "text-white/80 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                    {item.submenu && (
+                      <ChevronDown className={`w-3 h-3 transition-transform ${activeSubmenu === item.label ? "rotate-180" : ""}`} />
+                    )}
+                  </Link>
+
+                  {/* Submenu dropdown */}
+                  {item.submenu && activeSubmenu === item.label && (
+                    <div
+                      className="absolute top-full left-0 mt-0 pt-1 z-50"
+                      onMouseEnter={() => handleSubmenuEnter(item.label)}
+                      onMouseLeave={handleSubmenuLeave}
+                    >
+                      <div className={`bg-white border border-gray-200 rounded-lg shadow-xl py-3 ${
+                        item.submenu.length > 1 ? "flex gap-0 min-w-[380px]" : "min-w-[180px]"
+                      }`}>
+                        {item.submenu.map((group, gi) => (
+                          <div
+                            key={gi}
+                            className={`px-2 ${
+                              gi > 0 ? "border-l border-gray-100" : ""
+                            }`}
+                          >
+                            {group.title && (
+                              <p className="px-3 pb-1.5 text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
+                                {group.title}
+                              </p>
+                            )}
+                            {group.items.map((sub) => (
+                              <Link
+                                key={sub.label}
+                                href={sub.href}
+                                className="block px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal rounded-md transition-colors whitespace-nowrap"
+                              >
+                                {sub.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
             <div className="flex items-center gap-1">
@@ -213,19 +366,63 @@ export default function Header() {
 
             <div className="border-t border-gray-100 my-2" />
 
-            {/* Category nav */}
+            {/* Category nav with expandable submenus */}
             <p className="px-3 text-xs font-medium text-gray-400 uppercase tracking-wider pt-1">
               Shop
             </p>
-            {categoryNav.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="block px-3 py-2.5 text-sm text-gray-600 hover:text-charcoal"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
+            {categoryNav.map((item) => (
+              <div key={item.label}>
+                {item.submenu ? (
+                  <>
+                    <button
+                      onClick={() =>
+                        setMobileExpandedCategory(
+                          mobileExpandedCategory === item.label ? null : item.label
+                        )
+                      }
+                      className="flex items-center justify-between w-full px-3 py-2.5 text-sm text-gray-600 hover:text-charcoal cursor-pointer"
+                    >
+                      {item.label}
+                      <ChevronRight
+                        className={`w-4 h-4 text-gray-400 transition-transform ${
+                          mobileExpandedCategory === item.label ? "rotate-90" : ""
+                        }`}
+                      />
+                    </button>
+                    {mobileExpandedCategory === item.label && (
+                      <div className="pl-4 pb-1">
+                        {item.submenu.map((group, gi) => (
+                          <div key={gi}>
+                            {group.title && (
+                              <p className="px-3 pt-1 pb-0.5 text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
+                                {group.title}
+                              </p>
+                            )}
+                            {group.items.map((sub) => (
+                              <Link
+                                key={sub.label}
+                                href={sub.href}
+                                className="block px-3 py-2 text-sm text-gray-500 hover:text-charcoal"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                {sub.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="block px-3 py-2.5 text-sm text-gray-600 hover:text-charcoal"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </div>
             ))}
 
             <div className="border-t border-gray-100 my-2" />
