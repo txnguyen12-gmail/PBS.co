@@ -38,7 +38,10 @@ export default function GoClubPage() {
         </div>
       </section>
 
-      <ContactSection />
+      <ContactSection
+        title="Want to learn more? Contact our team"
+        subtitle="Our club experts are ready to onboard you!"
+      />
     </>
   );
 }

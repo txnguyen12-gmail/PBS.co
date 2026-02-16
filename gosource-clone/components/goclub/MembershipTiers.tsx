@@ -80,6 +80,13 @@ const featureCategories: FeatureCategory[] = [
   },
 ];
 
+const categoryColors: Record<string, string> = {
+  "Price & Value": "bg-yellow-50",
+  "Leads & Growth": "bg-blue-50",
+  "Service & Operations": "bg-green-50",
+  "Payments & Financial Flexibility": "bg-purple-50",
+};
+
 // Flattened features for mobile cards
 const allFeatures = featureCategories.flatMap((cat) => cat.features);
 
@@ -119,11 +126,11 @@ export default function MembershipTiers() {
         >
           <table className="w-full">
             <thead>
-              <tr>
+              <tr className="bg-yellow-50">
                 <th className="text-left p-4 text-sm text-gray-500 font-medium">Feature</th>
                 {tiers.map((tier) => (
                   <th key={tier.name} className="p-4 text-center">
-                    <div className="font-bold text-navy">{tier.name}</div>
+                    <div className="text-lg font-extrabold text-navy">{tier.name}</div>
                     <div className="text-xs text-gray-500 mt-1">{tier.volume}</div>
                   </th>
                 ))}
@@ -132,10 +139,10 @@ export default function MembershipTiers() {
             <tbody>
               {featureCategories.map((category) => (
                 <Fragment key={category.category}>
-                  <tr>
+                  <tr className={categoryColors[category.category] || ""}>
                     <td
                       colSpan={4}
-                      className="px-4 pt-6 pb-2 text-xs font-semibold uppercase tracking-wider text-accent-orange"
+                      className="px-4 pt-6 pb-2 text-xs font-bold uppercase tracking-wider text-accent-orange"
                     >
                       {category.category}
                     </td>

@@ -55,6 +55,25 @@ export default function PricingPackages() {
               >
                 {pkg.price === "Custom" ? "Contact Us" : "Get Started"}
               </Button>
+              <Button
+                href="#contact"
+                variant="outline"
+                size="md"
+                className="w-full mt-3"
+              >
+                View Specifications
+              </Button>
+              {/* Product Gallery */}
+              <div className="grid grid-cols-3 gap-2 mt-6">
+                {[1, 2, 3, 4, 5, 6].map((img) => (
+                  <div
+                    key={img}
+                    className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center"
+                  >
+                    <span className="text-xs text-gray-400">{img}</span>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

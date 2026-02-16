@@ -1,7 +1,9 @@
 import MultifamilyHero from "@/components/multifamily/MultifamilyHero";
 import MetricsDisplay from "@/components/multifamily/MetricsDisplay";
+import ImageBanners from "@/components/multifamily/ImageBanners";
 import PricingPackages from "@/components/multifamily/PricingPackages";
 import TeamSection from "@/components/multifamily/TeamSection";
+import TestimonialsBanner from "@/components/multifamily/TestimonialsBanner";
 import ContactForm from "@/components/multifamily/ContactForm";
 
 export const metadata = {
@@ -14,8 +16,10 @@ export default function MultifamilyPage() {
     <>
       <MultifamilyHero />
       <MetricsDisplay />
+      <ImageBanners />
       <PricingPackages />
       <TeamSection />
+      <TestimonialsBanner />
       <ContactForm />
     </>
   );
