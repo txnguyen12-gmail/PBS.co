@@ -9,9 +9,9 @@ const footerColumns = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about-us" },
+      { label: "Multifamily", href: "/multifamily" },
       { label: "TanClub™", href: "/goclub" },
       { label: "Blog", href: "/blog" },
-      { label: "Get in touch", href: "tel:+14242507795" },
     ],
   },
   {

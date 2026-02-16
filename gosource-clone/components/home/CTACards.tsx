@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const cards = [
   {
     title: "Surfaces",
-    description: "#1 marketplace for surfaces in the U.S.",
+    description: "Marketplace for surfaces in the U.S.",
     video: "https://gs-web.cdn.prismic.io/gs-web/aRGmcrpReVYa4R0Z_surfaces.mp4",
     href: "/surfaces",
     cta: "Explore",
@@ -19,6 +19,16 @@ const cards = [
     cta: "Explore",
   },
 ];
+
+function LogoMark() {
+  return (
+    <div className="w-[88px] h-[88px] rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+      <span className="text-lg font-bold text-white tracking-tight">
+        Tan<span className="text-accent-orange">W</span>W
+      </span>
+    </div>
+  );
+}
 
 export default function CTACards() {
   return (
@@ -48,11 +58,9 @@ export default function CTACards() {
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  {/* Logo */}
-                  <div className="mb-3">
-                    <span className="text-sm font-bold text-white/80 tracking-tight">
-                      Tan<span className="text-accent-orange">Win</span>Win
-                    </span>
+                  {/* Logo mark — 88x88 like GoSource */}
+                  <div className="mb-4">
+                    <LogoMark />
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
                     {card.title}

@@ -7,6 +7,8 @@ import { Menu, X, ChevronDown, Sparkles, User, ShoppingCart } from "lucide-react
 
 const primaryNav = [
   { label: "TanClub™", href: "/goclub" },
+  { label: "Vendor Portal", href: "/surfaces" },
+  { label: "Fabricators Index", href: "/surfaces" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/about-us" },
 ];
