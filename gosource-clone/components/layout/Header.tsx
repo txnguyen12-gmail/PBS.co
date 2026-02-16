@@ -3,37 +3,35 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Sparkles, User, ShoppingCart } from "lucide-react";
-
-const mainNav = [
-  { label: "GoClub™", href: "/goclub" },
-  { label: "Vendor Portal", href: "/surfaces" },
-  { label: "Fabricators Index", href: "/surfaces" },
-  { label: "Blog", href: "/blog" },
-  { label: "About Us", href: "/about-us" },
-];
+import { Menu, X, ChevronDown, Sparkles, User, ShoppingCart, Search } from "lucide-react";
 
 const categoryNav = [
   { label: "Slabs", href: "/collections/slabs" },
   { label: "Tiles", href: "/collections/tile" },
   { label: "Flooring", href: "/collections/all-flooring" },
-  { label: "Appliances", href: "/collections/appliance" },
-  { label: "Price Drop", href: "/price-drop" },
+  { label: "More Categories", href: "/surfaces" },
+  { label: "Price Drops", href: "/collections/price-drops" },
   { label: "New Arrivals", href: "/collections/new-arrivals" },
+];
+
+const resourceLinks = [
+  { label: "Blog", href: "/blog" },
+  { label: "About Us", href: "/about-us" },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [shopOpen, setShopOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
   const pathname = usePathname();
 
   if (pathname === "/ai-assistant") return null;
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      {/* Primary row */}
+      {/* Row 1 — Logo | Search | AI Mode | GoClub | Resources | Account | Cart */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <span className="text-xl font-bold text-charcoal tracking-tight">
@@ -41,30 +39,50 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop nav — AI Mode + Shop + links */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {/* AI Mode inline toggle */}
+          {/* Search bar */}
+          <div className="hidden lg:flex flex-1 max-w-md">
+            <div className="relative w-full">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                className="w-full pl-9 pr-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors"
+              />
+            </div>
+          </div>
+
+          {/* Nav items */}
+          <nav className="hidden lg:flex items-center gap-1 ml-auto">
+            {/* AI Mode pill */}
             <Link
               href="/ai-assistant"
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-charcoal hover:text-accent-orange transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
             >
-              <Sparkles className="w-3.5 h-3.5 text-accent-orange" />
               AI Mode
+              <span className="w-2 h-2 rounded-full bg-green-400" />
             </Link>
 
-            {/* Shop dropdown */}
+            {/* GoClub */}
+            <Link
+              href="/goclub"
+              className="px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors"
+            >
+              GoClub™
+            </Link>
+
+            {/* Resources dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setShopOpen(true)}
-              onMouseLeave={() => setShopOpen(false)}
+              onMouseEnter={() => setResourcesOpen(true)}
+              onMouseLeave={() => setResourcesOpen(false)}
             >
               <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors cursor-pointer">
-                Shop
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${shopOpen ? "rotate-180" : ""}`} />
+                Resources
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`} />
               </button>
-              {shopOpen && (
-                <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
-                  {categoryNav.map((link) => (
+              {resourcesOpen && (
+                <div className="absolute top-full right-0 mt-0 w-44 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
+                  {resourceLinks.map((link) => (
                     <Link
                       key={link.label}
                       href={link.href}
@@ -77,30 +95,30 @@ export default function Header() {
               )}
             </div>
 
-            {/* Divider */}
-            <div className="w-px h-4 bg-gray-200 mx-1" />
-
-            {/* Main nav links */}
-            {mainNav.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Right side — Account + Cart */}
-          <div className="hidden lg:flex items-center gap-1">
-            <Link
-              href="/sign-up"
-              className="p-2 text-gray-500 hover:text-charcoal transition-colors"
-              title="Account"
+            {/* Account dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setAccountOpen(true)}
+              onMouseLeave={() => setAccountOpen(false)}
             >
-              <User className="w-5 h-5" />
-            </Link>
+              <button className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors cursor-pointer">
+                <User className="w-4 h-4" />
+                Account
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${accountOpen ? "rotate-180" : ""}`} />
+              </button>
+              {accountOpen && (
+                <div className="absolute top-full right-0 mt-0 w-44 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
+                  <Link href="/sign-up" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
+                    Sign Up
+                  </Link>
+                  <Link href="/login" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
+                    Log In
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Cart */}
             <Link
               href="/surfaces"
               className="p-2 text-gray-500 hover:text-charcoal transition-colors relative"
@@ -111,31 +129,47 @@ export default function Header() {
                 0
               </span>
             </Link>
-          </div>
+          </nav>
 
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-gray-600 cursor-pointer"
+            className="lg:hidden p-2 text-gray-600 cursor-pointer ml-auto"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
-      {/* Secondary row — categories */}
+      {/* Row 2 — Categories (left) + Fabricators/Vendors (right) */}
       <div className="hidden lg:block border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1 h-10">
-            {categoryNav.map((link) => (
+          <nav className="flex items-center justify-between h-10">
+            <div className="flex items-center gap-1">
+              {categoryNav.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <div className="flex items-center gap-1">
               <Link
-                key={link.label}
-                href={link.href}
+                href="/surfaces"
                 className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
               >
-                {link.label}
+                Fabricators Index
               </Link>
-            ))}
+              <Link
+                href="/surfaces"
+                className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
+              >
+                Vendors Portal
+              </Link>
+            </div>
           </nav>
         </div>
       </div>
@@ -144,6 +178,16 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-1">
+            {/* Search */}
+            <div className="relative mb-3">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                className="w-full pl-9 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:border-gray-300"
+              />
+            </div>
+
             {/* AI Mode link */}
             <Link
               href="/ai-assistant"
@@ -157,16 +201,15 @@ export default function Header() {
             <div className="border-t border-gray-100 my-2" />
 
             {/* Main nav */}
-            {mainNav.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link href="/goclub" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
+              GoClub™
+            </Link>
+            <Link href="/blog" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
+              Blog
+            </Link>
+            <Link href="/about-us" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
+              About Us
+            </Link>
 
             <div className="border-t border-gray-100 my-2" />
 
