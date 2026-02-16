@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles, User, ShoppingCart } from "lucide-react";
 
-const primaryNav = [
-  { label: "TanClub™", href: "/goclub" },
+const mainNav = [
+  { label: "GoClub™", href: "/goclub" },
   { label: "Vendor Portal", href: "/surfaces" },
   { label: "Fabricators Index", href: "/surfaces" },
   { label: "Blog", href: "/blog" },
@@ -24,6 +24,7 @@ const categoryNav = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [shopOpen, setShopOpen] = useState(false);
   const pathname = usePathname();
 
   if (pathname === "/ai-assistant") return null;
@@ -40,9 +41,47 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop primary nav */}
+          {/* Desktop nav — AI Mode + Shop + links */}
           <nav className="hidden lg:flex items-center gap-1">
-            {primaryNav.map((link) => (
+            {/* AI Mode inline toggle */}
+            <Link
+              href="/ai-assistant"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-charcoal hover:text-accent-orange transition-colors"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-accent-orange" />
+              AI Mode
+            </Link>
+
+            {/* Shop dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShopOpen(true)}
+              onMouseLeave={() => setShopOpen(false)}
+            >
+              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors cursor-pointer">
+                Shop
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${shopOpen ? "rotate-180" : ""}`} />
+              </button>
+              {shopOpen && (
+                <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
+                  {categoryNav.map((link) => (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Divider */}
+            <div className="w-px h-4 bg-gray-200 mx-1" />
+
+            {/* Main nav links */}
+            {mainNav.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
@@ -53,15 +92,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right side */}
-          <div className="hidden lg:flex items-center gap-2">
-            <Link
-              href="/ai-assistant"
-              className="flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium text-charcoal border border-gray-200 rounded-full hover:bg-gray-50 transition-colors"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-accent-orange" />
-              AI Mode
-            </Link>
+          {/* Right side — Account + Cart */}
+          <div className="hidden lg:flex items-center gap-1">
             <Link
               href="/sign-up"
               className="p-2 text-gray-500 hover:text-charcoal transition-colors"
@@ -124,8 +156,8 @@ export default function Header() {
 
             <div className="border-t border-gray-100 my-2" />
 
-            {/* Primary nav */}
-            {primaryNav.map((link) => (
+            {/* Main nav */}
+            {mainNav.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
