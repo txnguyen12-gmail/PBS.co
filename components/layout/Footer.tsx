@@ -18,7 +18,7 @@ const footerColumns = [
   {
     title: "Products & Tools",
     links: [
-      { label: "AI Assistant", href: "/ai-assistant" },
+      { label: "Quick Quote", href: "/ai-assistant" },
       { label: "TanWinWin Estimate", href: "/surfaces" },
     ],
   },

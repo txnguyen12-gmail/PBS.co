@@ -114,8 +114,6 @@ export default function Header() {
   const submenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
 
-  if (pathname === "/ai-assistant") return null;
-
   const handleSubmenuEnter = useCallback((label: string) => {
     if (submenuTimeout.current) {
       clearTimeout(submenuTimeout.current);
@@ -130,9 +128,11 @@ export default function Header() {
     }, 150);
   }, []);
 
+  if (pathname === "/ai-assistant") return null;
+
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
-      {/* Row 1 — Logo | Search | AI Mode | GoClub | Resources | Account | Cart */}
+      {/* Row 1 — Logo | Search | Quick Quote | GoClub | Resources | Account | Cart */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
@@ -156,12 +156,12 @@ export default function Header() {
 
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
-            {/* AI Mode pill */}
+            {/* Quick Quote pill */}
             <Link
               href="/ai-assistant"
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal bg-yellow-300 border border-yellow-400 rounded-full hover:bg-yellow-200 transition-colors"
             >
-              AI Mode
+              Quick Quote
               <Sparkles className="w-3.5 h-3.5" />
             </Link>
 
@@ -341,14 +341,14 @@ export default function Header() {
               />
             </div>
 
-            {/* AI Mode link */}
+            {/* Quick Quote link */}
             <Link
               href="/ai-assistant"
               className="flex items-center gap-2 px-3 py-3 text-sm font-medium text-charcoal"
               onClick={() => setMobileOpen(false)}
             >
               <Sparkles className="w-4 h-4 text-accent-orange" />
-              AI Mode
+              Quick Quote
             </Link>
 
             <div className="border-t border-gray-100 my-2" />

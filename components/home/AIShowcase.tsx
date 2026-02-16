@@ -83,7 +83,7 @@ export default function AIShowcase() {
           ))}
         </div>
 
-        {/* CTA to AI Assistant */}
+        {/* CTA to Quick Quote */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ export default function AIShowcase() {
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-full hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-accent-orange/25 text-lg"
           >
             <Sparkles className="w-5 h-5" />
-            Try AI Assistant
+            Get a Quick Quote
           </Link>
         </motion.div>
 
