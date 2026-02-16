@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 const collections = [
   {
     name: "Slabs",
-    image: "https://images.prismic.io/gs-web/ZrBk3rokW0aN5CB3_slabs-collection.jpg",
+    image: "https://images.prismic.io/gs-web/aU1F73NYClf9oo8t_Slab_3-1-.png",
     href: "/collections/slabs",
     description: "Premium quartz, natural stone & porcelain slabs",
   },
   {
     name: "Tiles",
-    image: "https://images.prismic.io/gs-web/ZrBk3rokW0aN5CB3_tiles-collection.jpg",
+    image: "https://images.prismic.io/gs-web/aU1GJHNYClf9oo8v_Tile_4.png",
     href: "/collections/tile",
     description: "Porcelain, ceramic & mosaic tiles",
   },
   {
     name: "Flooring",
-    image: "https://images.prismic.io/gs-web/ZrBk3rokW0aN5CB3_flooring-collection.jpg",
+    image: "https://images.prismic.io/gs-web/aU1GSnNYClf9oo8x_Flooring_1.png",
     href: "/collections/all-flooring",
     description: "Hardwood, vinyl & laminate flooring",
   },
@@ -47,10 +47,12 @@ export default function CollectionCards() {
                 href={collection.href}
                 className="group relative block rounded-2xl overflow-hidden aspect-[4/5] bg-gray-100"
               >
+                <img
+                  src={collection.image}
+                  alt={collection.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent z-10" />
-                <div className="absolute inset-0 bg-charcoal/20 flex items-center justify-center">
-                  <span className="text-white/30 text-6xl font-bold">{collection.name}</span>
-                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
                   <h3 className="text-2xl font-bold text-white mb-1">{collection.name}</h3>
                   <p className="text-white/70 text-sm mb-3">{collection.description}</p>

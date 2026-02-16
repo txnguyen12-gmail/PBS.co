@@ -30,7 +30,7 @@ export default function SurfacesHero() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 max-w-3xl leading-tight"
         >
-          America&apos;s #1 Fastest-Growing Surfaces Marketplace
+          <span role="img" aria-label="US flag">🇺🇸</span> America&apos;s #1 Fastest-Growing Surfaces Marketplace
         </motion.h1>
 
         <div className="flex flex-wrap gap-6 md:gap-12 mb-10">

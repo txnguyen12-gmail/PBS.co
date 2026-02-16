@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 
@@ -8,18 +9,43 @@ const steps = [
     number: "01",
     title: "Join TanWinWin",
     description: "Create your free account as a trade professional.",
+    mockupImage: "https://images.prismic.io/gs-web/aU1I2XNYClf9oo9L_01_desktop.png",
   },
   {
     number: "02",
     title: "Unlock Trade Pricing",
     description: "Get access to exclusive pricing built for professionals.",
+    mockupImage: "https://images.prismic.io/gs-web/aU1JFnNYClf9oo9P_02_desktop.png",
   },
   {
     number: "03",
     title: "Order & Earn TanCash",
     description: "Purchase materials and earn cashback on every order.",
+    mockupImage: "https://images.prismic.io/gs-web/aU1JUnNYClf9oo9T_03_desktop.png",
   },
 ];
+
+function StepMockup({ step }: { step: typeof steps[number] }) {
+  const [imgError, setImgError] = useState(false);
+
+  return (
+    <div className="w-48 h-64 md:w-56 md:h-72 rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
+      {imgError ? (
+        <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200">
+          <span className="text-5xl font-bold text-gray-200 mb-2">{step.number}</span>
+          <span className="text-xs text-gray-400">Phone Mockup</span>
+        </div>
+      ) : (
+        <img
+          src={step.mockupImage}
+          alt={`Step ${step.number}: ${step.title}`}
+          className="w-full h-full object-cover"
+          onError={() => setImgError(true)}
+        />
+      )}
+    </div>
+  );
+}
 
 export default function ThreeStepProcess() {
   return (
@@ -41,11 +67,14 @@ export default function ThreeStepProcess() {
               transition={{ delay: i * 0.15 }}
               className="text-center relative"
             >
-              <div className="text-6xl font-bold text-navy/10 mb-4">{step.number}</div>
+              {/* Phone mockup image */}
+              <div className="mb-6 flex justify-center">
+                <StepMockup step={step} />
+              </div>
               <h3 className="text-xl font-bold text-navy mb-3">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>
               {i < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 right-0 translate-x-1/2 w-16 h-0.5 bg-navy/10" />
+                <div className="hidden md:block absolute top-32 right-0 translate-x-1/2 w-16 h-0.5 bg-navy/10" />
               )}
             </motion.div>
           ))}

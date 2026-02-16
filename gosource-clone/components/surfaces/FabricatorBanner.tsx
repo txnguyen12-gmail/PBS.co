@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Crown, Check } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -10,9 +11,30 @@ const fabricatorPerks = [
   "Cashback on every order",
 ];
 
+function FabricatorImage() {
+  const [imgError, setImgError] = useState(false);
+
+  if (imgError) {
+    return (
+      <div className="w-full h-full bg-white/60 rounded-2xl flex items-center justify-center">
+        <Crown className="w-24 h-24 text-accent-orange/30" />
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src="https://images.prismic.io/gs-web/aU1HL3NYClf9oo88_ImageDesktopFabricatorbanner_1.png"
+      alt="Stone fabricator at work"
+      className="w-full h-full object-cover rounded-2xl"
+      onError={() => setImgError(true)}
+    />
+  );
+}
+
 export default function FabricatorBanner() {
   return (
-    <section className="py-16 bg-lavender">
+    <section className="py-16 bg-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,14 +65,14 @@ export default function FabricatorBanner() {
               <Button href="/sign-up" variant="accent" size="lg">
                 Get My Fabricator Discount
               </Button>
-              <Button href="/surfaces/fabricators" variant="outline" size="md">
+              <Button href="/goclub" variant="outline" size="md">
                 Learn more
               </Button>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center">
-            <div className="w-48 h-48 md:w-64 md:h-64 bg-white/60 rounded-full flex items-center justify-center">
-              <Crown className="w-24 h-24 md:w-32 md:h-32 text-accent-orange/40" />
+          <div className="flex-1">
+            <div className="aspect-[4/3] overflow-hidden">
+              <FabricatorImage />
             </div>
           </div>
         </motion.div>

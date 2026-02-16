@@ -12,12 +12,21 @@ export default function ContactSection({
   subtitle = "Our team of TanWinWin pros is ready to help you.",
 }: ContactSectionProps) {
   return (
-    <section className="py-16 bg-surface-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+    <section className="relative py-16 overflow-hidden">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700">
+        <div
+          className="absolute inset-0 opacity-30 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.prismic.io/gs-web/aU1GwnNYClf9oo82_Imagewrap.png')",
+          }}
+        />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
           {title}
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-white/70 mb-12 max-w-2xl mx-auto">
           {subtitle}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

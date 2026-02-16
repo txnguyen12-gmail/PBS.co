@@ -50,8 +50,8 @@ export default function SurfacesPage() {
       </section>
 
       <ContactSection
-        title="Ready to find your Surfaces?"
-        subtitle="Our team of TanWinWin pros is ready to help you find the perfect slab, tile, or flooring for your next project."
+        title="Ready to find your Surfaces? Contact our sourcing desk"
+        subtitle="Our team of TanWinWin pros is ready to help you find the perfect slab for your project."
       />
       <FAQAccordion
         items={surfacesFAQ}
