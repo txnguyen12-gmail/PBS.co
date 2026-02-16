@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const footerColumns = [
   {
@@ -12,6 +12,14 @@ const footerColumns = [
       { label: "Multifamily", href: "/multifamily" },
       { label: "TanClub™", href: "/goclub" },
       { label: "Blog", href: "/blog" },
+      { label: "Contact", href: "/about-us#offices" },
+    ],
+  },
+  {
+    title: "Products & Tools",
+    links: [
+      { label: "AI Assistant", href: "/ai-assistant" },
+      { label: "TanWinWin Estimate", href: "/surfaces" },
     ],
   },
   {
@@ -28,7 +36,7 @@ const footerColumns = [
     ],
   },
   {
-    title: "Legal",
+    title: "Legal & Policies",
     links: [
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "/terms-of-service" },
@@ -42,6 +50,7 @@ const socialLinks = [
   { icon: Facebook, href: "https://facebook.com/tanwinwin", label: "Facebook" },
   { icon: Instagram, href: "https://instagram.com/tanwinwin", label: "Instagram" },
   { icon: Linkedin, href: "https://linkedin.com/company/tanwinwin", label: "LinkedIn" },
+  { icon: Youtube, href: "https://youtube.com/@tanwinwin", label: "YouTube" },
 ];
 
 const paymentMethods = ["Visa", "Amex", "Discover", "JCB", "Diners Club", "Mastercard"];
@@ -52,13 +61,13 @@ export default function Footer() {
   if (pathname === "/ai-assistant") return null;
 
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-charcoal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Logo column */}
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
             <Link href="/">
-              <span className="text-xl font-bold text-charcoal tracking-tight inline-block mb-4">
+              <span className="text-xl font-bold text-white tracking-tight inline-block mb-4">
                 Tan<span className="text-accent-orange">Win</span>Win
               </span>
             </Link>
@@ -69,7 +78,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors text-gray-500 hover:text-charcoal"
+                  className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-white/60 hover:text-white"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />
@@ -81,13 +90,13 @@ export default function Footer() {
           {/* Link columns */}
           {footerColumns.map((column) => (
             <div key={column.title}>
-              <h3 className="font-semibold text-sm mb-3 text-charcoal">{column.title}</h3>
+              <h3 className="font-semibold text-sm mb-3 text-white">{column.title}</h3>
               <ul className="space-y-2">
                 {column.links.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-sm text-gray-500 hover:text-charcoal transition-colors"
+                      className="text-sm text-white/50 hover:text-white transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -99,16 +108,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-gray-100">
+        <div className="mt-10 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-gray-400">
-              &copy; {new Date().getFullYear()} TanWinWin. All rights reserved.
+            <p className="text-xs text-white/40">
+              Copyright {new Date().getFullYear()} &copy; tanwinwin.com
             </p>
             <div className="flex items-center gap-2">
               {paymentMethods.map((card) => (
                 <div
                   key={card}
-                  className="px-2 py-1 bg-gray-50 border border-gray-100 rounded text-[10px] text-gray-400"
+                  className="px-2 py-1 bg-white/10 border border-white/10 rounded text-[10px] text-white/50"
                 >
                   {card}
                 </div>
