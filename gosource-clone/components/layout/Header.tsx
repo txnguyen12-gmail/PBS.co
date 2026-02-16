@@ -28,13 +28,13 @@ export default function Header() {
   if (pathname === "/ai-assistant") return null;
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-charcoal">
       {/* Row 1 — Logo | Search | AI Mode | GoClub | Resources | Account | Cart */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className="text-xl font-bold text-charcoal tracking-tight">
+            <span className="text-xl font-bold text-white tracking-tight">
               Tan<span className="text-accent-orange">Win</span>Win
             </span>
           </Link>
@@ -46,26 +46,26 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="What are you looking for?"
-                className="w-full pl-9 pr-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors"
+                className="w-full pl-9 pr-4 py-2 text-sm border border-white/20 rounded-lg bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-white/40 focus:bg-white/15 transition-colors"
               />
             </div>
           </div>
 
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
-            {/* AI Mode pill */}
+            {/* AI Mode pill — yellow like GoSource */}
             <Link
               href="/ai-assistant"
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal bg-yellow-300 border border-yellow-400 rounded-full hover:bg-yellow-200 transition-colors"
             >
               AI Mode
-              <span className="w-2 h-2 rounded-full bg-green-400" />
+              <Sparkles className="w-3.5 h-3.5" />
             </Link>
 
             {/* GoClub */}
             <Link
               href="/goclub"
-              className="px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors"
+              className="px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
               GoClub™
             </Link>
@@ -76,7 +76,7 @@ export default function Header() {
               onMouseEnter={() => setResourcesOpen(true)}
               onMouseLeave={() => setResourcesOpen(false)}
             >
-              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors cursor-pointer">
+              <button className="flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white transition-colors cursor-pointer">
                 Resources
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`} />
               </button>
@@ -101,7 +101,7 @@ export default function Header() {
               onMouseEnter={() => setAccountOpen(true)}
               onMouseLeave={() => setAccountOpen(false)}
             >
-              <button className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-600 hover:text-charcoal transition-colors cursor-pointer">
+              <button className="flex items-center gap-1.5 px-3 py-2 text-sm text-white/80 hover:text-white transition-colors cursor-pointer">
                 <User className="w-4 h-4" />
                 Account
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${accountOpen ? "rotate-180" : ""}`} />
@@ -121,11 +121,11 @@ export default function Header() {
             {/* Cart */}
             <Link
               href="/surfaces"
-              className="p-2 text-gray-500 hover:text-charcoal transition-colors relative"
+              className="p-2 text-white/80 hover:text-white transition-colors relative"
               title="Cart"
             >
               <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-charcoal text-white text-[10px] rounded-full flex items-center justify-center">
+              <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-accent-orange text-white text-[10px] rounded-full flex items-center justify-center">
                 0
               </span>
             </Link>
@@ -134,7 +134,7 @@ export default function Header() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-gray-600 cursor-pointer ml-auto"
+            className="lg:hidden p-2 text-white cursor-pointer ml-auto"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -142,7 +142,7 @@ export default function Header() {
       </div>
 
       {/* Row 2 — Categories (left) + Fabricators/Vendors (right) */}
-      <div className="hidden lg:block border-t border-gray-100">
+      <div className="hidden lg:block border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between h-10">
             <div className="flex items-center gap-1">
@@ -150,7 +150,7 @@ export default function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
+                  className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -159,13 +159,13 @@ export default function Header() {
             <div className="flex items-center gap-1">
               <Link
                 href="/surfaces"
-                className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
+                className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Fabricators Index
               </Link>
               <Link
                 href="/surfaces"
-                className="px-3 py-1.5 text-sm text-gray-500 hover:text-charcoal transition-colors"
+                className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Vendors Portal
               </Link>
