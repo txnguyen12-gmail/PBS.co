@@ -24,7 +24,7 @@ export const surfacesTestimonials: Testimonial[] = [
     role: "Interior Designer, Seattle, WA",
     quote: "Super easy to work with, and their team knows the materials inside out. Saved me time and money.",
     rating: 5,
-    image: "https://images.prismic.io/gs-web/aVD9NHNYClf9oqTN_Highly_realistic_candid_202512281151-1-.jpeg",
+    image: "/images/testimonials/candid-portrait.jpeg",
   },
   {
     name: "Amir Nadel",
@@ -37,7 +37,7 @@ export const surfacesTestimonials: Testimonial[] = [
     role: "Stone Fabricator, Houston, TX",
     quote: "I shopped around, and TanWinWin beat everyone on price — and I didn't have to wait hours.",
     rating: 5,
-    image: "https://images.prismic.io/gs-web/aQyOXLpReVYa4ICH_Image.png",
+    image: "/images/testimonials/testimonial-5.png",
   },
   {
     name: "David Suker",
@@ -53,21 +53,21 @@ export const tanclubTestimonials: Testimonial[] = [
     role: "Developer, Austin, TX",
     quote: "Fast quotes, fair prices, and on-time delivery — exactly what I need to keep projects moving.",
     rating: 5,
-    image: "https://images.prismic.io/gs-web/aVD5BHNYClf9oqS8_Gemini_Generated_Image_l34uvtl34uvtl34u.jpeg",
+    image: "/images/testimonials/testimonial-goclub-1.jpeg",
   },
   {
     name: "Luis M.",
     role: "Remodeler, Miami, FL",
     quote: "The quoting process was fast, and their sourcing expert helped me find exactly what I needed in minutes.",
     rating: 5,
-    image: "https://images.prismic.io/gs-web/aSQzG2GnmrmGqKmZ_Portrait_2.png",
+    image: "/images/testimonials/testimonial-goclub-2.png",
   },
   {
     name: "Derek T.",
     role: "Builder, Phoenix, AZ",
     quote: "I've used a lot of vendors, but TanWinWin consistently has the best pricing on natural stone and prefab slabs.",
     rating: 5,
-    image: "https://images.prismic.io/gs-web/aVD6rnNYClf9oqTJ_Highly_realistic_candid_202512281140.jpeg",
+    image: "/images/testimonials/testimonial-goclub-3.jpeg",
   },
   {
     name: "Sandra K.",

@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     date: "Feb 12, 2026",
     type: "Trend Analysis",
     categories: ["Slabs", "Countertops"],
-    image: "https://images.prismic.io/gs-web/countertop-trends-2026.jpg",
+    image: "/images/blog/calacatta-laza.jpg",
     author: "James Carter",
     content: `The countertop world is evolving fast, and 2026 is shaping up to be one of the most exciting years yet. Designers and homeowners alike are gravitating toward bolder, more expressive surfaces that tell a story — and the trends reflect that shift.
 
@@ -37,7 +37,7 @@ Finally, matte and leathered finishes are gaining ground over traditional polish
     date: "Feb 10, 2026",
     type: "Educational",
     categories: ["Slabs", "Countertops"],
-    image: "https://images.prismic.io/gs-web/hidden-costs-countertops.jpg",
+    image: "/images/blog/bigbox.png",
     author: "James Carter",
     content: `When homeowners walk into a big-box store and see countertop pricing, it looks straightforward. But for fabricators and trade professionals who know the supply chain, the reality is more complex — and often more expensive than it appears.
 
@@ -56,7 +56,7 @@ Sourcing through a trade-focused platform like TanWinWin eliminates these pain p
     date: "Feb 11, 2026",
     type: "Trend Analysis",
     categories: ["Slabs", "Countertops"],
-    image: "https://images.prismic.io/gs-web/taj-mahal-quartzite.jpg",
+    image: "/images/blog/taj-quartzite.webp",
     author: "James Carter",
     content: `If there's one material that defines luxury countertops right now, it's Taj Mahal quartzite. This Brazilian natural stone has become the gold standard for high-end kitchen and bathroom projects — and the demand shows no signs of slowing down.
 
@@ -75,7 +75,7 @@ This is where sourcing matters. Working with a platform like TanWinWin gives fab
     date: "Feb 5, 2026",
     type: "Product Comparison",
     categories: ["Slabs", "Countertops"],
-    image: "https://images.prismic.io/gs-web/calacatta-comparison.jpg",
+    image: "/images/blog/fusion-quartzite.jpg",
     author: "James Carter",
     content: `The Calacatta look is one of the most sought-after aesthetics in countertop design. But when it comes to choosing between genuine Calacatta marble and engineered Calacatta quartz, the decision isn't as simple as it seems. Both have their place, and understanding the trade-offs is essential for making the right recommendation to your clients.
 
@@ -94,7 +94,7 @@ For trade professionals, the best approach is to present both options honestly. 
     date: "May 14, 2025",
     type: "Showcases & Case Studies",
     categories: ["Slabs", "Appliances", "Flooring"],
-    image: "https://images.prismic.io/gs-web/westchester-remodel.jpg",
+    image: "/images/blog/westchester-home.jpg",
     author: "James Carter",
     content: `When a custom home builder in Westchester County, NY took on a full-home remodel, the scope was ambitious: new kitchen countertops, bathroom vanities, flooring throughout, and premium appliances — all within a tight 12-week timeline.
 
@@ -113,7 +113,7 @@ The result: the project came in on time and 15% under the original materials bud
     date: "Mar 25, 2025",
     type: "Showcases & Case Studies",
     categories: ["Flooring", "Appliances", "Plumbing"],
-    image: "https://images.prismic.io/gs-web/bel-air-project.jpg",
+    image: "/images/blog/bel-air.jpg",
     author: "James Carter",
     content: `A luxury home builder in Bel Air was working on a $3M+ custom home with exacting specifications. The client wanted premium materials throughout — Italian porcelain flooring, custom cabinetry hardware, high-end plumbing fixtures, and top-tier appliances. The original materials budget was $480K.
 
@@ -134,7 +134,7 @@ For builders working on high-end projects, the takeaway is clear: premium materi
     date: "Mar 19, 2025",
     type: "Showcases & Case Studies",
     categories: ["Appliances", "Countertops"],
-    image: "https://images.prismic.io/gs-web/truamerica-case-study.jpg",
+    image: "/images/blog/baypoint-bedroom.jpg",
     author: "James Carter",
     content: `TruAmerica Real Estate, one of the largest multifamily operators in the U.S., faced a common challenge: renovating hundreds of units across multiple properties while maintaining quality, controlling costs, and minimizing vacancy periods.
 
@@ -155,7 +155,7 @@ The partnership continues to grow. TruAmerica now uses TanWinWin for all new acq
     date: "Jun 17, 2025",
     type: "Showcases & Case Studies",
     categories: ["Pavers", "Tiles", "Countertops"],
-    image: "https://images.prismic.io/gs-web/rangely-west-hollywood.jpg",
+    image: "/images/blog/fusion-quartzite.jpg",
     author: "James Carter",
     content: `The Rangely project in West Hollywood is a prime example of what happens when great design meets smart sourcing. This modern multifamily property needed a complete renovation that would appeal to West Hollywood's design-savvy renters while staying within a competitive budget.
 

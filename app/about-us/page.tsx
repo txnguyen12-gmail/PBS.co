@@ -101,7 +101,7 @@ export default function AboutUsPage() {
           <div
             className="absolute inset-0 opacity-30 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.prismic.io/gs-web/aU1GwnNYClf9oo82_Imagewrap.png')",
+              backgroundImage: "url('/images/contact/contact-wrap.png')",
             }}
           />
         </div>
@@ -154,7 +154,7 @@ export default function AboutUsPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
               <img
-                src="https://images.prismic.io/gs-web/aU1HqXNYClf9oo9D_Whytochoosegosource.png"
+                src="/images/surfaces/why-choose-gosource.png"
                 alt="TanWinWin team at work"
                 className="w-full h-full object-cover"
               />
@@ -182,7 +182,7 @@ export default function AboutUsPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="https://images.prismic.io/gs-web/aU1HL3NYClf9oo88_ImageDesktopFabricatorbanner_1.png"
+                src="/images/surfaces/fabricator-banner-desktop.png"
                 alt="Our Mission"
                 className="w-full h-full object-cover"
               />
@@ -217,7 +217,7 @@ export default function AboutUsPage() {
       <section className="relative">
         <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
           <img
-            src="https://images.prismic.io/gs-web/aU1GwnNYClf9oo82_Imagewrap.png"
+            src="/images/contact/contact-wrap.png"
             alt="TanWinWin banner"
             className="w-full h-full object-cover"
           />

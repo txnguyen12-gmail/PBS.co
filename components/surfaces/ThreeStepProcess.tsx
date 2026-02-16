@@ -9,19 +9,19 @@ const steps = [
     number: "01",
     title: "Join TanWinWin",
     description: "Create your free account as a trade professional.",
-    mockupImage: "https://images.prismic.io/gs-web/aU1I2XNYClf9oo9L_01_desktop.png",
+    mockupImage: "/images/surfaces/step-01-desktop.png",
   },
   {
     number: "02",
     title: "Unlock Trade Pricing",
     description: "Get access to exclusive pricing built for professionals.",
-    mockupImage: "https://images.prismic.io/gs-web/aU1JFnNYClf9oo9P_02_desktop.png",
+    mockupImage: "/images/surfaces/step-02-desktop.png",
   },
   {
     number: "03",
     title: "Order & Earn TanCash",
     description: "Purchase materials and earn cashback on every order.",
-    mockupImage: "https://images.prismic.io/gs-web/aU1JUnNYClf9oo9T_03_desktop.png",
+    mockupImage: "/images/surfaces/step-03-desktop.png",
   },
 ];
 

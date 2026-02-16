@@ -6,17 +6,17 @@ const segments = [
   {
     title: "Fabricators",
     description: "Designed for high-volume sourcing, with fabricator-only pricing, access to new leads, and fulfillment routed directly to your shop.",
-    image: "https://images.prismic.io/gs-web/aU1VfXNYClf9oo-u_Fabricators.png",
+    image: "/images/goclub/fabricators.png",
   },
   {
     title: "Designers & Architects",
     description: "Built to support specification and client-facing workflows, with easy material discovery and TanCash rewards on homeowner-managed projects.",
-    image: "https://images.prismic.io/gs-web/aU1VfHNYClf9oo-t_Designers%26Architects.png",
+    image: "/images/goclub/designers-architects.png",
   },
   {
     title: "Builders & Contractors",
     description: "Optimized for speed and reliability across jobs, with nationwide availability and smooth coordination for delivery or pickup.",
-    image: "https://images.prismic.io/gs-web/aU1Ve3NYClf9oo-s_BuildersAndcontractors.png",
+    image: "/images/goclub/builders-contractors.png",
   },
 ];
 

@@ -71,7 +71,7 @@ export default function FeaturesGrid() {
           >
             <div className="aspect-[3/4] rounded-2xl overflow-hidden">
               <img
-                src="https://images.prismic.io/gs-web/aVo9TnNYClf9owj5_Fabricator_GoCash_Square.png"
+                src="/images/goclub/fabricator-gocash-square.png"
                 alt="TanWinWin value proposition"
                 className="w-full h-full object-cover"
               />

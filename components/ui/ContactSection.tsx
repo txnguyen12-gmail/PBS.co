@@ -18,7 +18,7 @@ export default function ContactSection({
         <div
           className="absolute inset-0 opacity-30 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.prismic.io/gs-web/aU1GwnNYClf9oo82_Imagewrap.png')",
+            backgroundImage: "url('/images/contact/contact-wrap.png')",
           }}
         />
       </div>

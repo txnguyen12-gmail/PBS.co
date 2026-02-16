@@ -17,7 +17,7 @@ function BannerImage() {
 
   return (
     <img
-      src="https://images.prismic.io/gs-web/aU1HqXNYClf9oo9D_Whytochoosegosource.png"
+      src="/images/surfaces/why-choose-gosource.png"
       alt="Builders using TanClub"
       className="w-full h-full object-cover rounded-2xl"
       onError={() => setImgError(true)}

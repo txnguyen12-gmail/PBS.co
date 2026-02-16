@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 const collections = [
   {
     name: "Slabs",
-    image: "https://images.prismic.io/gs-web/aU1F73NYClf9oo8t_Slab_3-1-.png",
+    image: "/images/surfaces/slab-category.png",
     href: "/collections/slabs",
     description: "Premium quartz, natural stone & porcelain slabs",
   },
   {
     name: "Tiles",
-    image: "https://images.prismic.io/gs-web/aU1GJHNYClf9oo8v_Tile_4.png",
+    image: "/images/surfaces/tile-category.png",
     href: "/collections/tile",
     description: "Porcelain, ceramic & mosaic tiles",
   },
   {
     name: "Flooring",
-    image: "https://images.prismic.io/gs-web/aU1GSnNYClf9oo8x_Flooring_1.png",
+    image: "/images/surfaces/flooring-category.png",
     href: "/collections/all-flooring",
     description: "Hardwood, vinyl & laminate flooring",
   },

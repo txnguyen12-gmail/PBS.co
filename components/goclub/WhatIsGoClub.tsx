@@ -44,7 +44,7 @@ export default function WhatIsGoClub() {
           >
             <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-slate to-surface-light flex items-center justify-center">
               <img
-                src="https://images.prismic.io/gs-web/aVo9TnNYClf9owj5_Fabricator_GoCash_Square.png"
+                src="/images/goclub/fabricator-gocash-square.png"
                 alt="Fabricator using TanClub on mobile"
                 className="w-full h-full object-cover"
               />

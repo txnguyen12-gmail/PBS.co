@@ -24,7 +24,7 @@ function FabricatorImage() {
 
   return (
     <img
-      src="https://images.prismic.io/gs-web/aU1HL3NYClf9oo88_ImageDesktopFabricatorbanner_1.png"
+      src="/images/surfaces/fabricator-banner-desktop.png"
       alt="Stone fabricator at work"
       className="w-full h-full object-cover rounded-2xl"
       onError={() => setImgError(true)}

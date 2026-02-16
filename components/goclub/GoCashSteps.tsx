@@ -8,19 +8,19 @@ const steps = [
     number: "01",
     title: "Get Started with Free Trade Account",
     description: "Sign up in minutes to unlock exclusive pricing, rewards, and tools designed to streamline your sourcing and grow your business.",
-    icon: "https://gs-web.cdn.prismic.io/gs-web/aS6mQnNYClf9nrao_01icon.svg",
+    icon: "/images/icons/step-01.svg",
   },
   {
     number: "02",
     title: "Purchase Materials and Earn TanCash",
     description: "Earn TanCash on every order. The more you source through TanWinWin, the more you earn — helping you boost profits with every project.",
-    icon: "https://gs-web.cdn.prismic.io/gs-web/aS6mYXNYClf9nra3_02icon.svg",
+    icon: "/images/icons/step-02.svg",
   },
   {
     number: "03",
     title: "Use TanCash on Your Next Order",
     description: "Redeem your TanCash balance on future purchases to enjoy greater savings on premium materials. Your sourcing gets smarter every time you buy.",
-    icon: "https://gs-web.cdn.prismic.io/gs-web/aS6ml3NYClf9nrbX_03icon.svg",
+    icon: "/images/icons/step-03.svg",
   },
 ];
 
