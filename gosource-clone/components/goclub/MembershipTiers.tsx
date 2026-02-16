@@ -60,6 +60,10 @@ const featureCategories: FeatureCategory[] = [
         values: ["Standard", "24/7 Dedicated account exec", "24/7 Dedicated account exec"],
       },
       {
+        name: "Plans Take Off",
+        values: [false, true, true],
+      },
+      {
         name: "Free Samples",
         values: [false, true, true],
       },

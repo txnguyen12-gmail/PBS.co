@@ -8,7 +8,8 @@ import {
   MapPin,
   Briefcase,
   Building2,
-  DollarSign,
+  ClipboardList,
+  ChevronDown,
 } from "lucide-react";
 import Image from "next/image";
 import { teamMembers } from "@/data/team";
@@ -25,37 +26,37 @@ const values = [
     icon: Heart,
     title: "Customer Obsession",
     description:
-      "We put our members first in everything we do. Their success drives every decision, product, and partnership we pursue.",
+      "We center everything around our customers — their satisfaction drives us, and their trust is our greatest reward.",
   },
   {
     icon: Award,
     title: "Operational Excellence",
     description:
-      "We relentlessly optimize our processes to deliver materials faster, more accurately, and at the best possible price.",
+      "We strive for flawless execution in every aspect of our operations.",
   },
   {
     icon: Rocket,
     title: "Entrepreneurial Spirit",
     description:
-      "We move fast, take smart risks, and constantly innovate to stay ahead in a rapidly evolving industry.",
+      "Embrace innovation, foster creativity and adaptability, and pursue ambitious goals fearlessly.",
   },
   {
     icon: Shield,
     title: "Quality and Integrity",
     description:
-      "We never cut corners. Every material we source meets our rigorous standards, and we stand behind every order.",
+      "We commit to delivering the highest quality while upholding unwavering integrity and the highest ethical standards.",
   },
   {
     icon: Handshake,
     title: "Building Strong Relationships",
     description:
-      "We invest in long-term partnerships with our members, vendors, and team — because trust is the foundation of great work.",
+      "We cultivate lasting connections with members, partners, suppliers, and communities — because collaboration drives our progress.",
   },
   {
     icon: Users,
     title: "Employee Care and Development",
     description:
-      "Our team is our greatest asset. We foster growth, celebrate wins, and create an environment where everyone can thrive.",
+      "We invest in our team's growth, well-being, and fulfillment — knowing that engaged employees are key to operational excellence and exceptional customer experiences.",
   },
 ];
 
@@ -64,38 +65,38 @@ const trustedLogos = [
   "Tishman Speyer",
   "Opendoor",
   "Compass",
-  "Avalon Bay",
-  "Greystar",
-  "Lennar",
-  "KB Home",
-  "Related Companies",
-  "Brookfield",
-  "CBRE",
-  "Toll Brothers",
-  "Invitation Homes",
-  "Camden Property",
+  "Avalon Bay Communities",
+  "Omninet",
+  "Hy-Max Building Corp",
+  "NorthCoast",
+  "AAGLA",
+  "Benedict Canyon Equities",
+  "CDH Investments",
+  "Artimus",
+  "Gelt Venture Partners",
+  "Shirley",
 ];
 
 const investorLogos = [
-  "Y Combinator",
-  "Andreessen Horowitz",
-  "Sequoia Capital",
-  "Accel Partners",
-  "First Round Capital",
+  "Tishman",
+  "Mosaic",
+  "72",
+  "TechAviv",
+  "NFX",
 ];
 
 const navAnchors = [
   { label: "Meet the team", href: "#team", icon: Users },
-  { label: "Open positions", href: "#positions", icon: Briefcase },
-  { label: "Investors", href: "#investors", icon: DollarSign },
-  { label: "Offices", href: "#offices", icon: Building2 },
+  { label: "View open positions", href: "#positions", icon: ClipboardList },
+  { label: "Investors", href: "#investors", icon: Award },
+  { label: "Our main offices", href: "#offices", icon: MapPin },
 ];
 
 export default function AboutUsPage() {
   return (
     <>
       {/* Hero - Full-width banner with image overlay */}
-      <section className="relative h-[340px] md:h-[440px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[170px] md:h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700">
           <div
             className="absolute inset-0 opacity-30 bg-cover bg-center"
@@ -106,6 +107,17 @@ export default function AboutUsPage() {
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white">About Us</h1>
+        </div>
+      </section>
+
+      {/* Main Heading */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Reinvent the way<br />
+            construction professionals<br />
+            source materials.
+          </h2>
         </div>
       </section>
 
@@ -121,22 +133,23 @@ export default function AboutUsPage() {
                 For Builders, By Builders
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                TanWinWin was founded with a clear mission: to transform how
-                construction professionals source materials. We saw an industry
-                plagued by opaque pricing, fragmented supply chains, and
-                countless hours wasted on phone calls and site visits just to get
-                a quote.
+                When we started TanWinWin, we set out to transform how
+                construction professionals source materials. Having experienced
+                the fragmented, slow, and costly procurement process firsthand,
+                we knew there had to be a better way.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                So we built a better way. By combining deep industry
-                relationships, AI-powered sourcing technology, and a team that
-                speaks the language of construction, TanWinWin delivers the
-                materials you need at prices that make sense -- with the speed
-                and reliability your projects demand.
+                TanWinWin brings together the largest collective of construction
+                professionals to harness real buying power, using advanced AI
+                technology to deliver transparency, speed, and savings — making
+                material procurement better, faster, easier, and more affordable
+                for everyone involved.
               </p>
-              <p className="text-sm text-gray-500 italic">
-                Founded by a team of industry veterans who have spent decades in
-                construction, procurement, and technology.
+              <p className="text-sm text-gray-500 italic mb-1">
+                TanWinWin Co-Founders
+              </p>
+              <p className="text-sm text-gray-500">
+                Ron Zuckerman, Yuval Mekler, Ori Birnbaum, and Shahar Koren
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
@@ -150,29 +163,29 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Mission - Dark section */}
-      <section className="py-20 bg-charcoal text-white">
+      {/* Mission - White section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 relative aspect-[4/3] rounded-2xl overflow-hidden">
+            <div>
+              <p className="text-sm font-semibold text-accent-orange uppercase tracking-wider mb-3">
+                Our Mission
+              </p>
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium mb-8">
+                To provide our members with the most efficient way to source the
+                materials they need — at the best possible price, with
+                exceptional service.
+              </p>
+              <Button href="/sign-up" variant="primary" size="lg">
+                Become a member
+              </Button>
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <img
                 src="https://images.prismic.io/gs-web/aU1HL3NYClf9oo88_ImageDesktopFabricatorbanner_1.png"
                 alt="Our Mission"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="order-1 lg:order-2">
-              <p className="text-sm font-semibold text-accent-orange uppercase tracking-wider mb-3">
-                Our Mission
-              </p>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-medium mb-8">
-                To provide our members with the most efficient way to source the
-                materials they need -- at the best possible price, with
-                exceptional service.
-              </p>
-              <Button href="/sign-up" variant="accent" size="lg">
-                Become a member
-              </Button>
             </div>
           </div>
         </div>
@@ -200,6 +213,17 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      {/* Banner */}
+      <section className="relative">
+        <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
+          <img
+            src="https://images.prismic.io/gs-web/aU1GwnNYClf9oo82_Imagewrap.png"
+            alt="TanWinWin banner"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
       {/* Values */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -207,8 +231,8 @@ export default function AboutUsPage() {
             <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
               Our Values
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold">
-              The principles that guide everything we do
+            <h2 className="text-2xl md:text-3xl font-bold max-w-3xl mx-auto leading-snug">
+              The TanWinWin spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -236,13 +260,10 @@ export default function AboutUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Anywhere in the U.S. Any project.
+                Anywhere in the U.S.<br />Any project.
               </h2>
               <p className="text-gray-400 text-base leading-relaxed mb-8">
-                From coast to coast, TanWinWin delivers construction materials
-                to job sites nationwide. Whether you are building in Los Angeles,
-                New York, Miami, or anywhere in between -- we have got you
-                covered.
+                We source top-quality materials from leading suppliers — at the best prices.
               </p>
               <Button href="/sign-up" variant="accent" size="lg">
                 Get Started
@@ -255,10 +276,10 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Navigation Anchors */}
-      <section className="bg-surface-light border-y border-gray-200">
+      {/* Navigation Anchors - Desktop only */}
+      <section className="hidden md:block bg-gray-100 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-4">
+          <div className="grid grid-cols-4 gap-4 py-4">
             {navAnchors.map((anchor) => (
               <a
                 key={anchor.label}
@@ -267,6 +288,7 @@ export default function AboutUsPage() {
               >
                 <anchor.icon className="w-4 h-4" />
                 {anchor.label}
+                <ChevronDown className="w-3 h-3" />
               </a>
             ))}
           </div>
@@ -283,22 +305,18 @@ export default function AboutUsPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Meet the team
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
-              Industry experts dedicated to transforming your sourcing
-              experience.
-            </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center group">
-                <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100 relative">
+                <div className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100 relative">
                   {member.image && member.image.startsWith("http") ? (
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
                       className="object-cover"
-                      sizes="112px"
+                      sizes="160px"
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
@@ -311,7 +329,7 @@ export default function AboutUsPage() {
                 <h3 className="font-semibold text-gray-900 text-sm">
                   {member.name}
                 </h3>
-                <p className="text-xs text-gray-500 mt-0.5">{member.role}</p>
+                <p className="text-xs text-gray-500 font-semibold mt-0.5">{member.role}</p>
               </div>
             ))}
           </div>
@@ -322,35 +340,19 @@ export default function AboutUsPage() {
       <section id="positions" className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Open Positions
+            Open positions
           </h2>
           <div className="space-y-4">
             <div className="flex items-center justify-between p-6 bg-surface-light rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
               <div>
-                <h3 className="font-semibold text-gray-900">Account Executive — Trade Sales</h3>
-                <p className="text-sm text-gray-500 mt-1">Los Angeles, CA · Full-time</p>
+                <h3 className="font-semibold text-gray-900">Sales Manager</h3>
               </div>
-              <Button href="/sign-up" variant="outline" size="sm">
-                View Details
-              </Button>
-            </div>
-            <div className="flex items-center justify-between p-6 bg-surface-light rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
-              <div>
-                <h3 className="font-semibold text-gray-900">Operations Coordinator — Logistics</h3>
-                <p className="text-sm text-gray-500 mt-1">Remote · Full-time</p>
-              </div>
-              <Button href="/sign-up" variant="outline" size="sm">
-                View Details
-              </Button>
-            </div>
-            <div className="flex items-center justify-between p-6 bg-surface-light rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
-              <div>
-                <h3 className="font-semibold text-gray-900">Software Engineer — AI/ML</h3>
-                <p className="text-sm text-gray-500 mt-1">Remote · Full-time</p>
-              </div>
-              <Button href="/sign-up" variant="outline" size="sm">
-                View Details
-              </Button>
+              <a
+                href="#"
+                className="text-sm font-medium text-accent-orange hover:underline"
+              >
+                View details
+              </a>
             </div>
           </div>
         </div>
@@ -360,7 +362,7 @@ export default function AboutUsPage() {
       <section id="investors" className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Our Investors
+            Institutional Investors
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-12">
             {investorLogos.map((name) => (
@@ -381,17 +383,17 @@ export default function AboutUsPage() {
       <section id="offices" className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Our Offices
+            Our main offices
           </h2>
           <div className="max-w-md">
             <div className="p-6 bg-surface-light rounded-xl border border-gray-100">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent-orange flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Los Angeles</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">Los Angeles, CA</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    Los Angeles, California<br />
-                    United States
+                    3130 Wilshire Blvd, Suite 300<br />
+                    Santa Monica CA 90404
                   </p>
                 </div>
               </div>

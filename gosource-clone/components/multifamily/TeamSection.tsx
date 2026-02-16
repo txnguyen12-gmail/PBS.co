@@ -15,7 +15,7 @@ export default function TeamSection() {
           Where Craft Meets Execution
         </h2>
         <p className="text-gray-300 text-center mb-12 max-w-xl mx-auto">
-          Our team of experienced professionals is ready to transform your properties
+          From demo to install, we&apos;re hands-on and accountable — delivering results without the runaround.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {teamMembers.map((member, i) => (

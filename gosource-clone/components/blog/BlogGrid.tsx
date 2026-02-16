@@ -7,7 +7,7 @@ import { blogPosts, blogCategories } from "@/data/blog-posts";
 export default function BlogGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const postsPerPage = 8;
 
   const filteredPosts =
     activeCategory === "All"

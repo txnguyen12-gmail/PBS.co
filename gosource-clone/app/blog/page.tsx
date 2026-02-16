@@ -25,7 +25,7 @@ export default function BlogPage() {
             Insights & Inspiration for Your Next Project
           </h1>
           <p className="text-base text-gray-500 max-w-2xl mx-auto">
-            Expert insights on construction supplies, project highlights, sourcing strategies, and industry trends for trade professionals.
+            Welcome to our source for expert insights on construction supplies, project highlights, and latest trends.
           </p>
         </div>
       </section>

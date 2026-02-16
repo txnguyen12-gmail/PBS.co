@@ -5,6 +5,7 @@ export interface PricingPackage {
   description: string;
   popular?: boolean;
   features: string[];
+  ctaText: string;
 }
 
 export const pricingPackages: PricingPackage[] = [
@@ -13,6 +14,7 @@ export const pricingPackages: PricingPackage[] = [
     price: "$3,999",
     turnaround: "7-10 days",
     description: "Smart upgrades. Engineered value.",
+    ctaText: "Fast turnaround",
     features: [
       "Standard material selection",
       "Basic appliance package",
@@ -26,6 +28,7 @@ export const pricingPackages: PricingPackage[] = [
     price: "$6,599",
     turnaround: "10-14 days",
     description: "Premium materials. Long-term value.",
+    ctaText: "Elevated design",
     features: [
       "Premium material selection",
       "Upgraded appliance package",
@@ -41,6 +44,7 @@ export const pricingPackages: PricingPackage[] = [
     turnaround: "14-21 days",
     description: "Full-scale Renovation. Top-tier materials.",
     popular: true,
+    ctaText: "Full-scale Renovation",
     features: [
       "Top-tier material selection",
       "Premium appliance package",
@@ -57,6 +61,7 @@ export const pricingPackages: PricingPackage[] = [
     price: "Custom",
     turnaround: "Varies",
     description: "Tailored renovation solutions — built around your vision.",
+    ctaText: "Make your package",
     features: [
       "Fully customized scope",
       "Bespoke material selection",

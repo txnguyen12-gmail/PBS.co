@@ -53,7 +53,7 @@ export default function PricingPackages() {
                 size="md"
                 className="w-full"
               >
-                {pkg.price === "Custom" ? "Contact Us" : "Get Started"}
+                {pkg.ctaText}
               </Button>
               <Button
                 href="#contact"
@@ -61,7 +61,7 @@ export default function PricingPackages() {
                 size="md"
                 className="w-full mt-3"
               >
-                View Specifications
+                See Specifications
               </Button>
               {/* Product Gallery */}
               <div className="grid grid-cols-3 gap-2 mt-6">
