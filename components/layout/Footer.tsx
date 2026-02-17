@@ -19,7 +19,7 @@ const footerColumns = [
     title: "Products & Tools",
     links: [
       { label: "Quick Quote", href: "/ai-assistant" },
-      { label: "TanWinWin Estimate", href: "/surfaces" },
+      { label: "TanWinTan Estimate", href: "/surfaces" },
     ],
   },
   {
@@ -47,10 +47,10 @@ const footerColumns = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/tanwinwin", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com/tanwinwin", label: "Instagram" },
-  { icon: Linkedin, href: "https://linkedin.com/company/tanwinwin", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com/@tanwinwin", label: "YouTube" },
+  { icon: Facebook, href: "https://facebook.com/tanwintan", label: "Facebook" },
+  { icon: Instagram, href: "https://instagram.com/tanwintan", label: "Instagram" },
+  { icon: Linkedin, href: "https://linkedin.com/company/tanwintan", label: "LinkedIn" },
+  { icon: Youtube, href: "https://youtube.com/@tanwintan", label: "YouTube" },
 ];
 
 const paymentMethods = ["Visa", "Amex", "Discover", "JCB", "Diners Club", "Mastercard"];
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
             <Link href="/">
               <span className="text-xl font-bold text-white tracking-tight inline-block mb-4">
-                Tan<span className="text-accent-orange">Win</span>Win
+                Tan<span className="text-accent-orange">Win</span>Tan
               </span>
             </Link>
             <div className="flex gap-3 mt-4">
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
-              Copyright {new Date().getFullYear()} &copy; tanwinwin.com
+              Copyright {new Date().getFullYear()} &copy; tanwintan.com
             </p>
             <div className="flex items-center gap-2">
               {paymentMethods.map((card) => (

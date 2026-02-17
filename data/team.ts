@@ -47,7 +47,7 @@ export const teamMembers: TeamMember[] = [
     role: "Contractor",
     location: "Chicago, IL",
     image: "",
-    bio: "Leads on-site crews with a hands-on approach, ensuring every unit meets TanWinWin's quality standards.",
+    bio: "Leads on-site crews with a hands-on approach, ensuring every unit meets TanWinTan's quality standards.",
   },
   {
     name: "Sarah",
@@ -117,7 +117,7 @@ export const teamMembers: TeamMember[] = [
     role: "Product Manager",
     location: "San Francisco, CA",
     image: "",
-    bio: "Shapes the TanWinWin platform experience based on member feedback and market insights.",
+    bio: "Shapes the TanWinTan platform experience based on member feedback and market insights.",
   },
   {
     name: "Marcus",

@@ -14,7 +14,7 @@ import { surfacesTestimonials } from "@/data/testimonials";
 import { surfacesFAQ } from "@/data/faq";
 
 export const metadata = {
-  title: "Surfaces - America's #1 Surfaces Marketplace | TanWinWin",
+  title: "Surfaces - America's #1 Surfaces Marketplace | TanWinTan",
   description: "Shop quartz, natural stone, porcelain slabs, tiles, and flooring with exclusive trade pricing.",
 };
 
@@ -39,7 +39,7 @@ export default function SurfacesPage() {
             What Stone Fabricators & Trade Professionals Are Saying
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            See why pros choose TanWinWin for their projects.
+            See why pros choose TanWinTan for their projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {surfacesTestimonials.map((testimonial, i) => (
@@ -51,13 +51,13 @@ export default function SurfacesPage() {
 
       <ContactSection
         title="Ready to find your Surfaces? Contact our sourcing desk"
-        subtitle="Our team of TanWinWin pros is ready to help you find the perfect slab for your project."
+        subtitle="Our team of TanWinTan pros is ready to help you find the perfect slab for your project."
       />
       <FAQAccordion
         items={surfacesFAQ}
-        title="TanWinWin Answering Your Questions"
+        title="TanWinTan Answering Your Questions"
         category="Surfaces Marketplace FAQs"
-        description="Find answers about sourcing surfaces, collections, tiles, and flooring through TanWinWin."
+        description="Find answers about sourcing surfaces, collections, tiles, and flooring through TanWinTan."
       />
       <BlogSection />
     </>

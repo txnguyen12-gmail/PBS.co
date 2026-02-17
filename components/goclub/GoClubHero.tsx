@@ -32,7 +32,7 @@ export default function GoClubHero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl"
         >
-          TanClub by TanWinWin: The First Loyalty Club for Trade Professionals
+          TanClub by TanWinTan: The First Loyalty Club for Trade Professionals
         </motion.h1>
 
         <motion.div

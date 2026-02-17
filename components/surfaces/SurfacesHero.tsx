@@ -58,7 +58,7 @@ export default function SurfacesHero() {
             Create An Account
           </Button>
           <Button href="tel:+14242507795" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
-            Talk to My TanWinWin Expert
+            Talk to My TanWinTan Expert
           </Button>
         </motion.div>
       </div>

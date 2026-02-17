@@ -138,7 +138,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <span className="text-xl font-bold text-white tracking-tight">
-              Tan<span className="text-accent-orange">Win</span>Win
+              Tan<span className="text-accent-orange">Win</span>Tan
             </span>
           </Link>
 

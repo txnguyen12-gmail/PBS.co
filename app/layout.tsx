@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TanWinWin - Transforming the Construction Industry with AI",
+  title: "TanWinTan - Transforming the Construction Industry with AI",
   description: "America's #1 marketplace for surfaces, AI-powered multifamily renovations, and the TanClub loyalty program for trade professionals.",
 };
 

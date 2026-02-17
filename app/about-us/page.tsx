@@ -16,9 +16,9 @@ import { teamMembers } from "@/data/team";
 import Button from "@/components/ui/Button";
 
 export const metadata = {
-  title: "About Us | TanWinWin",
+  title: "About Us | TanWinTan",
   description:
-    "Learn about TanWinWin's mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
+    "Learn about TanWinTan's mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
 };
 
 const values = [
@@ -133,20 +133,20 @@ export default function AboutUsPage() {
                 For Builders, By Builders
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                When we started TanWinWin, we set out to transform how
+                When we started TanWinTan, we set out to transform how
                 construction professionals source materials. Having experienced
                 the fragmented, slow, and costly procurement process firsthand,
                 we knew there had to be a better way.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                TanWinWin brings together the largest collective of construction
+                TanWinTan brings together the largest collective of construction
                 professionals to harness real buying power, using advanced AI
                 technology to deliver transparency, speed, and savings — making
                 material procurement better, faster, easier, and more affordable
                 for everyone involved.
               </p>
               <p className="text-sm text-gray-500 italic mb-1">
-                TanWinWin Co-Founders
+                TanWinTan Co-Founders
               </p>
               <p className="text-sm text-gray-500">
                 Ron Zuckerman, Yuval Mekler, Ori Birnbaum, and Shahar Koren
@@ -155,7 +155,7 @@ export default function AboutUsPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
               <img
                 src="/images/surfaces/why-choose-gosource.png"
-                alt="TanWinWin team at work"
+                alt="TanWinTan team at work"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
         <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
           <img
             src="/images/contact/contact-wrap.png"
-            alt="TanWinWin banner"
+            alt="TanWinTan banner"
             className="w-full h-full object-cover"
           />
         </div>
@@ -232,7 +232,7 @@ export default function AboutUsPage() {
               Our Values
             </p>
             <h2 className="text-2xl md:text-3xl font-bold max-w-3xl mx-auto leading-snug">
-              The TanWinWin spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
+              The TanWinTan spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -13,7 +13,7 @@ const steps = [
   {
     number: "02",
     title: "Purchase Materials and Earn TanCash",
-    description: "Earn TanCash on every order. The more you source through TanWinWin, the more you earn — helping you boost profits with every project.",
+    description: "Earn TanCash on every order. The more you source through TanWinTan, the more you earn — helping you boost profits with every project.",
     icon: "/images/icons/step-02.svg",
   },
   {

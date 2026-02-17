@@ -12,7 +12,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mb-3"
         >
-          Welcome to TanWinWin
+          Welcome to TanWinTan
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

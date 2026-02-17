@@ -5,20 +5,20 @@ export interface FAQItem {
 
 export const surfacesFAQ: FAQItem[] = [
   {
-    question: "What is the TanWinWin surfaces marketplace?",
-    answer: "TanWinWin is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, and more with competitive trade pricing.",
+    question: "What is the TanWinTan surfaces marketplace?",
+    answer: "TanWinTan is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, and more with competitive trade pricing.",
   },
   {
     question: "What types of surfaces can I buy?",
     answer: "You can purchase quartz slabs, natural stone, porcelain surfaces, tiles, vinyl, hardwood, and laminate flooring for kitchens, bathrooms, and commercial projects.",
   },
   {
-    question: "How does TanWinWin help stone fabricators?",
-    answer: "TanWinWin provides wholesale pricing, reliable delivery, TanCash rewards, and access to top brands and distributors — all in one marketplace.",
+    question: "How does TanWinTan help stone fabricators?",
+    answer: "TanWinTan provides wholesale pricing, reliable delivery, TanCash rewards, and access to top brands and distributors — all in one marketplace.",
   },
   {
     question: "Do I get access to multiple brands?",
-    answer: "Yes. TanWinWin partners with MSI, Caesarstone, Silestone, Roca, and many others so you can efficiently source from a wide selection.",
+    answer: "Yes. TanWinTan partners with MSI, Caesarstone, Silestone, Roca, and many others so you can efficiently source from a wide selection.",
   },
   {
     question: "What is TanClub and how does it benefit me?",

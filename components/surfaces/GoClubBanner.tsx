@@ -42,7 +42,7 @@ export default function TanClubBanner() {
               TanClub™ — Get More From Every Order
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-lg">
-              Unlock best wholesale pricing, tier-based TanCash rewards, and top-level priority support with every TanWinWin order.
+              Unlock best wholesale pricing, tier-based TanCash rewards, and top-level priority support with every TanWinTan order.
             </p>
             <Button href="/goclub" variant="accent" size="lg">
               Join TanClub™

@@ -11,9 +11,9 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
-  if (!post) return { title: "Post Not Found | TanWinWin" };
+  if (!post) return { title: "Post Not Found | TanWinTan" };
   return {
-    title: `${post.title} | TanWinWin Blog`,
+    title: `${post.title} | TanWinTan Blog`,
     description: post.excerpt,
   };
 }
@@ -98,7 +98,7 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <span className="text-gray-300 text-4xl font-bold">TanWinWin</span>
+                <span className="text-gray-300 text-4xl font-bold">TanWinTan</span>
               </div>
             )}
           </div>

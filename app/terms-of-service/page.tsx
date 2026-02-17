@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Terms of Service | TanWinWin",
-  description: "TanWinWin's terms of service — the rules and guidelines for using our platform.",
+  title: "Terms of Service | TanWinTan",
+  description: "TanWinTan's terms of service — the rules and guidelines for using our platform.",
 };
 
 export default function TermsOfServicePage() {
@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg max-w-none text-gray-700">
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="mb-6">
-            By accessing or using TanWinWin&apos;s website, platform, and services (collectively, the &quot;Services&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services. These terms apply to all users, including trade professionals, visitors, and any other individuals who access or use the Services.
+            By accessing or using TanWinTan&apos;s website, platform, and services (collectively, the &quot;Services&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services. These terms apply to all users, including trade professionals, visitors, and any other individuals who access or use the Services.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">2. Account Registration</h2>
@@ -52,12 +52,12 @@ export default function TermsOfServicePage() {
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">8. Intellectual Property</h2>
           <p className="mb-6">
-            All content on our platform — including text, graphics, logos, images, and software — is the property of TanWinWin or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
+            All content on our platform — including text, graphics, logos, images, and software — is the property of TanWinTan or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">9. Limitation of Liability</h2>
           <p className="mb-6">
-            To the fullest extent permitted by law, TanWinWin shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Services. Our total liability for any claim arising from these terms shall not exceed the amount you paid to us in the 12 months preceding the claim.
+            To the fullest extent permitted by law, TanWinTan shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Services. Our total liability for any claim arising from these terms shall not exceed the amount you paid to us in the 12 months preceding the claim.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Governing Law</h2>
@@ -73,8 +73,8 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">12. Contact Us</h2>
           <p className="mb-6">
             If you have questions about these Terms of Service, please contact us at{" "}
-            <a href="mailto:hello@tanwinwin.com" className="text-accent-orange hover:underline">
-              hello@tanwinwin.com
+            <a href="mailto:hello@tanwintan.com" className="text-accent-orange hover:underline">
+              hello@tanwintan.com
             </a>{" "}
             or call us at{" "}
             <a href="tel:+14242507795" className="text-accent-orange hover:underline">

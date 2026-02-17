@@ -31,7 +31,7 @@ export default function WhatIsGoClub() {
               support to stay ahead.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              As you grow with TanWinWin, your benefits grow too. Advance through{" "}
+              As you grow with TanWinTan, your benefits grow too. Advance through{" "}
               <strong className="text-navy">tier-based rewards</strong> to unlock even greater
               savings, faster service, and dedicated account management.
             </p>

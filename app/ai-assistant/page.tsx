@@ -17,7 +17,7 @@ import {
 import Link from "next/link";
 
 // ━━━ Webhook Configuration ━━━
-const WEBHOOK_URL = "https://hooks.tanwinwin.com/lead-capture"; // placeholder
+const WEBHOOK_URL = "https://hooks.tanwintan.com/lead-capture"; // placeholder
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // ── Knowledge Base ──────────────────────────────────────────────
@@ -134,15 +134,15 @@ const KB = {
 
   faq: [
     {
-      q: "What is TanWinWin?",
-      a: "TanWinWin is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, flooring, appliances, and more — all at competitive trade pricing.",
+      q: "What is TanWinTan?",
+      a: "TanWinTan is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, flooring, appliances, and more — all at competitive trade pricing.",
     },
     {
       q: "What surfaces can I buy?",
       a: "You can purchase quartz slabs, natural stone, porcelain surfaces, tiles, vinyl, hardwood, and laminate flooring for kitchens, bathrooms, and commercial projects.",
     },
     {
-      q: "How does TanWinWin help fabricators?",
+      q: "How does TanWinTan help fabricators?",
       a: "We provide wholesale pricing, reliable delivery, TanCash rewards, and access to top brands and distributors — all in one marketplace.",
     },
     {
@@ -162,7 +162,7 @@ const KB = {
   company: {
     phone: "(424) 250-7795",
     about:
-      "TanWinWin is a construction materials marketplace trusted by builders like TruAmerica, Tishman Speyer, AvalonBay, and Compass. We work with 500+ suppliers to offer 300,000+ products at wholesale pricing.",
+      "TanWinTan is a construction materials marketplace trusted by builders like TruAmerica, Tishman Speyer, AvalonBay, and Compass. We work with 500+ suppliers to offer 300,000+ products at wholesale pricing.",
     stats: {
       products: "300,000+",
       suppliers: "500+",
@@ -233,7 +233,7 @@ function detectIntent(message: string): Intent {
   if (/\b(ship|deliver|lead time|how long|when.*arrive)\b/.test(m))
     return "shipping";
 
-  if (/\b(about|who are you|what is tanwinwin|company|team)\b/.test(m))
+  if (/\b(about|who are you|what is tanwintan|company|team)\b/.test(m))
     return "about";
 
   if (
@@ -264,7 +264,7 @@ function generateResponse(
 ): string {
   switch (intent) {
     case "greeting":
-      return `Welcome to TanWinWin! I'm here to help you find the right materials for your project.\n\nI can help you with:\n• **Product search** — slabs, tiles, flooring, appliances\n• **Pricing** — our renovation packages and trade pricing\n• **TanClub** — our loyalty program with up to 5% cashback\n• **Quotes** — get a quote for your project\n\nWhat are you looking for today?`;
+      return `Welcome to TanWinTan! I'm here to help you find the right materials for your project.\n\nI can help you with:\n• **Product search** — slabs, tiles, flooring, appliances\n• **Pricing** — our renovation packages and trade pricing\n• **TanClub** — our loyalty program with up to 5% cashback\n• **Quotes** — get a quote for your project\n\nWhat are you looking for today?`;
 
     case "product_slabs": {
       const info = KB.products.slabs;
@@ -287,7 +287,7 @@ function generateResponse(
     }
 
     case "product_general":
-      return `TanWinWin offers a wide range of construction materials:\n\n• **Slabs** — quartz, natural stone, porcelain (${KB.products.slabs.brands.slice(0, 4).join(", ")}...)\n• **Tiles** — porcelain, ceramic, mosaic (${KB.products.tiles.brands.slice(0, 3).join(", ")}...)\n• **Flooring** — hardwood, vinyl, laminate\n• **Appliances** — kitchen, plumbing fixtures (${KB.products.appliances.brands.slice(0, 3).join(", ")}...)\n\nAll at **wholesale trade pricing** with nationwide delivery. Which category interests you?`;
+      return `TanWinTan offers a wide range of construction materials:\n\n• **Slabs** — quartz, natural stone, porcelain (${KB.products.slabs.brands.slice(0, 4).join(", ")}...)\n• **Tiles** — porcelain, ceramic, mosaic (${KB.products.tiles.brands.slice(0, 3).join(", ")}...)\n• **Flooring** — hardwood, vinyl, laminate\n• **Appliances** — kitchen, plumbing fixtures (${KB.products.appliances.brands.slice(0, 3).join(", ")}...)\n\nAll at **wholesale trade pricing** with nationwide delivery. Which category interests you?`;
 
     case "pricing":
       return `Here are our **renovation packages**:\n\n${KB.pricing
@@ -331,7 +331,7 @@ function generateResponse(
     }
 
     case "about":
-      return `**About TanWinWin:**\n\n${KB.company.about}\n\n**By the numbers:**\n• ${KB.company.stats.products} products indexed\n• ${KB.company.stats.suppliers} supplier network\n• ${KB.company.stats.responseTime} average quote response\n\n**Contact:** ${KB.company.phone}\n\nHow can we help with your project?`;
+      return `**About TanWinTan:**\n\n${KB.company.about}\n\n**By the numbers:**\n• ${KB.company.stats.products} products indexed\n• ${KB.company.stats.suppliers} supplier network\n• ${KB.company.stats.responseTime} average quote response\n\n**Contact:** ${KB.company.phone}\n\nHow can we help with your project?`;
 
     case "faq": {
       const m = message.toLowerCase();
@@ -347,7 +347,7 @@ function generateResponse(
       if (match) {
         return `${match.a}\n\nAnything else I can help with?`;
       }
-      return `Great question! Here's what I can tell you:\n\nTanWinWin is a professional marketplace for construction materials — slabs, tiles, flooring, and appliances — all at wholesale pricing.\n\nWe serve fabricators, contractors, builders, and designers nationwide. You can earn cashback through TanClub and get quotes in seconds.\n\nWant to know more about a specific topic?`;
+      return `Great question! Here's what I can tell you:\n\nTanWinTan is a professional marketplace for construction materials — slabs, tiles, flooring, and appliances — all at wholesale pricing.\n\nWe serve fabricators, contractors, builders, and designers nationwide. You can earn cashback through TanClub and get quotes in seconds.\n\nWant to know more about a specific topic?`;
     }
 
     default:
@@ -526,7 +526,7 @@ const mockChats: MockChat[] = [
       {
         id: "c2-4",
         role: "assistant",
-        content: `Great questions — let me address each one:\n\n**1. Phased Delivery — Yes, absolutely.**\nWe do this regularly for multifamily projects. Here's how it works:\n• We lock in your pricing for the full 39,600 sq ft today\n• Schedule 4 deliveries of ~9,900 sq ft each\n• You tell us the delivery dates (typically 2-3 days notice)\n• All material comes from the same production lot for color consistency\n• No storage fees — we hold inventory at our warehouse until you need it\n\n**2. Warranty:**\n• **Residential:** Lifetime limited warranty (for individual unit use)\n• **Commercial/Multifamily:** 10-year wear warranty\n• **Wear layer:** 20mil — rated for moderate commercial traffic\n• MSI will honor warranty claims through TanWinWin directly\n\n**3. Matching Accessories — Yes:**\n• **T-molding transition strips** — Color-matched to Bembridge, $3.49/ft trade\n• **Reducer strips** — For doorway transitions to carpet or tile, $3.49/ft\n• **Quarter round / shoe molding** — Color-matched, $1.89/ft\n• **Baseboards** — We carry 3.5" and 4.5" MDF baseboards in white (most multifamily projects paint these to match)\n\n**Pro tip for 48 units:** Order transition strips and quarter round at the same time as flooring. We'll bundle them into each phased delivery so your crew has everything they need on-site.\n\n**Estimated accessories per unit:**\n• 2-3 transition strips (~$25/unit)\n• 120 LF quarter round (~$225/unit)\n• Total accessories: ~$12,000 for all 48 units\n\nWant me to put together a full quote with flooring + accessories + phased delivery schedule?`,
+        content: `Great questions — let me address each one:\n\n**1. Phased Delivery — Yes, absolutely.**\nWe do this regularly for multifamily projects. Here's how it works:\n• We lock in your pricing for the full 39,600 sq ft today\n• Schedule 4 deliveries of ~9,900 sq ft each\n• You tell us the delivery dates (typically 2-3 days notice)\n• All material comes from the same production lot for color consistency\n• No storage fees — we hold inventory at our warehouse until you need it\n\n**2. Warranty:**\n• **Residential:** Lifetime limited warranty (for individual unit use)\n• **Commercial/Multifamily:** 10-year wear warranty\n• **Wear layer:** 20mil — rated for moderate commercial traffic\n• MSI will honor warranty claims through TanWinTan directly\n\n**3. Matching Accessories — Yes:**\n• **T-molding transition strips** — Color-matched to Bembridge, $3.49/ft trade\n• **Reducer strips** — For doorway transitions to carpet or tile, $3.49/ft\n• **Quarter round / shoe molding** — Color-matched, $1.89/ft\n• **Baseboards** — We carry 3.5" and 4.5" MDF baseboards in white (most multifamily projects paint these to match)\n\n**Pro tip for 48 units:** Order transition strips and quarter round at the same time as flooring. We'll bundle them into each phased delivery so your crew has everything they need on-site.\n\n**Estimated accessories per unit:**\n• 2-3 transition strips (~$25/unit)\n• 120 LF quarter round (~$225/unit)\n• Total accessories: ~$12,000 for all 48 units\n\nWant me to put together a full quote with flooring + accessories + phased delivery schedule?`,
         timestamp: new Date(Date.now() - 7020000),
       },
       {
@@ -604,7 +604,7 @@ const mockChats: MockChat[] = [
       {
         id: "c3-4",
         role: "assistant",
-        content: `Great taste — leathered Taj Mahal is absolutely stunning. Here's the pricing context:\n\n**Taj Mahal Quartzite — 3cm Leathered:**\n• Retail price range: $85-$120/sq ft (installed)\n• TanWinWin trade price: **Significantly below retail** — exact pricing depends on slab selection and volume\n• For 70-80 sq ft, you're looking at a material investment in the premium tier\n\n**What affects pricing:**\n• Slab size and quality grade (A, B, or Premium)\n• Vein pattern consistency (bookmatched pairs command a premium)\n• Current market availability (Taj Mahal has been in high demand)\n• Leathered finish adds ~10-15% vs. polished (more processing at the quarry)\n\n**Photos & Viewing:**\nI can have our LA team photograph the current bundles and send them to you within a few hours. Each photo set will include:\n• Full slab overview (both slabs in the pair)\n• Close-up of veining detail\n• Color reference with calibration card\n• Slab dimensions and thickness verification\n\n**For a Bel Air luxury project, I'd also recommend:**\n• Visit our partner slab yard in person — photos don't fully capture the depth of Taj Mahal's veining\n• Bring your client if possible — slab selection for a bookmatched island is a great client experience\n• We can hold slabs for 7 days while you coordinate the visit (14 days for TanClub Gold)\n\nWant me to set up the slab viewing and get you exact pricing? I'll need your contact info to coordinate with our LA sourcing team.`,
+        content: `Great taste — leathered Taj Mahal is absolutely stunning. Here's the pricing context:\n\n**Taj Mahal Quartzite — 3cm Leathered:**\n• Retail price range: $85-$120/sq ft (installed)\n• TanWinTan trade price: **Significantly below retail** — exact pricing depends on slab selection and volume\n• For 70-80 sq ft, you're looking at a material investment in the premium tier\n\n**What affects pricing:**\n• Slab size and quality grade (A, B, or Premium)\n• Vein pattern consistency (bookmatched pairs command a premium)\n• Current market availability (Taj Mahal has been in high demand)\n• Leathered finish adds ~10-15% vs. polished (more processing at the quarry)\n\n**Photos & Viewing:**\nI can have our LA team photograph the current bundles and send them to you within a few hours. Each photo set will include:\n• Full slab overview (both slabs in the pair)\n• Close-up of veining detail\n• Color reference with calibration card\n• Slab dimensions and thickness verification\n\n**For a Bel Air luxury project, I'd also recommend:**\n• Visit our partner slab yard in person — photos don't fully capture the depth of Taj Mahal's veining\n• Bring your client if possible — slab selection for a bookmatched island is a great client experience\n• We can hold slabs for 7 days while you coordinate the visit (14 days for TanClub Gold)\n\nWant me to set up the slab viewing and get you exact pricing? I'll need your contact info to coordinate with our LA sourcing team.`,
         timestamp: new Date(Date.now() - 86220000),
       },
       {
@@ -652,7 +652,7 @@ const mockChats: MockChat[] = [
       {
         id: "c3-12",
         role: "assistant",
-        content: `You're all set, Elena!\n\n**Viewing Request Summary:**\n• **Stone:** Taj Mahal Quartzite — 3cm Leathered\n• **Total:** ~120 sq ft (bookmatched island + perimeter counters)\n• **Location:** TanWinWin partner yard, Los Angeles\n• **Preferred dates:** Thursday or Friday this week\n• **Contact:** elena@vvstonedesign.com · (310) 555-0891\n\n**What happens next:**\n1. Our LA team will confirm the viewing slot within 2 hours\n2. You'll receive slab photos via email today\n3. We'll have 3 bundles (6 slabs) pulled and staged for your visit\n4. After selection, we can hold your chosen slabs for up to 14 days\n\nDirect line for our LA sourcing desk: **(424) 250-7795**\n\nLooking forward to helping you create something beautiful for this Bel Air project!`,
+        content: `You're all set, Elena!\n\n**Viewing Request Summary:**\n• **Stone:** Taj Mahal Quartzite — 3cm Leathered\n• **Total:** ~120 sq ft (bookmatched island + perimeter counters)\n• **Location:** TanWinTan partner yard, Los Angeles\n• **Preferred dates:** Thursday or Friday this week\n• **Contact:** elena@vvstonedesign.com · (310) 555-0891\n\n**What happens next:**\n1. Our LA team will confirm the viewing slot within 2 hours\n2. You'll receive slab photos via email today\n3. We'll have 3 bundles (6 slabs) pulled and staged for your visit\n4. After selection, we can hold your chosen slabs for up to 14 days\n\nDirect line for our LA sourcing desk: **(424) 250-7795**\n\nLooking forward to helping you create something beautiful for this Bel Air project!`,
         timestamp: new Date(Date.now() - 85840000),
       },
     ],
@@ -772,7 +772,7 @@ const mockChats: MockChat[] = [
       {
         id: "c5-6",
         role: "assistant",
-        content: `Absolutely — let's map it out:\n\n**Your Path to Platinum:**\n• Current total spend: **$15,000**\n• Upcoming project: **+$25,000**\n• New total: **$40,000**\n• Remaining to Platinum: **$60,000**\n\nAt your current pace, you could reach Platinum in **8-12 months**. And here's the exciting part — that $25K slab order at Gold tier earns you:\n\n**TanCash on this order alone:**\n• $25,000 × 3% = **$750 in TanCash**\n• Plus your existing ~$450 balance\n• **Total TanCash available: ~$1,200** toward future orders\n\n**For your $25K slab project with Split Payments:**\n• Pay $12,500 upfront to lock pricing and reserve slabs\n• Pay $12,500 on delivery\n• 10-day price lock while you finalize selections\n• Free samples to confirm colors with your client\n\n**Pro tip:** If you refer other fabricators to TanWinWin, referral bonuses can accelerate your volume toward Platinum even faster.\n\nLet me connect you with your Gold account exec to:\n1. Activate split payments on your account\n2. Start quoting the $25K slab project\n3. Set up your TanCash redemption\n\nWhat's your **name**?`,
+        content: `Absolutely — let's map it out:\n\n**Your Path to Platinum:**\n• Current total spend: **$15,000**\n• Upcoming project: **+$25,000**\n• New total: **$40,000**\n• Remaining to Platinum: **$60,000**\n\nAt your current pace, you could reach Platinum in **8-12 months**. And here's the exciting part — that $25K slab order at Gold tier earns you:\n\n**TanCash on this order alone:**\n• $25,000 × 3% = **$750 in TanCash**\n• Plus your existing ~$450 balance\n• **Total TanCash available: ~$1,200** toward future orders\n\n**For your $25K slab project with Split Payments:**\n• Pay $12,500 upfront to lock pricing and reserve slabs\n• Pay $12,500 on delivery\n• 10-day price lock while you finalize selections\n• Free samples to confirm colors with your client\n\n**Pro tip:** If you refer other fabricators to TanWinTan, referral bonuses can accelerate your volume toward Platinum even faster.\n\nLet me connect you with your Gold account exec to:\n1. Activate split payments on your account\n2. Start quoting the $25K slab project\n3. Set up your TanCash redemption\n\nWhat's your **name**?`,
         timestamp: new Date(Date.now() - 258900000),
       },
       {

@@ -8,12 +8,12 @@ const features = [
   {
     icon: DollarSign,
     title: "Save More",
-    description: "Access exclusive wholesale pricing powered by TanWinWin's national buying scale, built to make every project more profitable.",
+    description: "Access exclusive wholesale pricing powered by TanWinTan's national buying scale, built to make every project more profitable.",
   },
   {
     icon: Coins,
     title: "Earn TanCash",
-    description: "Get instant cashback on every order with TanWinWin — reinvest it in your next project and boost your bottom line.",
+    description: "Get instant cashback on every order with TanWinTan — reinvest it in your next project and boost your bottom line.",
   },
   {
     icon: Headphones,
@@ -72,7 +72,7 @@ export default function FeaturesGrid() {
             <div className="aspect-[3/4] rounded-2xl overflow-hidden">
               <img
                 src="/images/goclub/fabricator-gocash-square.png"
-                alt="TanWinWin value proposition"
+                alt="TanWinTan value proposition"
                 className="w-full h-full object-cover"
               />
             </div>

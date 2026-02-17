@@ -2,7 +2,7 @@ import BlogGrid from "@/components/blog/BlogGrid";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog - Insights & Inspiration | TanWinWin",
+  title: "Blog - Insights & Inspiration | TanWinTan",
   description: "Explore insights on slabs, quartz, porcelain, stone fabrication, pricing trends, and sourcing strategies for trade professionals.",
 };
 
