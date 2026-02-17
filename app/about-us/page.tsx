@@ -11,7 +11,6 @@ import {
   ClipboardList,
   ChevronDown,
 } from "lucide-react";
-import Image from "next/image";
 import { teamMembers } from "@/data/team";
 import Button from "@/components/ui/Button";
 
@@ -61,28 +60,28 @@ const values = [
 ];
 
 const trustedLogos = [
-  "TruAmerica",
-  "Tishman Speyer",
-  "Opendoor",
-  "Compass",
-  "Avalon Bay Communities",
-  "Omninet",
-  "Hy-Max Building Corp",
-  "NorthCoast",
-  "AAGLA",
-  "Benedict Canyon Equities",
-  "CDH Investments",
-  "Artimus",
-  "Gelt Venture Partners",
-  "Shirley",
+  { name: "TruAmerica", logo: "/images/partners/truamerica-about.svg" },
+  { name: "Tishman Speyer", logo: "/images/partners/tishman-about.svg" },
+  { name: "Opendoor", logo: "/images/partners/opendoor-about.svg" },
+  { name: "Compass", logo: "/images/partners/compass-about.png" },
+  { name: "Avalon Bay Communities", logo: "/images/partners/avalon-about.svg" },
+  { name: "Omninet", logo: "/images/partners/omninet.svg" },
+  { name: "Hy-Max Building Corp", logo: "/images/partners/hymax.svg" },
+  { name: "NorthCoast", logo: "/images/partners/northcoast.png" },
+  { name: "AAGLA", logo: "/images/partners/aagla.png" },
+  { name: "Benedict Canyon Equities", logo: "/images/partners/benedict-canyon.png" },
+  { name: "CDH Investments", logo: "/images/partners/dcdh.png" },
+  { name: "Artimus", logo: "/images/partners/artimus.svg" },
+  { name: "Gelt Venture Partners", logo: "/images/partners/gelt.png" },
+  { name: "Shirley", logo: "/images/partners/shirley.png" },
 ];
 
 const investorLogos = [
-  "Tishman",
-  "Mosaic",
-  "72",
-  "TechAviv",
-  "NFX",
+  { name: "Tishman", logo: "/images/investors/tishman-logo.png" },
+  { name: "Mosaic", logo: "/images/investors/mosaic-logo.png" },
+  { name: "72", logo: "/images/investors/72-logo.png" },
+  { name: "TechAviv", logo: "/images/investors/techaviv-logo.png" },
+  { name: "NFX", logo: "/images/investors/nfx-logo.png" },
 ];
 
 const navAnchors = [
@@ -199,14 +198,16 @@ export default function AboutUsPage() {
             and designers.
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-8 items-center">
-            {trustedLogos.map((name) => (
+            {trustedLogos.map((item) => (
               <div
-                key={name}
+                key={item.name}
                 className="flex items-center justify-center h-16 px-4"
               >
-                <span className="text-sm font-semibold text-gray-400 text-center">
-                  {name}
-                </span>
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="h-8 md:h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
               </div>
             ))}
           </div>
@@ -310,13 +311,11 @@ export default function AboutUsPage() {
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center group">
                 <div className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100 relative">
-                  {member.image && member.image.startsWith("http") ? (
-                    <Image
+                  {member.image ? (
+                    <img
                       src={member.image}
                       alt={member.name}
-                      fill
-                      className="object-cover"
-                      sizes="160px"
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
@@ -365,14 +364,16 @@ export default function AboutUsPage() {
             Institutional Investors
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-12">
-            {investorLogos.map((name) => (
+            {investorLogos.map((item) => (
               <div
-                key={name}
+                key={item.name}
                 className="flex items-center justify-center h-16 px-6"
               >
-                <span className="text-lg font-semibold text-gray-300">
-                  {name}
-                </span>
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="h-8 md:h-10 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity"
+                />
               </div>
             ))}
           </div>

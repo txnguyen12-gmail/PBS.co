@@ -53,7 +53,14 @@ const socialLinks = [
   { icon: Youtube, href: "https://youtube.com/@tanwintan", label: "YouTube" },
 ];
 
-const paymentMethods = ["Visa", "Amex", "Discover", "JCB", "Diners Club", "Mastercard"];
+const paymentMethods = [
+  { name: "Visa", icon: "/images/payments/visa.svg" },
+  { name: "Mastercard", icon: "/images/payments/mastercard.svg" },
+  { name: "Amex", icon: "/images/payments/amex.svg" },
+  { name: "Discover", icon: "/images/payments/discover.svg" },
+  { name: "JCB", icon: "/images/payments/jcb.svg" },
+  { name: "Diners Club", icon: "/images/payments/diners-club.svg" },
+];
 
 export default function Footer() {
   const pathname = usePathname();
@@ -116,10 +123,10 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               {paymentMethods.map((card) => (
                 <div
-                  key={card}
-                  className="px-2 py-1 bg-white/10 border border-white/10 rounded text-[10px] text-white/50"
+                  key={card.name}
+                  className="px-1.5 py-1 bg-white/10 border border-white/10 rounded"
                 >
-                  {card}
+                  <img src={card.icon} alt={card.name} className="h-5 w-auto" />
                 </div>
               ))}
             </div>

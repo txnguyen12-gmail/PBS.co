@@ -12,12 +12,14 @@ export const surfacesTestimonials: Testimonial[] = [
     role: "Designer",
     quote: "TanWinTan revolutionized my project's finishes procurement, simplifying the process and elevating the results.",
     rating: 5,
+    image: "/images/testimonials/dorothy.jpeg",
   },
   {
     name: "Rafael Moyal",
     role: "Under Construction Inc.",
     quote: "TanWinTan helped me reduce 20% material cost on this project.",
     rating: 5,
+    image: "/images/testimonials/moyal.avif",
   },
   {
     name: "Alicia W.",
@@ -31,6 +33,7 @@ export const surfacesTestimonials: Testimonial[] = [
     role: "Rhodium Construction Inc.",
     quote: "TanWinTan saved me a lot of money by sourcing and shipping to my Denver job site.",
     rating: 5,
+    image: "/images/testimonials/nadel.webp",
   },
   {
     name: "Mike G.",
