@@ -25,7 +25,7 @@ export default function HomePage() {
       <SurfacesHero />
       <LogoCarousel
         title="Trusted brands. One marketplace."
-        logos={surfaceBrands.map((name) => ({ name }))}
+        logos={surfaceBrands}
       />
       <CollectionCards />
       <FeaturesGrid />
