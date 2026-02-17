@@ -165,12 +165,12 @@ export default function Header() {
               <Sparkles className="w-3.5 h-3.5" />
             </Link>
 
-            {/* GoClub */}
+            {/* TanClub */}
             <Link
               href="/goclub"
               className="px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              GoClub™
+              TanClub™
             </Link>
 
             {/* Resources dropdown */}
@@ -355,7 +355,7 @@ export default function Header() {
 
             {/* Main nav */}
             <Link href="/goclub" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
-              GoClub™
+              TanClub™
             </Link>
             <Link href="/blog" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               Blog
