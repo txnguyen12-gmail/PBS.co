@@ -123,7 +123,10 @@ export default function AboutUsPage() {
                 for everyone involved.
               </p>
               <p className="text-sm text-gray-500 italic mb-1">
-                Perfect Building Supply Co. Founding Team
+                Perfect Building Supply Co. Co-Founders
+              </p>
+              <p className="text-sm text-gray-500">
+                Thanh Nguyen & James Youngblood
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
