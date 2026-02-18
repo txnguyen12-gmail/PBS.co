@@ -1056,7 +1056,7 @@ export default function AIAssistantPage() {
         {/* Logo */}
         <div className="flex items-center justify-between px-4 pt-5 pb-4">
           <Link href="/" className="flex items-center gap-1">
-            <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-8 w-auto rounded-full" />
+            <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-8 w-8 object-contain" />
           </Link>
           <button
             onClick={() => setSidebarOpen(false)}
@@ -1184,7 +1184,7 @@ export default function AIAssistantPage() {
             </svg>
           </button>
           <span className="text-sm font-semibold text-charcoal flex items-center gap-2">
-            <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-6 w-auto rounded-full" />
+            <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-6 w-6 object-contain" />
             AI Sourcing Agent
           </span>
         </div>

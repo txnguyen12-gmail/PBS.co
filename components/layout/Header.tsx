@@ -159,7 +159,7 @@ export default function Header() {
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-9 w-auto rounded-full" />
+            <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-9 w-9 object-contain" />
           </Link>
 
           {/* Search bar */}

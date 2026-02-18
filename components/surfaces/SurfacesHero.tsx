@@ -31,7 +31,7 @@ export default function SurfacesHero() {
           transition={{ duration: 0.5 }}
           className="mb-6"
         >
-          <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-16 md:h-20 w-auto rounded-full border-2 border-white/20" />
+          <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-16 md:h-20 w-16 md:w-20 object-contain" />
         </motion.div>
 
         <motion.h1

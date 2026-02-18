@@ -74,7 +74,7 @@ export default function Footer() {
           {/* Logo column */}
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
             <Link href="/">
-              <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-10 w-auto rounded-full mb-4" />
+              <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-10 w-10 object-contain mb-4" />
             </Link>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (
