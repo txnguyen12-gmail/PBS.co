@@ -59,12 +59,9 @@ const values = [
   },
 ];
 
-const investorLogos: { name: string; logo: string }[] = [];
-
 const navAnchors = [
   { label: "Our team", href: "#team", icon: Users },
   { label: "View open positions", href: "#positions", icon: ClipboardList },
-  { label: "Investors", href: "#investors", icon: Award },
   { label: "Our main offices", href: "#offices", icon: MapPin },
 ];
 
@@ -234,7 +231,7 @@ export default function AboutUsPage() {
       {/* Navigation Anchors - Desktop only */}
       <section className="hidden md:block bg-gray-100 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-4 gap-4 py-4">
+          <div className="grid grid-cols-3 gap-4 py-4">
             {navAnchors.map((anchor) => (
               <a
                 key={anchor.label}
@@ -307,29 +304,6 @@ export default function AboutUsPage() {
                 View details
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Investors */}
-      <section id="investors" className="py-16 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Institutional Investors
-          </h2>
-          <div className="flex flex-wrap items-center justify-center gap-12">
-            {investorLogos.map((item) => (
-              <div
-                key={item.name}
-                className="flex items-center justify-center h-16 px-6"
-              >
-                <img
-                  src={item.logo}
-                  alt={item.name}
-                  className="h-8 md:h-10 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

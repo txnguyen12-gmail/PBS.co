@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const footerColumns = [
   {
@@ -46,13 +45,6 @@ const footerColumns = [
   },
 ];
 
-const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-];
-
 const paymentMethods = [
   { name: "Visa", icon: "/images/payments/visa.svg" },
   { name: "Mastercard", icon: "/images/payments/mastercard.svg" },
@@ -79,20 +71,6 @@ export default function Footer() {
             <p className="text-xs text-white/60 leading-snug mb-3">
               The Perfect Building<br />Supply Company
             </p>
-            <div className="flex gap-3 mt-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-white/60 hover:text-white"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-4 h-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Link columns */}
