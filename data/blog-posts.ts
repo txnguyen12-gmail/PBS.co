@@ -75,7 +75,7 @@ This is where sourcing matters. Working with a platform like PBS Supply Co. give
     date: "Feb 5, 2026",
     type: "Product Comparison",
     categories: ["Slabs", "Countertops"],
-    image: "/images/blog/fusion-quartzite.jpg",
+    image: "/images/blog/calacatta-laza.jpg",
     author: "James Carter",
     content: `The Calacatta look is one of the most sought-after aesthetics in countertop design. But when it comes to choosing between genuine Calacatta marble and engineered Calacatta quartz, the decision isn't as simple as it seems. Both have their place, and understanding the trade-offs is essential for making the right recommendation to your clients.
 
@@ -155,7 +155,7 @@ The partnership continues to grow. TruAmerica now uses PBS Supply Co. for all ne
     date: "Jun 17, 2025",
     type: "Showcases & Case Studies",
     categories: ["Pavers", "Tiles", "Countertops"],
-    image: "/images/blog/fusion-quartzite.jpg",
+    image: "/images/blog/bel-air.jpg",
     author: "James Carter",
     content: `The Rangely project in West Hollywood is a prime example of what happens when great design meets smart sourcing. This modern multifamily property needed a complete renovation that would appeal to West Hollywood's design-savvy renters while staying within a competitive budget.
 
