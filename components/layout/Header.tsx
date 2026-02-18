@@ -191,7 +191,11 @@ export default function Header() {
             {/* PBS Club */}
             <Link
               href="/goclub"
-              className="px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
+              className={`px-3 py-2 text-sm transition-colors ${
+                pathname.startsWith("/goclub")
+                  ? "text-white underline decoration-accent-orange underline-offset-4"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               PBS Club™
             </Link>
@@ -260,6 +264,8 @@ export default function Header() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={mobileOpen}
             className="lg:hidden p-2 text-white cursor-pointer ml-auto"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -282,8 +288,8 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={`flex items-center gap-1 px-3 py-1.5 text-sm font-medium transition-colors ${
-                      activeSubmenu === item.label
-                        ? "text-white"
+                      activeSubmenu === item.label || pathname === item.href || pathname.startsWith(item.href + "/")
+                        ? "text-white underline decoration-accent-orange underline-offset-4"
                         : "text-white/80 hover:text-white"
                     }`}
                   >

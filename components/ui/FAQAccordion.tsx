@@ -30,6 +30,9 @@ export default function FAQAccordion({ items, title, category, description }: { 
               className="border border-gray-200 rounded-xl overflow-hidden"
             >
               <button
+                id={`faq-btn-${index}`}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-panel-${index}`}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors cursor-pointer"
               >
@@ -41,6 +44,9 @@ export default function FAQAccordion({ items, title, category, description }: { 
                 />
               </button>
               <div
+                id={`faq-panel-${index}`}
+                role="region"
+                aria-labelledby={`faq-btn-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? "max-h-96" : "max-h-0"
                 }`}
