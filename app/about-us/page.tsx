@@ -62,7 +62,7 @@ const values = [
 const investorLogos: { name: string; logo: string }[] = [];
 
 const navAnchors = [
-  { label: "Meet the team", href: "#team", icon: Users },
+  { label: "Our team", href: "#team", icon: Users },
   { label: "View open positions", href: "#positions", icon: ClipboardList },
   { label: "Investors", href: "#investors", icon: Award },
   { label: "Our main offices", href: "#offices", icon: MapPin },
@@ -255,10 +255,10 @@ export default function AboutUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
-              Driven by Expertise
+              Our People
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet the team
+              The Team Behind PBS
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
