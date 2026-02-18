@@ -23,6 +23,29 @@ interface CategoryNavItem {
 
 const categoryNav: CategoryNavItem[] = [
   {
+    label: "Building Materials",
+    href: "/collections/building-materials",
+    submenu: [
+      {
+        title: "Core Products",
+        items: [
+          { label: "Cabinets", href: "/collections/cabinets" },
+          { label: "WPC Walls", href: "/collections/wpc-walls" },
+          { label: "Ceilings", href: "/collections/ceilings" },
+          { label: "SPC/LVP Flooring", href: "/collections/spc-lvp-flooring" },
+        ],
+      },
+      {
+        title: "Exterior & More",
+        items: [
+          { label: "Fencing", href: "/collections/fencing" },
+          { label: "Siding & Cladding", href: "/collections/siding-cladding" },
+          { label: "Artificial Turf", href: "/collections/artificial-turf" },
+        ],
+      },
+    ],
+  },
+  {
     label: "Slabs",
     href: "/collections/slabs",
     submenu: [
@@ -77,29 +100,6 @@ const categoryNav: CategoryNavItem[] = [
           { label: "Hardwood", href: "/collections/hardwood" },
           { label: "Vinyl", href: "/collections/vinyl" },
           { label: "Laminate", href: "/collections/laminate" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Building Materials",
-    href: "/collections/building-materials",
-    submenu: [
-      {
-        title: "Interior",
-        items: [
-          { label: "Cabinets", href: "/collections/cabinets" },
-          { label: "WPC Walls", href: "/collections/wpc-walls" },
-          { label: "Ceilings", href: "/collections/ceilings" },
-          { label: "SPC/LVP Flooring", href: "/collections/spc-lvp-flooring" },
-        ],
-      },
-      {
-        title: "Exterior & More",
-        items: [
-          { label: "Fencing", href: "/collections/fencing" },
-          { label: "Siding & Cladding", href: "/collections/siding-cladding" },
-          { label: "Artificial Turf", href: "/collections/artificial-turf" },
         ],
       },
     ],
