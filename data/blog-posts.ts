@@ -47,7 +47,7 @@ Then there's the quality question. Big-box stores often source from secondary su
 
 Lead times are another hidden cost. Retail chains operate on a consumer timeline, not a construction one. A two-week delay on a slab delivery can cascade into weeks of project delays, costing builders and contractors real money.
 
-Sourcing through a trade-focused platform like TanWinTan eliminates these pain points. You get transparent pricing that includes all costs upfront, access to hand-selected slabs with consistent quality, and delivery timelines built for professional workflows. The bottom line: what looks cheaper at a big-box store often isn't — especially when your reputation and project timeline are on the line.`,
+Sourcing through a trade-focused platform like PBS Supply Co. eliminates these pain points. You get transparent pricing that includes all costs upfront, access to hand-selected slabs with consistent quality, and delivery timelines built for professional workflows. The bottom line: what looks cheaper at a big-box store often isn't — especially when your reputation and project timeline are on the line.`,
   },
   {
     slug: "taj-mahal-quartzite-is-the-most-requested-countertop-material",
@@ -66,7 +66,7 @@ From a performance standpoint, quartzite outperforms marble in almost every cate
 
 For fabricators, Taj Mahal quartzite presents both opportunity and challenge. The stone's popularity means consistent demand, but it also means clients are more educated about what they want. They've seen it on Pinterest and Instagram, and they expect specific veining patterns and color tones.
 
-This is where sourcing matters. Working with a platform like TanWinTan gives fabricators access to a wide selection of Taj Mahal slabs, with detailed photos and dimensions, so you can find the perfect match before committing. It's the difference between showing a client exactly what they'll get and hoping the slab that arrives matches their expectations.`,
+This is where sourcing matters. Working with a platform like PBS Supply Co. gives fabricators access to a wide selection of Taj Mahal slabs, with detailed photos and dimensions, so you can find the perfect match before committing. It's the difference between showing a client exactly what they'll get and hoping the slab that arrives matches their expectations.`,
   },
   {
     slug: "calacatta-quartz-vs-calacatta-marble",
@@ -89,8 +89,8 @@ For trade professionals, the best approach is to present both options honestly. 
   },
   {
     slug: "meeting-the-challenge-full-service-procurement-for",
-    title: "How TanWinTan Helped Streamline a Custom Remodel in Westchester",
-    excerpt: "A case study on how TanWinTan simplified procurement and saved time on a complex residential remodel.",
+    title: "How PBS Supply Co. Helped Streamline a Custom Remodel in Westchester",
+    excerpt: "A case study on how PBS Supply Co. simplified procurement and saved time on a complex residential remodel.",
     date: "May 14, 2025",
     type: "Showcases & Case Studies",
     categories: ["Slabs", "Appliances", "Flooring"],
@@ -100,15 +100,15 @@ For trade professionals, the best approach is to present both options honestly. 
 
 The challenge wasn't just finding the right materials. It was coordinating deliveries from multiple suppliers, managing lead times that didn't align, and keeping the project on budget when material costs were fluctuating. The builder had worked with traditional distributors before but found the process fragmented and unpredictable.
 
-TanWinTan stepped in as a single-source procurement partner. Our team worked directly with the builder to spec materials across all categories — Taj Mahal quartzite for the kitchen island, porcelain tile for bathrooms, engineered hardwood for living areas, and a suite of built-in appliances.
+PBS Supply Co. stepped in as a single-source procurement partner. Our team worked directly with the builder to spec materials across all categories — Taj Mahal quartzite for the kitchen island, porcelain tile for bathrooms, engineered hardwood for living areas, and a suite of built-in appliances.
 
 By consolidating sourcing through one platform, the builder eliminated the back-and-forth with multiple vendors. Pricing was locked in upfront, delivery schedules were coordinated to match the construction timeline, and our dedicated account manager handled any issues that came up — from a slab substitution to a last-minute appliance swap.
 
-The result: the project came in on time and 15% under the original materials budget. The builder has since used TanWinTan for three additional projects, citing the streamlined process and consistent pricing as the primary reasons for coming back.`,
+The result: the project came in on time and 15% under the original materials budget. The builder has since used PBS Supply Co. for three additional projects, citing the streamlined process and consistent pricing as the primary reasons for coming back.`,
   },
   {
-    slug: "how-tanwintan-helped-cut-costs-by-20-on-a-custom-bel-air-project",
-    title: "How TanWinTan Helped Cut Costs by 20% on a Custom Bel Air Project",
+    slug: "how-pbssupply-helped-cut-costs-by-20-on-a-custom-bel-air-project",
+    title: "How PBS Supply Co. Helped Cut Costs by 20% on a Custom Bel Air Project",
     excerpt: "Learn how a luxury home builder saved 20% on materials without compromising quality.",
     date: "Mar 25, 2025",
     type: "Showcases & Case Studies",
@@ -119,7 +119,7 @@ The result: the project came in on time and 15% under the original materials bud
 
 The builder's usual approach was to source each category from different specialty distributors. While this ensured quality, it also meant paying retail-adjacent pricing, managing multiple vendor relationships, and dealing with inconsistent delivery timelines.
 
-TanWinTan's approach was different. Our sourcing team analyzed the full materials list and identified opportunities to source equivalent — or in some cases identical — products through our vendor network at significantly lower prices. We weren't cutting corners; we were cutting out unnecessary middlemen.
+PBS Supply Co.'s approach was different. Our sourcing team analyzed the full materials list and identified opportunities to source equivalent — or in some cases identical — products through our vendor network at significantly lower prices. We weren't cutting corners; we were cutting out unnecessary middlemen.
 
 For flooring, we sourced the same Italian porcelain from a direct import channel, saving 25% compared to the builder's previous supplier. Plumbing fixtures came from our wholesale partnerships with major brands. Appliances were bundled through our trade program for additional volume discounts.
 
@@ -128,9 +128,9 @@ The total savings came to $96K — a full 20% off the original budget — withou
 For builders working on high-end projects, the takeaway is clear: premium materials don't have to come with premium markups. The right sourcing partner can protect your margins while delivering exactly what the project demands.`,
   },
   {
-    slug: "how-tanwintan-helped-truamerica-enhance-renovations-boost-roi",
-    title: "How TanWinTan Helped TruAmerica Enhance Renovations & Boost ROI",
-    excerpt: "A deep dive into how TruAmerica partnered with TanWinTan to transform their renovation process.",
+    slug: "how-pbssupply-helped-truamerica-enhance-renovations-boost-roi",
+    title: "How PBS Supply Co. Helped TruAmerica Enhance Renovations & Boost ROI",
+    excerpt: "A deep dive into how TruAmerica partnered with PBS Supply Co. to transform their renovation process.",
     date: "Mar 19, 2025",
     type: "Showcases & Case Studies",
     categories: ["Appliances", "Countertops"],
@@ -140,18 +140,18 @@ For builders working on high-end projects, the takeaway is clear: premium materi
 
 Their existing process involved local contractors sourcing materials independently at each property. This led to inconsistent quality, unpredictable pricing, and no leverage for volume discounts. A unit renovation that should take 5 days was averaging 8-10 days due to material delays and coordination issues.
 
-TanWinTan partnered with TruAmerica to centralize their materials procurement. We developed standardized renovation packages — from countertops and appliances to flooring and fixtures — tailored to each property's market positioning and budget tier.
+PBS Supply Co. partnered with TruAmerica to centralize their materials procurement. We developed standardized renovation packages — from countertops and appliances to flooring and fixtures — tailored to each property's market positioning and budget tier.
 
 The impact was immediate. By sourcing materials in bulk across the portfolio, we reduced per-unit material costs by 22%. Standardized packages meant contractors knew exactly what materials to expect, eliminating specification confusion and reducing installation errors.
 
 More importantly, the streamlined supply chain cut average renovation time from 8-10 days to under 5. For a multifamily operator, that means units go back on the market faster, generating revenue sooner. Across TruAmerica's portfolio, this translated to significant improvements in IRR.
 
-The partnership continues to grow. TruAmerica now uses TanWinTan for all new acquisitions, and our team works directly with their asset managers to develop renovation strategies that balance cost efficiency with the finish quality that today's renters expect.`,
+The partnership continues to grow. TruAmerica now uses PBS Supply Co. for all new acquisitions, and our team works directly with their asset managers to develop renovation strategies that balance cost efficiency with the finish quality that today's renters expect.`,
   },
   {
     slug: "rangely-west-hollywood",
     title: "Bright, Durable, and Built to Last: Modern Living Made Beautiful",
-    excerpt: "Explore how TanWinTan materials transformed a West Hollywood property into a modern living showcase.",
+    excerpt: "Explore how PBS Supply Co. materials transformed a West Hollywood property into a modern living showcase.",
     date: "Jun 17, 2025",
     type: "Showcases & Case Studies",
     categories: ["Pavers", "Tiles", "Countertops"],
@@ -161,7 +161,7 @@ The partnership continues to grow. TruAmerica now uses TanWinTan for all new acq
 
 The design brief called for bright, contemporary interiors with durable materials that could handle high turnover. The property management team wanted surfaces that looked premium but wouldn't require constant maintenance between tenants.
 
-TanWinTan sourced a curated material package: large-format porcelain tiles for common areas, quartz countertops with subtle veining for kitchens, and modern pavers for the outdoor living spaces. Every material was selected for both aesthetics and long-term performance.
+PBS Supply Co. sourced a curated material package: large-format porcelain tiles for common areas, quartz countertops with subtle veining for kitchens, and modern pavers for the outdoor living spaces. Every material was selected for both aesthetics and long-term performance.
 
 The porcelain tiles were a standout choice. Their durability rating made them ideal for high-traffic lobbies and hallways, while the large format (24x48) gave spaces a sleek, modern feel with fewer grout lines. For the outdoor spaces, we specified frost-resistant pavers with a non-slip finish — practical for poolside areas without sacrificing the design vision.
 

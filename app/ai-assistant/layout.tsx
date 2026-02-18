@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quick Quote — TanWinTan",
-  description: "Get a quick quote from TanWinTan to find the right construction materials, get pricing, and connect with our sourcing team.",
+  title: "AI Sourcing Agent — PBS Supply Co.",
+  description: "Chat with our AI Sourcing Agent to find building materials, get instant pricing, and connect with our supply team.",
 };
 
 export default function AIAssistantLayout({ children }: { children: React.ReactNode }) {

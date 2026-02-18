@@ -12,7 +12,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mb-3"
         >
-          Welcome to TanWinTan
+          Welcome to PBS Supply Co.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-lg md:text-xl text-gray-500 max-w-xl mx-auto"
         >
-          Transforming the construction industry with AI.
+          Lower prices than your current supplier — guaranteed. Direct trucking to your jobsite.
         </motion.p>
       </div>
     </section>

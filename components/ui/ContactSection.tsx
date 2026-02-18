@@ -9,7 +9,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   title = "Want to learn more? Contact our team",
-  subtitle = "Our team of TanWinTan pros is ready to help you.",
+  subtitle = "Our team of PBS Supply Co. pros is ready to help you.",
 }: ContactSectionProps) {
   return (
     <section className="relative py-16 overflow-hidden">
@@ -31,7 +31,7 @@ export default function ContactSection({
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <a
-            href="tel:+14242507795"
+            href="tel:+17139271500"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
@@ -39,11 +39,11 @@ export default function ContactSection({
             </div>
             <h3 className="font-semibold text-navy mb-1">Call Us</h3>
             <p className="text-sm text-gray-500 mb-2">Speak with our sourcing pros</p>
-            <span className="text-navy font-semibold">(424) 250-7795</span>
+            <span className="text-navy font-semibold">(713) 927-1500</span>
           </a>
 
           <a
-            href="mailto:hello@tanwintan.com"
+            href="mailto:hello@pbssupply.co"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
@@ -51,7 +51,7 @@ export default function ContactSection({
             </div>
             <h3 className="font-semibold text-navy mb-1">Email Us</h3>
             <p className="text-sm text-gray-500 mb-2">Get detailed information</p>
-            <span className="text-navy font-semibold">hello@tanwintan.com</span>
+            <span className="text-navy font-semibold">hello@pbssupply.co</span>
           </a>
 
           <a

@@ -12,14 +12,14 @@ const steps = [
   },
   {
     number: "02",
-    title: "Purchase Materials and Earn TanCash",
-    description: "Earn TanCash on every order. The more you source through TanWinTan, the more you earn — helping you boost profits with every project.",
+    title: "Purchase Materials and Earn PBScash",
+    description: "Earn PBScash on every order. The more you source through PBS Supply Co., the more you earn — helping you boost profits with every project.",
     icon: "/images/icons/step-02.svg",
   },
   {
     number: "03",
-    title: "Use TanCash on Your Next Order",
-    description: "Redeem your TanCash balance on future purchases to enjoy greater savings on premium materials. Your sourcing gets smarter every time you buy.",
+    title: "Use PBScash on Your Next Order",
+    description: "Redeem your PBScash balance on future purchases to enjoy greater savings on premium materials. Your sourcing gets smarter every time you buy.",
     icon: "/images/icons/step-03.svg",
   },
 ];
@@ -34,7 +34,7 @@ export default function GoCashSteps() {
           </span>
         </div>
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-12">
-          How TanCash Works
+          How PBScash Works
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -78,7 +78,7 @@ export default function GoCashSteps() {
             ))}
             <div className="pt-4">
               <Button href="/sign-up" variant="primary" size="lg">
-                I want TanCash
+                I want PBScash
               </Button>
             </div>
           </div>

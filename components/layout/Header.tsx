@@ -82,21 +82,43 @@ const categoryNav: CategoryNavItem[] = [
     ],
   },
   {
-    label: "More Categories",
-    href: "/surfaces",
+    label: "Building Materials",
+    href: "/collections/building-materials",
     submenu: [
       {
+        title: "Interior",
         items: [
-          { label: "Appliances", href: "/collections/appliance" },
-          { label: "Plumbing", href: "/collections/plumbing" },
-          { label: "Lighting", href: "/collections/lighting" },
-          { label: "Accessories", href: "/collections/accessories" },
+          { label: "Cabinets", href: "/collections/cabinets" },
+          { label: "WPC Walls", href: "/collections/wpc-walls" },
+          { label: "Ceilings", href: "/collections/ceilings" },
+          { label: "SPC/LVP Flooring", href: "/collections/spc-lvp-flooring" },
+        ],
+      },
+      {
+        title: "Exterior & More",
+        items: [
+          { label: "Fencing", href: "/collections/fencing" },
+          { label: "Siding & Cladding", href: "/collections/siding-cladding" },
           { label: "Artificial Turf", href: "/collections/artificial-turf" },
         ],
       },
     ],
   },
-  { label: "Price Drops", href: "/collections/price-drops" },
+  {
+    label: "Fixtures & Systems",
+    href: "/collections/fixtures",
+    submenu: [
+      {
+        items: [
+          { label: "Sanitaryware & Fixtures", href: "/collections/sanitaryware-fixtures" },
+          { label: "Plumbing", href: "/collections/plumbing" },
+          { label: "Lighting", href: "/collections/lighting" },
+          { label: "Electrical Wires", href: "/collections/electrical-wires" },
+          { label: "Gas & Water Accessories", href: "/collections/gas-water-accessories" },
+        ],
+      },
+    ],
+  },
   { label: "New Arrivals", href: "/collections/new-arrivals" },
 ];
 
@@ -132,14 +154,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
-      {/* Row 1 — Logo | Search | Quick Quote | GoClub | Resources | Account | Cart */}
+      {/* Row 1 — Logo | Search | AI Sourcing | GoClub | Resources | Account | Cart */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className="text-xl font-bold text-white tracking-tight">
-              Tan<span className="text-accent-orange">Win</span>Tan
-            </span>
+            <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-9 w-auto rounded-full" />
           </Link>
 
           {/* Search bar */}
@@ -156,21 +176,21 @@ export default function Header() {
 
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
-            {/* Quick Quote pill */}
+            {/* AI Sourcing pill */}
             <Link
               href="/ai-assistant"
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal bg-yellow-300 border border-yellow-400 rounded-full hover:bg-yellow-200 transition-colors"
             >
-              Quick Quote
+              AI Sourcing
               <Sparkles className="w-3.5 h-3.5" />
             </Link>
 
-            {/* TanClub */}
+            {/* PBS Club */}
             <Link
               href="/goclub"
               className="px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              TanClub™
+              PBS Club™
             </Link>
 
             {/* Resources dropdown */}
@@ -341,21 +361,21 @@ export default function Header() {
               />
             </div>
 
-            {/* Quick Quote link */}
+            {/* AI Sourcing link */}
             <Link
               href="/ai-assistant"
               className="flex items-center gap-2 px-3 py-3 text-sm font-medium text-charcoal"
               onClick={() => setMobileOpen(false)}
             >
               <Sparkles className="w-4 h-4 text-accent-orange" />
-              Quick Quote
+              AI Sourcing
             </Link>
 
             <div className="border-t border-gray-100 my-2" />
 
             {/* Main nav */}
             <Link href="/goclub" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
-              TanClub™
+              PBS Club™
             </Link>
             <Link href="/blog" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               Blog

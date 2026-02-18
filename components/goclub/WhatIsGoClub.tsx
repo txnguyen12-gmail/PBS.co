@@ -13,25 +13,25 @@ export default function WhatIsGoClub() {
             viewport={{ once: true }}
           >
             <span className="text-sm text-accent-orange uppercase tracking-wider font-medium mb-3 block">
-              What is TanClub?
+              What is PBS Club?
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
               Loyalty That Pays Off
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              TanClub members receive <strong className="text-navy">exclusive discounts</strong>,{" "}
-              <strong className="text-navy">TanCash rewards</strong> on every purchase,{" "}
+              PBS Club members receive <strong className="text-navy">exclusive discounts</strong>,{" "}
+              <strong className="text-navy">PBScash rewards</strong> on every purchase,{" "}
               <strong className="text-navy">priority support</strong>, and access to{" "}
               <strong className="text-navy">qualified leads</strong> — all designed to help
               stone fabricators and trade professionals grow their business.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               Whether you are a fabricator sourcing slabs daily or a designer specifying
-              materials for a client project, TanClub gives you the tools, pricing, and
+              materials for a client project, PBS Club gives you the tools, pricing, and
               support to stay ahead.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              As you grow with TanWinTan, your benefits grow too. Advance through{" "}
+              As you grow with PBS Supply Co., your benefits grow too. Advance through{" "}
               <strong className="text-navy">tier-based rewards</strong> to unlock even greater
               savings, faster service, and dedicated account management.
             </p>
@@ -45,7 +45,7 @@ export default function WhatIsGoClub() {
             <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-slate to-surface-light flex items-center justify-center">
               <img
                 src="/images/goclub/fabricator-gocash-square.png"
-                alt="Fabricator using TanClub on mobile"
+                alt="Fabricator using PBS Club on mobile"
                 className="w-full h-full object-cover"
               />
             </div>

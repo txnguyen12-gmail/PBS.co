@@ -10,7 +10,7 @@ const footerColumns = [
     links: [
       { label: "About Us", href: "/about-us" },
       { label: "Multifamily", href: "/multifamily" },
-      { label: "TanClub™", href: "/goclub" },
+      { label: "PBS Club™", href: "/goclub" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/about-us#offices" },
     ],
@@ -18,21 +18,21 @@ const footerColumns = [
   {
     title: "Products & Tools",
     links: [
-      { label: "Quick Quote", href: "/ai-assistant" },
-      { label: "TanWinTan Estimate", href: "/surfaces" },
+      { label: "AI Sourcing", href: "/ai-assistant" },
+      { label: "PBS Supply Co. Estimate", href: "/surfaces" },
     ],
   },
   {
     title: "Categories",
     links: [
-      { label: "Appliances", href: "/collections/appliance" },
       { label: "Slabs", href: "/collections/slabs" },
+      { label: "Tiles", href: "/collections/tile" },
       { label: "Flooring", href: "/collections/all-flooring" },
-      { label: "Tile", href: "/collections/tile" },
-      { label: "Plumbing", href: "/collections/plumbing" },
-      { label: "Accessories", href: "/collections/accessories" },
-      { label: "Lighting", href: "/collections/lighting" },
-      { label: "Artificial Turf", href: "/collections/artificial-turf" },
+      { label: "Cabinets", href: "/collections/cabinets" },
+      { label: "Sanitaryware", href: "/collections/sanitaryware-fixtures" },
+      { label: "Siding & Cladding", href: "/collections/siding-cladding" },
+      { label: "Fencing", href: "/collections/fencing" },
+      { label: "Electrical", href: "/collections/electrical-wires" },
     ],
   },
   {
@@ -47,10 +47,10 @@ const footerColumns = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/tanwintan", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com/tanwintan", label: "Instagram" },
-  { icon: Linkedin, href: "https://linkedin.com/company/tanwintan", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com/@tanwintan", label: "YouTube" },
+  { icon: Facebook, href: "https://facebook.com/pbssupply", label: "Facebook" },
+  { icon: Instagram, href: "https://instagram.com/pbssupply", label: "Instagram" },
+  { icon: Linkedin, href: "https://linkedin.com/company/pbssupply", label: "LinkedIn" },
+  { icon: Youtube, href: "https://youtube.com/@pbssupply", label: "YouTube" },
 ];
 
 const paymentMethods = [
@@ -74,9 +74,7 @@ export default function Footer() {
           {/* Logo column */}
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
             <Link href="/">
-              <span className="text-xl font-bold text-white tracking-tight inline-block mb-4">
-                Tan<span className="text-accent-orange">Win</span>Tan
-              </span>
+              <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-10 w-auto rounded-full mb-4" />
             </Link>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (
@@ -118,7 +116,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
-              Copyright {new Date().getFullYear()} &copy; tanwintan.com
+              Copyright {new Date().getFullYear()} &copy; pbssupply.co
             </p>
             <div className="flex items-center gap-2">
               {paymentMethods.map((card) => (

@@ -7,8 +7,8 @@ import TestimonialsBanner from "@/components/multifamily/TestimonialsBanner";
 import ContactForm from "@/components/multifamily/ContactForm";
 
 export const metadata = {
-  title: "Multifamily Renovations - AI-Powered Solutions | TanWinTan",
-  description: "Transform your multifamily properties with TanWinTan's AI-powered renovation solutions. On spec, on time, on budget.",
+  title: "Multifamily Renovations - AI-Powered Solutions | PBS Supply Co.",
+  description: "Transform your multifamily properties with PBS Supply Co.'s AI-powered renovation solutions. On spec, on time, on budget.",
 };
 
 export default function MultifamilyPage() {

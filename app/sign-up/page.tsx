@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 
 const benefits = [
   "Access exclusive wholesale pricing",
-  "Earn TanCash rewards on every order",
+  "Earn PBScash rewards on every order",
   "Get priority support from sourcing experts",
   "Browse 300,000+ products in stock",
   "Lock in prices for up to 14 days",
@@ -79,7 +79,7 @@ export default function SignUpPage() {
           <div className="w-16 h-16 bg-accent-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-accent-green" />
           </div>
-          <h1 className="text-3xl font-bold text-navy mb-4">Welcome to TanWinTan!</h1>
+          <h1 className="text-3xl font-bold text-navy mb-4">Welcome to PBS Supply Co.!</h1>
           <p className="text-gray-600 mb-8">
             Your account request has been received. Our team will reach out shortly to get you set up with trade pricing and full platform access.
           </p>
@@ -99,7 +99,7 @@ export default function SignUpPage() {
       {/* Left: Benefits */}
       <div className="hidden lg:flex lg:w-1/2 bg-charcoal text-white p-12 xl:p-16 flex-col justify-center">
         <h1 className="text-4xl xl:text-5xl font-bold mb-6">
-          Join TanWinTan
+          Join PBS Supply Co.
         </h1>
         <p className="text-white/70 text-lg mb-10 max-w-md">
           Create your free trade account and start sourcing smarter today.
@@ -119,7 +119,7 @@ export default function SignUpPage() {
       {/* Right: Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-white">
         <div className="w-full max-w-md">
-          <h2 className="text-2xl lg:hidden font-bold text-navy mb-2">Join TanWinTan</h2>
+          <h2 className="text-2xl lg:hidden font-bold text-navy mb-2">Join PBS Supply Co.</h2>
           <p className="lg:hidden text-gray-600 mb-8">Create your free trade account.</p>
           <h2 className="hidden lg:block text-2xl font-bold text-navy mb-8">Create Your Account</h2>
 

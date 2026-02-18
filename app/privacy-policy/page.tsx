@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy | TanWinTan",
-  description: "TanWinTan's privacy policy — how we collect, use, and protect your information.",
+  title: "Privacy Policy | PBS Supply Co.",
+  description: "PBS Supply Co.'s privacy policy — how we collect, use, and protect your information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
           <p className="mb-4">We use the information we collect to:</p>
           <ul className="list-disc pl-6 mb-6 space-y-2">
             <li>Process and fulfill your orders and quote requests</li>
-            <li>Manage your TanClub membership and TanCash rewards</li>
+            <li>Manage your PBS Club membership and PBScash rewards</li>
             <li>Communicate with you about products, services, and promotions</li>
             <li>Improve and personalize your experience on our platform</li>
             <li>Analyze usage patterns to enhance our services</li>
@@ -77,12 +77,12 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Contact Us</h2>
           <p className="mb-6">
             If you have questions about this privacy policy or our data practices, please contact us at{" "}
-            <a href="mailto:hello@tanwintan.com" className="text-accent-orange hover:underline">
-              hello@tanwintan.com
+            <a href="mailto:hello@pbssupply.co" className="text-accent-orange hover:underline">
+              hello@pbssupply.co
             </a>{" "}
             or call us at{" "}
-            <a href="tel:+14242507795" className="text-accent-orange hover:underline">
-              (424) 250-7795
+            <a href="tel:+17139271500" className="text-accent-orange hover:underline">
+              (713) 927-1500
             </a>.
           </p>
         </div>

@@ -10,7 +10,7 @@ const segments = [
   },
   {
     title: "Designers & Architects",
-    description: "Built to support specification and client-facing workflows, with easy material discovery and TanCash rewards on homeowner-managed projects.",
+    description: "Built to support specification and client-facing workflows, with easy material discovery and PBScash rewards on homeowner-managed projects.",
     image: "/images/goclub/designers-architects.png",
   },
   {
@@ -28,7 +28,7 @@ export default function TradeProSegments() {
           Built for Trade Professionals
         </h2>
         <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-          Whether you fabricate, design, or build — TanClub is made for you
+          Whether you fabricate, design, or build — PBS Club is made for you
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {segments.map((segment, i) => (

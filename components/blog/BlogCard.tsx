@@ -27,7 +27,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-              <span className="text-gray-300 text-3xl font-bold">TanWinTan</span>
+              <span className="text-gray-300 text-3xl font-bold">PBS Supply Co.</span>
             </div>
           )}
         </div>

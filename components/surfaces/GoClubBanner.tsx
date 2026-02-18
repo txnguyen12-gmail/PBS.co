@@ -10,7 +10,7 @@ function BannerImage() {
   if (imgError) {
     return (
       <div className="w-full h-full bg-white/10 rounded-2xl flex items-center justify-center">
-        <span className="text-white/20 text-3xl font-bold">TanClub™</span>
+        <span className="text-white/20 text-3xl font-bold">PBS Club™</span>
       </div>
     );
   }
@@ -18,14 +18,14 @@ function BannerImage() {
   return (
     <img
       src="/images/surfaces/why-choose-gosource.png"
-      alt="Builders using TanClub"
+      alt="Builders using PBS Club"
       className="w-full h-full object-cover rounded-2xl"
       onError={() => setImgError(true)}
     />
   );
 }
 
-export default function TanClubBanner() {
+export default function GoClubBanner() {
   return (
     <section className="py-20 bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,13 +39,13 @@ export default function TanClubBanner() {
               Loyalty That Pays Off
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              TanClub™ — Get More From Every Order
+              PBS Club™ — Get More From Every Order
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-lg">
-              Unlock best wholesale pricing, tier-based TanCash rewards, and top-level priority support with every TanWinTan order.
+              Unlock best wholesale pricing, tier-based PBScash rewards, and top-level priority support with every PBS Supply Co. order.
             </p>
             <Button href="/goclub" variant="accent" size="lg">
-              Join TanClub™
+              Join PBS Club™
             </Button>
           </motion.div>
 

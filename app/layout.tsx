@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TanWinTan - Transforming the Construction Industry with AI",
-  description: "America's #1 marketplace for surfaces, AI-powered multifamily renovations, and the TanClub loyalty program for trade professionals.",
+  title: "PBS Supply Co. — America's #1 Building Supply Source",
+  description: "Lower prices than your current supplier, guaranteed. Direct trucking to your jobsite. Building supplies for large and small builders.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

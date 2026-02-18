@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Terms of Service | TanWinTan",
-  description: "TanWinTan's terms of service — the rules and guidelines for using our platform.",
+  title: "Terms of Service | PBS Supply Co.",
+  description: "PBS Supply Co.'s terms of service — the rules and guidelines for using our platform.",
 };
 
 export default function TermsOfServicePage() {
@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg max-w-none text-gray-700">
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="mb-6">
-            By accessing or using TanWinTan&apos;s website, platform, and services (collectively, the &quot;Services&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services. These terms apply to all users, including trade professionals, visitors, and any other individuals who access or use the Services.
+            By accessing or using PBS Supply Co.&apos;s website, platform, and services (collectively, the &quot;Services&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services. These terms apply to all users, including trade professionals, visitors, and any other individuals who access or use the Services.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">2. Account Registration</h2>
@@ -27,7 +27,7 @@ export default function TermsOfServicePage() {
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">3. Products and Pricing</h2>
           <p className="mb-6">
-            All product descriptions, images, and specifications are provided for informational purposes. While we strive for accuracy, we do not guarantee that product descriptions or pricing are error-free. We reserve the right to correct any errors and to cancel orders placed at incorrect prices. Prices are subject to change without notice. Trade pricing and TanClub member pricing are available only to qualifying accounts.
+            All product descriptions, images, and specifications are provided for informational purposes. While we strive for accuracy, we do not guarantee that product descriptions or pricing are error-free. We reserve the right to correct any errors and to cancel orders placed at incorrect prices. Prices are subject to change without notice. Trade pricing and PBS Club member pricing are available only to qualifying accounts.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">4. Orders and Payment</h2>
@@ -35,9 +35,9 @@ export default function TermsOfServicePage() {
             By placing an order, you agree to pay the listed price plus any applicable taxes, shipping, and handling fees. We accept major credit cards and approved payment methods. All orders are subject to acceptance and availability. We reserve the right to refuse or cancel any order for any reason, including suspected fraud or unauthorized activity.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">5. TanClub Membership and TanCash</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">5. PBS Club Membership and PBScash</h2>
           <p className="mb-6">
-            TanClub membership is subject to separate terms and conditions. TanCash rewards are earned on qualifying purchases and may be redeemed on future orders. TanCash has no cash value and cannot be transferred to third parties. We reserve the right to modify the TanCash program, including earning rates and redemption terms, at any time with reasonable notice.
+            PBS Club membership is subject to separate terms and conditions. PBScash rewards are earned on qualifying purchases and may be redeemed on future orders. PBScash has no cash value and cannot be transferred to third parties. We reserve the right to modify the PBScash program, including earning rates and redemption terms, at any time with reasonable notice.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">6. Shipping and Delivery</h2>
@@ -52,12 +52,12 @@ export default function TermsOfServicePage() {
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">8. Intellectual Property</h2>
           <p className="mb-6">
-            All content on our platform — including text, graphics, logos, images, and software — is the property of TanWinTan or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
+            All content on our platform — including text, graphics, logos, images, and software — is the property of PBS Supply Co. or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">9. Limitation of Liability</h2>
           <p className="mb-6">
-            To the fullest extent permitted by law, TanWinTan shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Services. Our total liability for any claim arising from these terms shall not exceed the amount you paid to us in the 12 months preceding the claim.
+            To the fullest extent permitted by law, PBS Supply Co. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Services. Our total liability for any claim arising from these terms shall not exceed the amount you paid to us in the 12 months preceding the claim.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Governing Law</h2>
@@ -73,12 +73,12 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">12. Contact Us</h2>
           <p className="mb-6">
             If you have questions about these Terms of Service, please contact us at{" "}
-            <a href="mailto:hello@tanwintan.com" className="text-accent-orange hover:underline">
-              hello@tanwintan.com
+            <a href="mailto:hello@pbssupply.co" className="text-accent-orange hover:underline">
+              hello@pbssupply.co
             </a>{" "}
             or call us at{" "}
-            <a href="tel:+14242507795" className="text-accent-orange hover:underline">
-              (424) 250-7795
+            <a href="tel:+17139271500" className="text-accent-orange hover:underline">
+              (713) 927-1500
             </a>.
           </p>
         </div>

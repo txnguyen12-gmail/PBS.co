@@ -15,9 +15,9 @@ import { teamMembers } from "@/data/team";
 import Button from "@/components/ui/Button";
 
 export const metadata = {
-  title: "About Us | TanWinTan",
+  title: "About Us | PBS Supply Co.",
   description:
-    "Learn about TanWinTan's mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
+    "Learn about PBS Supply Co.'s mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
 };
 
 const values = [
@@ -57,23 +57,6 @@ const values = [
     description:
       "We invest in our team's growth, well-being, and fulfillment — knowing that engaged employees are key to operational excellence and exceptional customer experiences.",
   },
-];
-
-const trustedLogos = [
-  { name: "TruAmerica", logo: "/images/partners/truamerica-about.svg" },
-  { name: "Tishman Speyer", logo: "/images/partners/tishman-about.svg" },
-  { name: "Opendoor", logo: "/images/partners/opendoor-about.svg" },
-  { name: "Compass", logo: "/images/partners/compass-about.png" },
-  { name: "Avalon Bay Communities", logo: "/images/partners/avalon-about.svg" },
-  { name: "Omninet", logo: "/images/partners/omninet.svg" },
-  { name: "Hy-Max Building Corp", logo: "/images/partners/hymax.svg" },
-  { name: "NorthCoast", logo: "/images/partners/northcoast.png" },
-  { name: "AAGLA", logo: "/images/partners/aagla.png" },
-  { name: "Benedict Canyon Equities", logo: "/images/partners/benedict-canyon.png" },
-  { name: "CDH Investments", logo: "/images/partners/dcdh.png" },
-  { name: "Artimus", logo: "/images/partners/artimus.svg" },
-  { name: "Gelt Venture Partners", logo: "/images/partners/gelt.png" },
-  { name: "Shirley", logo: "/images/partners/shirley.png" },
 ];
 
 const investorLogos = [
@@ -132,20 +115,20 @@ export default function AboutUsPage() {
                 For Builders, By Builders
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                When we started TanWinTan, we set out to transform how
+                When we started PBS Supply Co., we set out to transform how
                 construction professionals source materials. Having experienced
                 the fragmented, slow, and costly procurement process firsthand,
                 we knew there had to be a better way.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                TanWinTan brings together the largest collective of construction
+                PBS Supply Co. brings together the largest collective of construction
                 professionals to harness real buying power, using advanced AI
                 technology to deliver transparency, speed, and savings — making
                 material procurement better, faster, easier, and more affordable
                 for everyone involved.
               </p>
               <p className="text-sm text-gray-500 italic mb-1">
-                TanWinTan Co-Founders
+                PBS Supply Co. Co-Founders
               </p>
               <p className="text-sm text-gray-500">
                 Ron Zuckerman, Yuval Mekler, Ori Birnbaum, and Shahar Koren
@@ -154,7 +137,7 @@ export default function AboutUsPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
               <img
                 src="/images/surfaces/why-choose-gosource.png"
-                alt="TanWinTan team at work"
+                alt="PBS Supply Co. team at work"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -190,36 +173,12 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Trust Logos */}
-      <section className="py-16 bg-surface-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-base text-gray-500 mb-10 max-w-2xl mx-auto">
-            Trusted by hundreds of top-tier developers, builders, architects,
-            and designers.
-          </p>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-8 items-center">
-            {trustedLogos.map((item) => (
-              <div
-                key={item.name}
-                className="flex items-center justify-center h-16 px-4"
-              >
-                <img
-                  src={item.logo}
-                  alt={item.name}
-                  className="h-8 md:h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Banner */}
       <section className="relative">
         <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
           <img
             src="/images/contact/contact-wrap.png"
-            alt="TanWinTan banner"
+            alt="PBS Supply Co. banner"
             className="w-full h-full object-cover"
           />
         </div>
@@ -233,7 +192,7 @@ export default function AboutUsPage() {
               Our Values
             </p>
             <h2 className="text-2xl md:text-3xl font-bold max-w-3xl mx-auto leading-snug">
-              The TanWinTan spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
+              The PBS Supply Co. spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

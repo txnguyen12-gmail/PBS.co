@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 
 const collections = [
   {
-    name: "Slabs",
+    name: "Slabs & Tiles",
     image: "/images/surfaces/slab-category.png",
     href: "/collections/slabs",
-    description: "Premium quartz, natural stone & porcelain slabs",
+    description: "Quartz, natural stone, porcelain slabs & tiles",
   },
   {
-    name: "Tiles",
-    image: "/images/surfaces/tile-category.png",
-    href: "/collections/tile",
-    description: "Porcelain, ceramic & mosaic tiles",
-  },
-  {
-    name: "Flooring",
+    name: "Flooring & Walls",
     image: "/images/surfaces/flooring-category.png",
     href: "/collections/all-flooring",
-    description: "Hardwood, vinyl & laminate flooring",
+    description: "SPC/LVP, hardwood, WPC walls & ceilings",
+  },
+  {
+    name: "Cabinets & Fixtures",
+    image: "/images/surfaces/tile-category.png",
+    href: "/collections/cabinets",
+    description: "Cabinets, sanitaryware, plumbing & lighting",
   },
 ];
 
@@ -29,10 +29,10 @@ export default function CollectionCards() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
-          Surfaces Crafted for Living
+          Building Supplies for Every Project
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Curated to elevate every environment with enduring style.
+          From foundations to finishes — everything you need, direct to your jobsite.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {collections.map((collection, i) => (

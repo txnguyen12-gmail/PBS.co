@@ -6,9 +6,9 @@ import { Check, X } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 const tiers = [
-  { name: "TanClub Member", volume: "Under $10K" },
-  { name: "TanClub Gold", volume: "Above $10K" },
-  { name: "TanClub Platinum", volume: "Above $100K" },
+  { name: "PBS Club Member", volume: "Under $10K" },
+  { name: "PBS Club Gold", volume: "Above $10K" },
+  { name: "PBS Club Platinum", volume: "Above $100K" },
 ];
 
 interface FeatureRow {
@@ -26,7 +26,7 @@ const featureCategories: FeatureCategory[] = [
     category: "Price & Value",
     features: [
       {
-        name: "TanCash Cashback",
+        name: "PBScash Cashback",
         values: ["2%", "3%", "5%"],
       },
       {
@@ -112,7 +112,7 @@ export default function MembershipTiers() {
     <section className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <span className="text-sm text-accent-orange uppercase tracking-wider font-medium mb-3 block text-center">
-          TanClub Benefits
+          PBS Club Benefits
         </span>
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
           Membership Tiers — Built for Every Trade

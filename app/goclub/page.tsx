@@ -8,8 +8,8 @@ import ContactSection from "@/components/ui/ContactSection";
 import { tanclubTestimonials } from "@/data/testimonials";
 
 export const metadata = {
-  title: "TanClub - The First Loyalty Club for Trade Professionals | TanWinTan",
-  description: "Join TanClub for exclusive pricing, TanCash rewards, and priority support. Built for fabricators, designers, and builders.",
+  title: "PBS Club - The First Loyalty Club for Trade Professionals | PBS Supply Co.",
+  description: "Join PBS Club for exclusive pricing, PBScash rewards, and priority support. Built for fabricators, designers, and builders.",
 };
 
 export default function GoClubPage() {
@@ -28,7 +28,7 @@ export default function GoClubPage() {
             What Stone Fabricators & Trade Professionals Are Saying
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            See why pros choose TanWinTan for their projects.
+            See why pros choose PBS Supply Co. for their projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tanclubTestimonials.slice(0, 5).map((testimonial, i) => (

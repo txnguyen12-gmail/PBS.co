@@ -32,7 +32,7 @@ export default function GoClubHero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl"
         >
-          TanClub by TanWinTan: The First Loyalty Club for Trade Professionals
+          PBS Club by PBS Supply Co.: The First Loyalty Club for Trade Professionals
         </motion.h1>
 
         <motion.div
@@ -63,7 +63,7 @@ export default function GoClubHero() {
           <Button href="/sign-up" variant="white" size="lg">
             Join Our Club
           </Button>
-          <Button href="tel:+14242507795" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
+          <Button href="tel:+17139271500" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
             Call An Account Manager
           </Button>
         </motion.div>
