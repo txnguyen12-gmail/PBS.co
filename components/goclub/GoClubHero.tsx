@@ -26,13 +26,21 @@ export default function GoClubHero() {
       </video>
       <div className="absolute inset-0 bg-charcoal/60" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-accent-orange font-semibold text-sm uppercase tracking-wider mb-3"
+        >
+          PBS Club™ by Perfect Building Supply Co.
+        </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl"
+          transition={{ delay: 0.05 }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl"
         >
-          PBS Club by Perfect Building Supply Co.: The First Loyalty Club for Trade Professionals
+          The First Loyalty Club for Trade Pros
         </motion.h1>
 
         <motion.div
