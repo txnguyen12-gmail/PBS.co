@@ -7,14 +7,14 @@ const cards = [
   {
     title: "Surfaces",
     description: "Marketplace for surfaces in the U.S.",
-    video: "https://gs-web.cdn.prismic.io/gs-web/aRGmcrpReVYa4R0Z_surfaces.mp4",
+    gradient: "from-navy via-navy/95 to-charcoal/90",
     href: "/surfaces",
     cta: "Explore",
   },
   {
     title: "Multifamily",
     description: "AI-powered multifamily renovations",
-    video: "https://gs-web.cdn.prismic.io/gs-web/aRGmcbpReVYa4R0X_multifamily.mp4",
+    gradient: "from-charcoal via-charcoal/95 to-navy/90",
     href: "/multifamily",
     cta: "Explore",
   },
@@ -47,16 +47,8 @@ export default function CTACards() {
                 href={card.href}
                 className="group relative block rounded-2xl overflow-hidden aspect-[16/9] md:aspect-[4/3]"
               >
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                >
-                  <source src={card.video} type="video/mp4" />
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className={`absolute inset-0 bg-gradient-to-br ${card.gradient}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   {/* Logo mark — 88x88 */}
                   <div className="mb-4">

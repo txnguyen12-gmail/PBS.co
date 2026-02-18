@@ -5,26 +5,14 @@ import Button from "@/components/ui/Button";
 
 export default function PBSClubHero() {
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover hidden md:block"
-      >
-        <source src="https://gs-web.cdn.prismic.io/gs-web/aRr0rbpReVYa4iB-_Herogoclubdarkversion-1-.mp4" type="video/mp4" />
-      </video>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover md:hidden"
-      >
-        <source src="https://gs-web.cdn.prismic.io/gs-web/aRrswbpReVYa4h9j_Heromobiledarkversion.mp4" type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-charcoal/60" />
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-charcoal">
+      {/* Background pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-accent-orange/5 translate-x-32 -translate-y-32" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent-gold/5 -translate-x-20 translate-y-20" />
+        <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-accent-green/5 -translate-x-1/2 -translate-y-1/2" />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal/95 to-charcoal/90" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
         <motion.p
@@ -49,7 +37,7 @@ export default function PBSClubHero() {
           transition={{ delay: 0.2 }}
           className="flex flex-wrap gap-4 mb-10"
         >
-          {["Bigger Discounts", "Free Qualified Leads", "24/7 Priority Support"].map((benefit, i) => (
+          {["Bigger Discounts", "Free Qualified Leads", "24/7 Priority Support"].map((benefit) => (
             <div
               key={benefit}
               className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm"
@@ -71,7 +59,7 @@ export default function PBSClubHero() {
           <Button href="/sign-up" variant="white" size="lg">
             Join Our Club
           </Button>
-          <Button href="tel:+17139271500" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
+          <Button href="tel:+17139271500" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-charcoal">
             Call An Account Manager
           </Button>
         </motion.div>

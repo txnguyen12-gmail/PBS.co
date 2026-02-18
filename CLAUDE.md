@@ -10,8 +10,8 @@
 Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for construction surfaces, multifamily renovations, and trade loyalty program (TanClub). All data is static TypeScript files in `data/` — no CMS or database yet.
 
 ## Structure
-- `app/` - Pages (surfaces, multifamily, goclub, ai-assistant, blog, about-us, sign-up)
-- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `multifamily/`, `goclub/`, `blog/`, `home/`
+- `app/` - Pages (surfaces, multifamily, pbsclub, ai-assistant, blog, about-us, sign-up)
+- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `multifamily/`, `pbsclub/`, `blog/`, `home/`
 - `data/` - Static data: blog-posts, brands, faq, pricing, team, testimonials
 - `public/` - Images and videos
 
@@ -50,7 +50,7 @@ export default function Component() {
 - Font: Inter (Google Fonts)
 
 ## Gotchas
-- Remote images must be from Prismic CDN domains (configured in next.config.ts)
+- Remote images: configure allowed domains in next.config.ts remotePatterns if needed
 - Most components are client-side (`"use client"`) — prefer server components for static content
 - No tests exist yet
 - Path alias: `@/*` maps to project root
