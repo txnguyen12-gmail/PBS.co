@@ -3,6 +3,37 @@ export interface FAQItem {
   answer: string;
 }
 
+export const homepageFAQ: FAQItem[] = [
+  {
+    question: "What products does Perfect Building Supply Co. carry?",
+    answer: "We specialize in cabinets, WPC wall panels, and ceiling systems for residential and commercial projects. We also offer surfaces, flooring, fixtures, and other building materials through our extended catalog.",
+  },
+  {
+    question: "Do you offer custom configurations?",
+    answer: "Yes. We work with you to spec custom sizes, finishes, and configurations for cabinets, wall panels, and ceilings. Contact our team with your project details for a custom quote.",
+  },
+  {
+    question: "How does trade pricing work?",
+    answer: "We partner directly with manufacturers to offer wholesale pricing to contractors, builders, and trade professionals. The more you order, the better the pricing. Create an account to access trade rates.",
+  },
+  {
+    question: "Can I place bulk orders for multi-unit projects?",
+    answer: "Absolutely. We offer volume discounts on large orders — whether you're outfitting 10 units or 100. Our team can provide project-based quotes tailored to your scope.",
+  },
+  {
+    question: "What is PBS Club?",
+    answer: "PBS Club is our loyalty program for trade professionals. Members earn PBScash on every order, get price locks, priority support, and exclusive deals. Tiers include Member, Gold, and Platinum.",
+  },
+  {
+    question: "Do you offer project-based quotes?",
+    answer: "Yes. Send us your project specs and our sourcing team will put together a comprehensive quote with trade pricing, delivery timelines, and any custom configuration details.",
+  },
+  {
+    question: "What is your delivery coverage?",
+    answer: "We ship nationwide using optimized routing from the nearest partner warehouse, ensuring faster delivery and lower freight costs for your project.",
+  },
+];
+
 export const surfacesFAQ: FAQItem[] = [
   {
     question: "What is the Perfect Building Supply Co. surfaces marketplace?",

@@ -173,13 +173,11 @@ The result is a property that commands premium rents while keeping maintenance c
 
 export const blogCategories = [
   "All",
-  "Windows",
-  "Pavers",
-  "Tiles",
-  "LA",
   "Countertops",
+  "Tiles",
   "Flooring",
+  "Cabinets",
+  "Building Materials",
   "Appliances",
   "Plumbing",
-  "Light Fixtures",
 ];
