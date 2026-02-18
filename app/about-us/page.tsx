@@ -137,7 +137,7 @@ export default function AboutUsPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
               <img
-                src="/images/surfaces/why-choose-gosource.png"
+                src="/images/surfaces/trade-professionals.png"
                 alt="Perfect Building Supply Co. team at work"
                 className="w-full h-full object-cover"
               />

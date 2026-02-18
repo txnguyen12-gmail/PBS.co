@@ -62,19 +62,46 @@ export default function FeaturesGrid() {
             ))}
           </div>
 
-          {/* Side image */}
+          {/* PBScash rewards card — PBS branded */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="hidden lg:block"
+            className="hidden lg:flex items-center justify-center"
           >
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden">
-              <img
-                src="/images/goclub/fabricator-gocash-square.png"
-                alt="Perfect Building Supply Co. value proposition"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative w-72 h-96 rounded-3xl bg-charcoal overflow-hidden shadow-2xl flex flex-col justify-between p-8">
+              {/* Background pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-0 right-0 w-48 h-48 rounded-full bg-accent-orange translate-x-16 -translate-y-16" />
+                <div className="absolute bottom-0 left-0 w-36 h-36 rounded-full bg-accent-orange -translate-x-10 translate-y-10" />
+              </div>
+
+              {/* Top: logo + label */}
+              <div className="relative z-10 flex items-center gap-3">
+                <img src="/images/logo/pbs-badge.jpeg" alt="PBS" className="h-10 w-10 rounded-full object-contain" />
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-widest">Perfect Building Supply</p>
+                  <p className="text-white font-semibold text-sm">PBScash Rewards</p>
+                </div>
+              </div>
+
+              {/* Middle: reward amount */}
+              <div className="relative z-10 text-center">
+                <p className="text-white/50 text-sm mb-1">Your PBScash Balance</p>
+                <p className="text-5xl font-bold text-accent-orange leading-tight">$456</p>
+                <p className="text-white/60 text-xs mt-2">Earned on every order</p>
+              </div>
+
+              {/* Bottom: notification */}
+              <div className="relative z-10 bg-white/10 rounded-xl px-4 py-3 flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-accent-orange/20 flex items-center justify-center flex-shrink-0">
+                  <span className="text-accent-orange text-base">✓</span>
+                </div>
+                <div>
+                  <p className="text-white text-xs font-semibold">PBScash received!</p>
+                  <p className="text-white/50 text-xs">+$45.00 from your last order</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

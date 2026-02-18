@@ -17,7 +17,7 @@ function BannerImage() {
 
   return (
     <img
-      src="/images/surfaces/why-choose-gosource.png"
+      src="/images/surfaces/trade-professionals.png"
       alt="Builders using PBS Club"
       className="w-full h-full object-cover rounded-2xl"
       onError={() => setImgError(true)}
