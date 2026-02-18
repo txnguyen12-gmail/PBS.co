@@ -3,7 +3,7 @@ import SurfacesHero from "@/components/surfaces/SurfacesHero";
 import CollectionCards from "@/components/surfaces/CollectionCards";
 import FeaturesGrid from "@/components/surfaces/FeaturesGrid";
 import ThreeStepProcess from "@/components/surfaces/ThreeStepProcess";
-import GoClubBanner from "@/components/surfaces/GoClubBanner";
+import PBSClubBanner from "@/components/surfaces/PBSClubBanner";
 import FabricatorBanner from "@/components/surfaces/FabricatorBanner";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ContactSection from "@/components/ui/ContactSection";
@@ -24,7 +24,7 @@ export default function HomePage() {
       <CollectionCards />
       <FeaturesGrid />
       <ThreeStepProcess />
-      <GoClubBanner />
+      <PBSClubBanner />
       <FabricatorBanner />
 
       {/* Testimonials */}

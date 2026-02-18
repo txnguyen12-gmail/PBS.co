@@ -58,7 +58,7 @@ export default function CTACards() {
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  {/* Logo mark — 88x88 like GoSource */}
+                  {/* Logo mark — 88x88 */}
                   <div className="mb-4">
                     <LogoMark />
                   </div>

@@ -1,8 +1,8 @@
-import GoClubHero from "@/components/goclub/GoClubHero";
-import WhatIsGoClub from "@/components/goclub/WhatIsGoClub";
-import TradeProSegments from "@/components/goclub/TradeProSegments";
-import MembershipTiers from "@/components/goclub/MembershipTiers";
-import GoCashSteps from "@/components/goclub/GoCashSteps";
+import PBSClubHero from "@/components/pbsclub/PBSClubHero";
+import WhatIsPBSClub from "@/components/pbsclub/WhatIsPBSClub";
+import TradeProSegments from "@/components/pbsclub/TradeProSegments";
+import MembershipTiers from "@/components/pbsclub/MembershipTiers";
+import PBSCashSteps from "@/components/pbsclub/PBSCashSteps";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ContactSection from "@/components/ui/ContactSection";
 import { tanclubTestimonials } from "@/data/testimonials";
@@ -12,14 +12,14 @@ export const metadata = {
   description: "Join PBS Club for exclusive pricing, PBScash rewards, and priority support. Built for fabricators, designers, and builders.",
 };
 
-export default function GoClubPage() {
+export default function PBSClubPage() {
   return (
     <>
-      <GoClubHero />
-      <WhatIsGoClub />
+      <PBSClubHero />
+      <WhatIsPBSClub />
       <TradeProSegments />
       <MembershipTiers />
-      <GoCashSteps />
+      <PBSCashSteps />
 
       {/* Testimonials */}
       <section className="py-20 bg-white">

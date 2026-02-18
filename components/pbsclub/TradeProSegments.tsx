@@ -6,17 +6,17 @@ const segments = [
   {
     title: "Fabricators",
     description: "Designed for high-volume sourcing, with fabricator-only pricing, access to new leads, and fulfillment routed directly to your shop.",
-    image: "/images/goclub/fabricators.png",
+    image: "/images/pbsclub/fabricators.png",
   },
   {
     title: "Designers & Architects",
     description: "Built to support specification and client-facing workflows, with easy material discovery and PBScash rewards on homeowner-managed projects.",
-    image: "/images/goclub/designers-architects.png",
+    image: "/images/pbsclub/designers-architects.png",
   },
   {
     title: "Builders & Contractors",
     description: "Optimized for speed and reliability across jobs, with nationwide availability and smooth coordination for delivery or pickup.",
-    image: "/images/goclub/builders-contractors.png",
+    image: "/images/pbsclub/builders-contractors.png",
   },
 ];
 

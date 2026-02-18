@@ -65,7 +65,7 @@ export default function FabricatorBanner() {
               <Button href="/sign-up" variant="accent" size="lg">
                 Get My Fabricator Discount
               </Button>
-              <Button href="/goclub" variant="outline" size="md">
+              <Button href="/pbsclub" variant="outline" size="md">
                 Learn more
               </Button>
             </div>

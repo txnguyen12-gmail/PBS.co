@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 
-export default function GoClubHero() {
+export default function PBSClubHero() {
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
       <video

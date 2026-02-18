@@ -43,7 +43,7 @@ export default function ContactSection({
           </a>
 
           <a
-            href="mailto:hello@pbssupply.co"
+            href="mailto:LettonLLC@gmail.com"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
@@ -51,7 +51,7 @@ export default function ContactSection({
             </div>
             <h3 className="font-semibold text-navy mb-1">Email Us</h3>
             <p className="text-sm text-gray-500 mb-2">Get detailed information</p>
-            <span className="text-navy font-semibold">hello@pbssupply.co</span>
+            <span className="text-navy font-semibold">LettonLLC@gmail.com</span>
           </a>
 
           <a

@@ -24,7 +24,7 @@ const steps = [
   },
 ];
 
-export default function GoCashSteps() {
+export default function PBSCashSteps() {
   return (
     <section className="py-20 bg-surface-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

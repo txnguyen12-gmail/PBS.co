@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Governing Law</h2>
           <p className="mb-6">
-            These terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of laws principles. Any disputes arising under these terms shall be resolved in the state or federal courts located in Los Angeles County, California.
+            These terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of laws principles. Any disputes arising under these terms shall be resolved in the state or federal courts located in Okaloosa County, Florida.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">11. Changes to These Terms</h2>
@@ -73,8 +73,8 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">12. Contact Us</h2>
           <p className="mb-6">
             If you have questions about these Terms of Service, please contact us at{" "}
-            <a href="mailto:hello@pbssupply.co" className="text-accent-orange hover:underline">
-              hello@pbssupply.co
+            <a href="mailto:LettonLLC@gmail.com" className="text-accent-orange hover:underline">
+              LettonLLC@gmail.com
             </a>{" "}
             or call us at{" "}
             <a href="tel:+17139271500" className="text-accent-orange hover:underline">
