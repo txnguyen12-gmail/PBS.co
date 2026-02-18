@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     type: "Trend Analysis",
     categories: ["Slabs", "Countertops"],
     image: "/images/blog/calacatta-laza.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `The countertop world is evolving fast, and 2026 is shaping up to be one of the most exciting years yet. Designers and homeowners alike are gravitating toward bolder, more expressive surfaces that tell a story — and the trends reflect that shift.
 
 Warm tones are taking center stage. Think rich caramels, soft terracottas, and golden veining on white or cream bases. These palettes bring a sense of coziness and sophistication that cooler grays simply can't match. Expect to see warm-toned quartzite and engineered quartz leading the charge in kitchen and bathroom remodels.
@@ -38,7 +38,7 @@ Finally, matte and leathered finishes are gaining ground over traditional polish
     type: "Educational",
     categories: ["Slabs", "Countertops"],
     image: "/images/blog/bigbox.png",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `When homeowners walk into a big-box store and see countertop pricing, it looks straightforward. But for fabricators and trade professionals who know the supply chain, the reality is more complex — and often more expensive than it appears.
 
 Let's take Taj Mahal quartzite as an example. A big-box retailer might advertise an attractive per-square-foot price, but that number rarely includes templating, fabrication, edge profiling, cutouts, or installation. By the time those are added, the final cost can be 40-60% higher than the sticker price.
@@ -57,7 +57,7 @@ Sourcing through a trade-focused platform like PBS Supply Co. eliminates these p
     type: "Trend Analysis",
     categories: ["Slabs", "Countertops"],
     image: "/images/blog/taj-quartzite.webp",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `If there's one material that defines luxury countertops right now, it's Taj Mahal quartzite. This Brazilian natural stone has become the gold standard for high-end kitchen and bathroom projects — and the demand shows no signs of slowing down.
 
 What makes Taj Mahal so special? Start with the aesthetics. Its warm white base with soft gold and caramel veining creates an elegant, timeless look that works with both traditional and modern designs. Unlike stark white marbles, Taj Mahal brings warmth without sacrificing sophistication.
@@ -76,7 +76,7 @@ This is where sourcing matters. Working with a platform like PBS Supply Co. give
     type: "Product Comparison",
     categories: ["Slabs", "Countertops"],
     image: "/images/blog/calacatta-laza.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `The Calacatta look is one of the most sought-after aesthetics in countertop design. But when it comes to choosing between genuine Calacatta marble and engineered Calacatta quartz, the decision isn't as simple as it seems. Both have their place, and understanding the trade-offs is essential for making the right recommendation to your clients.
 
 Calacatta marble is the original — quarried in Italy, with distinctive bold grey and gold veining on a bright white base. It's stunning, and nothing quite matches the depth and character of natural stone. However, marble is porous, softer than quartz, and requires regular sealing. For a low-traffic bathroom vanity, it can be perfect. For a busy family kitchen, it demands more care than most homeowners are prepared for.
@@ -95,7 +95,7 @@ For trade professionals, the best approach is to present both options honestly. 
     type: "Showcases & Case Studies",
     categories: ["Slabs", "Appliances", "Flooring"],
     image: "/images/blog/westchester-home.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `When a custom home builder in Westchester County, NY took on a full-home remodel, the scope was ambitious: new kitchen countertops, bathroom vanities, flooring throughout, and premium appliances — all within a tight 12-week timeline.
 
 The challenge wasn't just finding the right materials. It was coordinating deliveries from multiple suppliers, managing lead times that didn't align, and keeping the project on budget when material costs were fluctuating. The builder had worked with traditional distributors before but found the process fragmented and unpredictable.
@@ -114,7 +114,7 @@ The result: the project came in on time and 15% under the original materials bud
     type: "Showcases & Case Studies",
     categories: ["Flooring", "Appliances", "Plumbing"],
     image: "/images/blog/bel-air.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `A luxury home builder in Bel Air was working on a $3M+ custom home with exacting specifications. The client wanted premium materials throughout — Italian porcelain flooring, custom cabinetry hardware, high-end plumbing fixtures, and top-tier appliances. The original materials budget was $480K.
 
 The builder's usual approach was to source each category from different specialty distributors. While this ensured quality, it also meant paying retail-adjacent pricing, managing multiple vendor relationships, and dealing with inconsistent delivery timelines.
@@ -135,7 +135,7 @@ For builders working on high-end projects, the takeaway is clear: premium materi
     type: "Showcases & Case Studies",
     categories: ["Appliances", "Countertops"],
     image: "/images/blog/baypoint-bedroom.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `TruAmerica Real Estate, one of the largest multifamily operators in the U.S., faced a common challenge: renovating hundreds of units across multiple properties while maintaining quality, controlling costs, and minimizing vacancy periods.
 
 Their existing process involved local contractors sourcing materials independently at each property. This led to inconsistent quality, unpredictable pricing, and no leverage for volume discounts. A unit renovation that should take 5 days was averaging 8-10 days due to material delays and coordination issues.
@@ -156,7 +156,7 @@ The partnership continues to grow. TruAmerica now uses PBS Supply Co. for all ne
     type: "Showcases & Case Studies",
     categories: ["Pavers", "Tiles", "Countertops"],
     image: "/images/blog/bel-air.jpg",
-    author: "James Carter",
+    author: "PBS Editorial Team",
     content: `The Rangely project in West Hollywood is a prime example of what happens when great design meets smart sourcing. This modern multifamily property needed a complete renovation that would appeal to West Hollywood's design-savvy renters while staying within a competitive budget.
 
 The design brief called for bright, contemporary interiors with durable materials that could handle high turnover. The property management team wanted surfaces that looked premium but wouldn't require constant maintenance between tenants.

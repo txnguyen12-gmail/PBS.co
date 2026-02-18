@@ -59,13 +59,7 @@ const values = [
   },
 ];
 
-const investorLogos = [
-  { name: "Tishman", logo: "/images/investors/tishman-logo.png" },
-  { name: "Mosaic", logo: "/images/investors/mosaic-logo.png" },
-  { name: "72", logo: "/images/investors/72-logo.png" },
-  { name: "TechAviv", logo: "/images/investors/techaviv-logo.png" },
-  { name: "NFX", logo: "/images/investors/nfx-logo.png" },
-];
+const investorLogos: { name: string; logo: string }[] = [];
 
 const navAnchors = [
   { label: "Meet the team", href: "#team", icon: Users },
@@ -129,10 +123,7 @@ export default function AboutUsPage() {
                 for everyone involved.
               </p>
               <p className="text-sm text-gray-500 italic mb-1">
-                Perfect Building Supply Co. Co-Founders
-              </p>
-              <p className="text-sm text-gray-500">
-                Ron Zuckerman, Yuval Mekler, Ori Birnbaum, and Shahar Koren
+                Perfect Building Supply Co. Founding Team
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
@@ -351,10 +342,10 @@ export default function AboutUsPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent-orange flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Los Angeles, CA</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">Destin, FL</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    3130 Wilshire Blvd, Suite 300<br />
-                    Santa Monica CA 90404
+                    515 Mountain Dr<br />
+                    Destin, FL 32541, USA
                   </p>
                 </div>
               </div>

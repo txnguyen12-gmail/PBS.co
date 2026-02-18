@@ -10,7 +10,7 @@ const footerColumns = [
     links: [
       { label: "About Us", href: "/about-us" },
       { label: "Multifamily", href: "/multifamily" },
-      { label: "PBS Club™", href: "/goclub" },
+      { label: "PBS Club™", href: "/pbsclub" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/about-us#offices" },
     ],
@@ -47,10 +47,10 @@ const footerColumns = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/pbssupply", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com/pbssupply", label: "Instagram" },
-  { icon: Linkedin, href: "https://linkedin.com/company/pbssupply", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com/@pbssupply", label: "YouTube" },
+  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Youtube, href: "#", label: "YouTube" },
 ];
 
 const paymentMethods = [

@@ -25,7 +25,7 @@ function BannerImage() {
   );
 }
 
-export default function GoClubBanner() {
+export default function PBSClubBanner() {
   return (
     <section className="py-20 bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export default function GoClubBanner() {
             <p className="text-white/70 text-lg mb-8 max-w-lg">
               Unlock best wholesale pricing, tier-based PBScash rewards, and top-level priority support with every Perfect Building Supply Co. order.
             </p>
-            <Button href="/goclub" variant="accent" size="lg">
+            <Button href="/pbsclub" variant="accent" size="lg">
               Join PBS Club™
             </Button>
           </motion.div>

@@ -154,7 +154,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
-      {/* Row 1 — Logo | Search | AI Sourcing | GoClub | Resources | Account | Cart */}
+      {/* Row 1 — Logo | Search | AI Sourcing | PBS Club | Resources | Account | Cart */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
@@ -190,9 +190,9 @@ export default function Header() {
 
             {/* PBS Club */}
             <Link
-              href="/goclub"
+              href="/pbsclub"
               className={`px-3 py-2 text-sm transition-colors ${
-                pathname.startsWith("/goclub")
+                pathname.startsWith("/pbsclub")
                   ? "text-white underline decoration-accent-orange underline-offset-4"
                   : "text-white/80 hover:text-white"
               }`}
@@ -383,7 +383,7 @@ export default function Header() {
             <div className="border-t border-gray-100 my-2" />
 
             {/* Main nav */}
-            <Link href="/goclub" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
+            <Link href="/pbsclub" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               PBS Club™
             </Link>
             <Link href="/blog" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>

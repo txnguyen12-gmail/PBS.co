@@ -77,8 +77,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Contact Us</h2>
           <p className="mb-6">
             If you have questions about this privacy policy or our data practices, please contact us at{" "}
-            <a href="mailto:hello@pbssupply.co" className="text-accent-orange hover:underline">
-              hello@pbssupply.co
+            <a href="mailto:LettonLLC@gmail.com" className="text-accent-orange hover:underline">
+              LettonLLC@gmail.com
             </a>{" "}
             or call us at{" "}
             <a href="tel:+17139271500" className="text-accent-orange hover:underline">
