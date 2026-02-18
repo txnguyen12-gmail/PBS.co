@@ -71,3 +71,13 @@ body {
 .animate-glow-drift-reverse {
   animation: glow-drift-reverse 10s ease-in-out infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-scroll-left,
+  .animate-scroll-left-slow,
+  .animate-glow-drift,
+  .animate-glow-drift-reverse {
+    animation: none;
+  }
+}

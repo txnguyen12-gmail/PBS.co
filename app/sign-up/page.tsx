@@ -33,6 +33,7 @@ export default function SignUpPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function validate() {
     const newErrors: Record<string, string> = {};
@@ -52,11 +53,14 @@ export default function SignUpPage() {
     return newErrors;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
+      setIsSubmitting(true);
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      setIsSubmitting(false);
       setSubmitted(true);
     }
   }
@@ -201,9 +205,12 @@ export default function SignUpPage() {
 
             <button
               type="submit"
-              className="w-full py-3.5 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-xl hover:opacity-90 transition-all cursor-pointer active:scale-[0.98]"
+              disabled={isSubmitting}
+              className={`w-full py-3.5 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-xl transition-all ${
+                isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:opacity-90 cursor-pointer active:scale-[0.98]"
+              }`}
             >
-              Create Account
+              {isSubmitting ? "Creating Account..." : "Create Account"}
             </button>
 
             <p className="text-xs text-gray-500 text-center">
