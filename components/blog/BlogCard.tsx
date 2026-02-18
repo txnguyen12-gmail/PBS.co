@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import type { BlogPost } from "@/data/blog-posts";
 
 export default function BlogCard({ post, index }: { post: BlogPost; index: number }) {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -17,13 +20,14 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
       <Link href={`/blog/${post.slug}`} className="group block">
         {/* Feature Image */}
         <div className="aspect-[16/10] overflow-hidden bg-gray-100 relative">
-          {post.image && post.image.startsWith("http") ? (
+          {post.image && !imgError ? (
             <Image
               src={post.image}
               alt={post.title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              onError={() => setImgError(true)}
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
