@@ -12,16 +12,12 @@ const metrics = [
 export default function MultifamilyHero() {
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center bg-navy overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
-      >
-        <source src="https://gs-web.cdn.prismic.io/gs-web/aRGmcbpReVYa4R0X_multifamily.mp4" type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 to-charcoal/90" />
+      {/* Background pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-accent-orange/5 -translate-x-32 -translate-y-32" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full bg-accent-gold/5 translate-x-48 translate-y-48" />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 to-navy/90" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <motion.h1

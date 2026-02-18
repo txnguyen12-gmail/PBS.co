@@ -42,17 +42,20 @@ export default function PBSCashSteps() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative rounded-2xl overflow-hidden aspect-video bg-navy order-2 lg:order-1"
+            className="relative rounded-2xl overflow-hidden aspect-video bg-charcoal order-2 lg:order-1"
           >
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="https://gs-web.cdn.prismic.io/gs-web/aU1KmnNYClf9oo9Z__model_veo3_202512251619_d079i.mp4" type="video/mp4" />
-            </video>
+            <div className="absolute inset-0">
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent-orange/10 translate-x-16 -translate-y-16" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-accent-gold/10 -translate-x-8 translate-y-8" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal/95 to-navy/90" />
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+              <div className="w-16 h-16 rounded-2xl bg-accent-orange/15 flex items-center justify-center mb-4">
+                <span className="text-accent-orange text-2xl font-bold">$</span>
+              </div>
+              <p className="text-white font-bold text-xl mb-2">PBScash Rewards</p>
+              <p className="text-white/50 text-sm">Earn cashback on every order</p>
+            </div>
           </motion.div>
 
           <div className="space-y-8 order-1 lg:order-2">
