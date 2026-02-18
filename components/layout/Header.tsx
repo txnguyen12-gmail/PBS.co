@@ -159,7 +159,7 @@ export default function Header() {
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <img src="/images/logo/pbs-badge.jpeg" alt="Perfect Building Supply Co." className="h-9 w-9 object-contain rounded-full" />
+            <img src="/images/logo/pbs-logo.jpeg" alt="Perfect Building Supply Co." className="h-9 w-9 object-contain" />
             <span className="hidden xl:block text-white font-semibold text-sm tracking-tight leading-tight">
               PBS<span className="text-accent-orange">.</span> Supply Co<span className="text-accent-orange">.</span>
             </span>

@@ -31,7 +31,7 @@ export default function SurfacesHero() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-4 mb-6"
         >
-          <img src="/images/logo/pbs-badge.jpeg" alt="Perfect Building Supply Co." className="h-16 md:h-20 w-16 md:w-20 object-contain rounded-full ring-2 ring-white/20" />
+          <img src="/images/logo/pbs-logo.jpeg" alt="Perfect Building Supply Co." className="h-16 md:h-20 w-16 md:w-20 object-contain" />
           <div className="hidden sm:block">
             <p className="text-white/60 text-sm font-medium tracking-wider uppercase">The Perfect</p>
             <p className="text-white text-lg md:text-xl font-bold leading-tight">Building Supply Co.</p>

@@ -52,7 +52,7 @@ export default function WhatIsGoClub() {
 
               {/* Header */}
               <div className="relative z-10 flex items-center gap-3">
-                <img src="/images/logo/pbs-badge.jpeg" alt="PBS" className="h-12 w-12 rounded-full object-contain" />
+                <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-12 w-12 object-contain" />
                 <div>
                   <p className="text-white font-bold text-sm leading-tight">PBS Club™</p>
                   <p className="text-white/50 text-xs">Gold Member</p>

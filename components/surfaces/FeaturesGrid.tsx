@@ -78,7 +78,7 @@ export default function FeaturesGrid() {
 
               {/* Top: logo + label */}
               <div className="relative z-10 flex items-center gap-3">
-                <img src="/images/logo/pbs-badge.jpeg" alt="PBS" className="h-10 w-10 rounded-full object-contain" />
+                <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-10 w-10 object-contain" />
                 <div>
                   <p className="text-white/50 text-xs uppercase tracking-widest">Perfect Building Supply</p>
                   <p className="text-white font-semibold text-sm">PBScash Rewards</p>
