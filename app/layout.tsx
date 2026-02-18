@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PBS Supply Co. — America's #1 Building Supply Source",
+  title: "Perfect Building Supply Co. — America's #1 Building Supply Source",
   description: "Lower prices than your current supplier, guaranteed. Direct trucking to your jobsite. Building supplies for large and small builders.",
 };
 

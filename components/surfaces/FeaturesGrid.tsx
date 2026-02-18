@@ -8,12 +8,12 @@ const features = [
   {
     icon: DollarSign,
     title: "Save More",
-    description: "Access exclusive wholesale pricing powered by PBS Supply Co.'s national buying scale, built to make every project more profitable.",
+    description: "Access exclusive wholesale pricing powered by Perfect Building Supply Co.'s national buying scale, built to make every project more profitable.",
   },
   {
     icon: Coins,
     title: "Earn PBScash",
-    description: "Get instant cashback on every order with PBS Supply Co. — reinvest it in your next project and boost your bottom line.",
+    description: "Get instant cashback on every order with Perfect Building Supply Co. — reinvest it in your next project and boost your bottom line.",
   },
   {
     icon: Headphones,
@@ -72,7 +72,7 @@ export default function FeaturesGrid() {
             <div className="aspect-[3/4] rounded-2xl overflow-hidden">
               <img
                 src="/images/goclub/fabricator-gocash-square.png"
-                alt="PBS Supply Co. value proposition"
+                alt="Perfect Building Supply Co. value proposition"
                 className="w-full h-full object-cover"
               />
             </div>

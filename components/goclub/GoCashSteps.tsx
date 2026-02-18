@@ -13,7 +13,7 @@ const steps = [
   {
     number: "02",
     title: "Purchase Materials and Earn PBScash",
-    description: "Earn PBScash on every order. The more you source through PBS Supply Co., the more you earn — helping you boost profits with every project.",
+    description: "Earn PBScash on every order. The more you source through Perfect Building Supply Co., the more you earn — helping you boost profits with every project.",
     icon: "/images/icons/step-02.svg",
   },
   {

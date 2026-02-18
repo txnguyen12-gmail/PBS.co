@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy | PBS Supply Co.",
-  description: "PBS Supply Co.'s privacy policy — how we collect, use, and protect your information.",
+  title: "Privacy Policy | Perfect Building Supply Co.",
+  description: "Perfect Building Supply Co.'s privacy policy — how we collect, use, and protect your information.",
 };
 
 export default function PrivacyPolicyPage() {

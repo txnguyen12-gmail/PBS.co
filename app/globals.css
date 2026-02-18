@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warm Industrial palette */
-  --color-charcoal: #1A2332;
+  /* PBS Brand Palette — derived from logo system */
+  --color-charcoal: #1C2333;
   --color-charcoal-light: #2C3E50;
   --color-slate: #CBD5E1;
   --color-orange-accent: #FFF3E8;
-  --color-accent-orange: #D97337;
-  --color-accent-gold: #D4A574;
+  --color-accent-orange: #E8762B;
+  --color-accent-gold: #D4883B;
   --color-accent-green: #4A6B5E;
-  /* Legacy aliases — instant migration for 190+ usages */
-  --color-navy: #1A2332;
+  --color-cream: #F5EDE0;
+  --color-brick: #C4652A;
+  /* Legacy aliases */
+  --color-navy: #1C2333;
   --color-navy-light: #2C3E50;
   --color-lavender: #CBD5E1;
   --color-yellow-accent: #FFF3E8;

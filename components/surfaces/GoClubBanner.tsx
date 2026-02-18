@@ -42,7 +42,7 @@ export default function GoClubBanner() {
               PBS Club™ — Get More From Every Order
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-lg">
-              Unlock best wholesale pricing, tier-based PBScash rewards, and top-level priority support with every PBS Supply Co. order.
+              Unlock best wholesale pricing, tier-based PBScash rewards, and top-level priority support with every Perfect Building Supply Co. order.
             </p>
             <Button href="/goclub" variant="accent" size="lg">
               Join PBS Club™

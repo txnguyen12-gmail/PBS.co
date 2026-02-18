@@ -9,7 +9,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   title = "Want to learn more? Contact our team",
-  subtitle = "Our team of PBS Supply Co. pros is ready to help you.",
+  subtitle = "Our team of Perfect Building Supply Co. pros is ready to help you.",
 }: ContactSectionProps) {
   return (
     <section className="relative py-16 overflow-hidden">

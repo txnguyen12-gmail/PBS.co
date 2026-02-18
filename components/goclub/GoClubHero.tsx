@@ -32,7 +32,7 @@ export default function GoClubHero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl"
         >
-          PBS Club by PBS Supply Co.: The First Loyalty Club for Trade Professionals
+          PBS Club by Perfect Building Supply Co.: The First Loyalty Club for Trade Professionals
         </motion.h1>
 
         <motion.div

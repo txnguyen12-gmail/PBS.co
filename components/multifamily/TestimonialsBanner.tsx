@@ -12,7 +12,7 @@ export default function TestimonialsBanner() {
           viewport={{ once: true }}
         >
           <blockquote className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed mb-8">
-            &ldquo;PBS Supply Co. transformed our renovation process — faster turnarounds, better materials, and significant cost savings across our entire portfolio.&rdquo;
+            &ldquo;Perfect Building Supply Co. transformed our renovation process — faster turnarounds, better materials, and significant cost savings across our entire portfolio.&rdquo;
           </blockquote>
           <p className="text-gray-400 text-lg font-semibold">
             — Property Management Executive

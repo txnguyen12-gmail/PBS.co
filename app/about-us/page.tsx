@@ -15,9 +15,9 @@ import { teamMembers } from "@/data/team";
 import Button from "@/components/ui/Button";
 
 export const metadata = {
-  title: "About Us | PBS Supply Co.",
+  title: "About Us | Perfect Building Supply Co.",
   description:
-    "Learn about PBS Supply Co.'s mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
+    "Learn about Perfect Building Supply Co.'s mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
 };
 
 const values = [
@@ -77,18 +77,19 @@ const navAnchors = [
 export default function AboutUsPage() {
   return (
     <>
-      {/* Hero - Full-width banner with image overlay */}
-      <section className="relative h-[170px] md:h-[500px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700">
-          <div
-            className="absolute inset-0 opacity-30 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/contact/contact-wrap.png')",
-            }}
+      {/* Hero - Full-width banner with storefront photo */}
+      <section className="relative h-[220px] md:h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/logo/pbs-storefront.jpeg"
+            alt="The Perfect Building Supply Company storefront"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-charcoal/20" />
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white">About Us</h1>
+          <p className="text-white/70 text-lg mt-3 hidden md:block">The Perfect Building Supply Company</p>
         </div>
       </section>
 
@@ -115,20 +116,20 @@ export default function AboutUsPage() {
                 For Builders, By Builders
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                When we started PBS Supply Co., we set out to transform how
+                When we started Perfect Building Supply Co., we set out to transform how
                 construction professionals source materials. Having experienced
                 the fragmented, slow, and costly procurement process firsthand,
                 we knew there had to be a better way.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                PBS Supply Co. brings together the largest collective of construction
+                Perfect Building Supply Co. brings together the largest collective of construction
                 professionals to harness real buying power, using advanced AI
                 technology to deliver transparency, speed, and savings — making
                 material procurement better, faster, easier, and more affordable
                 for everyone involved.
               </p>
               <p className="text-sm text-gray-500 italic mb-1">
-                PBS Supply Co. Co-Founders
+                Perfect Building Supply Co. Co-Founders
               </p>
               <p className="text-sm text-gray-500">
                 Ron Zuckerman, Yuval Mekler, Ori Birnbaum, and Shahar Koren
@@ -137,7 +138,7 @@ export default function AboutUsPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
               <img
                 src="/images/surfaces/why-choose-gosource.png"
-                alt="PBS Supply Co. team at work"
+                alt="Perfect Building Supply Co. team at work"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -178,7 +179,7 @@ export default function AboutUsPage() {
         <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
           <img
             src="/images/contact/contact-wrap.png"
-            alt="PBS Supply Co. banner"
+            alt="Perfect Building Supply Co. banner"
             className="w-full h-full object-cover"
           />
         </div>
@@ -192,7 +193,7 @@ export default function AboutUsPage() {
               Our Values
             </p>
             <h2 className="text-2xl md:text-3xl font-bold max-w-3xl mx-auto leading-snug">
-              The PBS Supply Co. spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
+              The Perfect Building Supply Co. spirit is guided by simple principles: customer obsession, ownership mentality, operational excellence, and long-term thinking.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

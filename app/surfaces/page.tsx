@@ -12,7 +12,7 @@ import { surfacesTestimonials } from "@/data/testimonials";
 import { surfacesFAQ } from "@/data/faq";
 
 export const metadata = {
-  title: "Surfaces & Building Materials | PBS Supply Co.",
+  title: "Surfaces & Building Materials | Perfect Building Supply Co.",
   description: "Shop slabs, tiles, flooring, cabinets, fixtures & more with exclusive trade pricing. Direct to your jobsite.",
 };
 
@@ -33,7 +33,7 @@ export default function SurfacesPage() {
             What Builders & Trade Professionals Are Saying
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            See why pros choose PBS Supply Co. for their projects.
+            See why pros choose Perfect Building Supply Co. for their projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {surfacesTestimonials.map((testimonial, i) => (
@@ -45,13 +45,13 @@ export default function SurfacesPage() {
 
       <ContactSection
         title="Ready to source materials? Contact our team"
-        subtitle="Our PBS Supply Co. pros are ready to help you find the right materials for your project."
+        subtitle="Our Perfect Building Supply Co. pros are ready to help you find the right materials for your project."
       />
       <FAQAccordion
         items={surfacesFAQ}
-        title="PBS Supply Co. Answering Your Questions"
+        title="Perfect Building Supply Co. — Your Questions Answered"
         category="Building Supply FAQs"
-        description="Find answers about sourcing building supplies, materials, and logistics through PBS Supply Co."
+        description="Find answers about sourcing building supplies, materials, and logistics through Perfect Building Supply Co."
       />
       <BlogSection />
     </>

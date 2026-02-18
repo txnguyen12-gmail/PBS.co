@@ -5,20 +5,20 @@ export interface FAQItem {
 
 export const surfacesFAQ: FAQItem[] = [
   {
-    question: "What is the PBS Supply Co. surfaces marketplace?",
-    answer: "PBS Supply Co. is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, and more with competitive trade pricing.",
+    question: "What is the Perfect Building Supply Co. surfaces marketplace?",
+    answer: "Perfect Building Supply Co. is a professional marketplace for fabricators, contractors, builders, and designers to source quartz, natural stone, porcelain slabs, tiles, and more with competitive trade pricing.",
   },
   {
     question: "What types of surfaces can I buy?",
     answer: "You can purchase quartz slabs, natural stone, porcelain surfaces, tiles, vinyl, hardwood, and laminate flooring for kitchens, bathrooms, and commercial projects.",
   },
   {
-    question: "How does PBS Supply Co. help stone fabricators?",
-    answer: "PBS Supply Co. provides wholesale pricing, reliable delivery, PBScash rewards, and access to top brands and distributors — all in one marketplace.",
+    question: "How does Perfect Building Supply Co. help stone fabricators?",
+    answer: "Perfect Building Supply Co. provides wholesale pricing, reliable delivery, PBScash rewards, and access to top brands and distributors — all in one marketplace.",
   },
   {
     question: "Do I get access to multiple brands?",
-    answer: "Yes. PBS Supply Co. partners with MSI, Caesarstone, Silestone, Roca, and many others so you can efficiently source from a wide selection.",
+    answer: "Yes. Perfect Building Supply Co. partners with MSI, Caesarstone, Silestone, Roca, and many others so you can efficiently source from a wide selection.",
   },
   {
     question: "What is PBS Club and how does it benefit me?",

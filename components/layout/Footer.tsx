@@ -19,7 +19,7 @@ const footerColumns = [
     title: "Products & Tools",
     links: [
       { label: "AI Sourcing", href: "/ai-assistant" },
-      { label: "PBS Supply Co. Estimate", href: "/surfaces" },
+      { label: "Get an Estimate", href: "/surfaces" },
     ],
   },
   {
@@ -73,9 +73,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Logo column */}
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
-            <Link href="/">
-              <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-10 w-10 object-contain mb-4" />
+            <Link href="/" className="inline-block">
+              <img src="/images/logo/pbs-badge.jpeg" alt="Perfect Building Supply Co." className="h-12 w-12 object-contain rounded-full mb-2" />
             </Link>
+            <p className="text-xs text-white/60 leading-snug mb-3">
+              The Perfect Building<br />Supply Company
+            </p>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (
                 <a
@@ -116,7 +119,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
-              Copyright {new Date().getFullYear()} &copy; pbssupply.co
+              Copyright {new Date().getFullYear()} &copy; Perfect Building Supply Co.
             </p>
             <div className="flex items-center gap-2">
               {paymentMethods.map((card) => (

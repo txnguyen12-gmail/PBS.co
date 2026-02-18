@@ -29,9 +29,13 @@ export default function SurfacesHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-6"
+          className="flex items-center gap-4 mb-6"
         >
-          <img src="/images/logo/pbs-logo.jpeg" alt="PBS Supply Co." className="h-16 md:h-20 w-16 md:w-20 object-contain" />
+          <img src="/images/logo/pbs-badge.jpeg" alt="Perfect Building Supply Co." className="h-16 md:h-20 w-16 md:w-20 object-contain rounded-full ring-2 ring-white/20" />
+          <div className="hidden sm:block">
+            <p className="text-white/60 text-sm font-medium tracking-wider uppercase">The Perfect</p>
+            <p className="text-white text-lg md:text-xl font-bold leading-tight">Building Supply Co.</p>
+          </div>
         </motion.div>
 
         <motion.h1

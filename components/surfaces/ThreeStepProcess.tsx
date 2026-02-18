@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 const steps = [
   {
     number: "01",
-    title: "Join PBS Supply Co.",
+    title: "Join Perfect Building Supply Co.",
     description: "Create your free account as a trade professional.",
     mockupImage: "/images/surfaces/step-01-desktop.png",
   },
@@ -52,7 +52,7 @@ export default function ThreeStepProcess() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
-          Join Thousands of Pros Saving More with PBS Supply Co.
+          Join Thousands of Pros Saving More with Perfect Building Supply Co.
         </h2>
         <p className="text-gray-600 text-center mb-16 max-w-xl mx-auto">
           Simple, transparent, rewarding

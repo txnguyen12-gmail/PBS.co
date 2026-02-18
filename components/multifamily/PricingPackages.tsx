@@ -10,7 +10,7 @@ export default function PricingPackages() {
     <section className="py-20 bg-surface-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold text-center mb-4">
-          PBS Supply Co. Renovation Packages
+          Perfect Building Supply Co. Renovation Packages
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-12">
           Compare Renovation Packages

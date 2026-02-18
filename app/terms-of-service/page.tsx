@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Terms of Service | PBS Supply Co.",
-  description: "PBS Supply Co.'s terms of service — the rules and guidelines for using our platform.",
+  title: "Terms of Service | Perfect Building Supply Co.",
+  description: "Perfect Building Supply Co.'s terms of service — the rules and guidelines for using our platform.",
 };
 
 export default function TermsOfServicePage() {

@@ -13,7 +13,7 @@ import { surfacesTestimonials } from "@/data/testimonials";
 import { surfacesFAQ } from "@/data/faq";
 
 export const metadata: Metadata = {
-  title: "PBS Supply Co. — America's #1 Building Supply Source",
+  title: "Perfect Building Supply Co. — America's #1 Building Supply Source",
   description: "Lower prices than your current supplier, guaranteed. Direct trucking to your jobsite. Slabs, tiles, flooring, cabinets, fixtures & more for builders of all sizes.",
 };
 
@@ -34,7 +34,7 @@ export default function HomePage() {
             What Stone Fabricators & Trade Professionals Are Saying
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            See why pros choose PBS Supply Co. for their projects.
+            See why pros choose Perfect Building Supply Co. for their projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {surfacesTestimonials.map((testimonial, i) => (
@@ -46,13 +46,13 @@ export default function HomePage() {
 
       <ContactSection
         title="Ready to find your Surfaces? Contact our sourcing desk"
-        subtitle="Our team of PBS Supply Co. pros is ready to help you find the perfect slab for your project."
+        subtitle="Our team of Perfect Building Supply Co. pros is ready to help you find the perfect slab for your project."
       />
       <FAQAccordion
         items={surfacesFAQ}
-        title="PBS Supply Co. Answering Your Questions"
+        title="Perfect Building Supply Co. — Your Questions Answered"
         category="Surfaces Marketplace FAQs"
-        description="Find answers about sourcing building supplies, materials, and logistics through PBS Supply Co."
+        description="Find answers about sourcing building supplies, materials, and logistics through Perfect Building Supply Co."
       />
       <BlogSection />
     </>

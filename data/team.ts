@@ -47,7 +47,7 @@ export const teamMembers: TeamMember[] = [
     role: "Contractor",
     location: "Chicago, IL",
     image: "/images/team/team-9.png",
-    bio: "Leads on-site crews with a hands-on approach, ensuring every unit meets PBS Supply Co.'s quality standards.",
+    bio: "Leads on-site crews with a hands-on approach, ensuring every unit meets Perfect Building Supply Co.'s quality standards.",
   },
   {
     name: "Sarah",
@@ -117,7 +117,7 @@ export const teamMembers: TeamMember[] = [
     role: "Product Manager",
     location: "San Francisco, CA",
     image: "/images/team/team-15.png",
-    bio: "Shapes the PBS Supply Co. platform experience based on member feedback and market insights.",
+    bio: "Shapes the Perfect Building Supply Co. platform experience based on member feedback and market insights.",
   },
   {
     name: "Marcus",

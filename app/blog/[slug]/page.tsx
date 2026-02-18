@@ -11,9 +11,9 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
-  if (!post) return { title: "Post Not Found | PBS Supply Co." };
+  if (!post) return { title: "Post Not Found | Perfect Building Supply Co." };
   return {
-    title: `${post.title} | PBS Supply Co. Blog`,
+    title: `${post.title} | Perfect Building Supply Co. Blog`,
     description: post.excerpt,
   };
 }
@@ -98,7 +98,7 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <span className="text-gray-300 text-4xl font-bold">PBS Supply Co.</span>
+                <span className="text-gray-300 text-4xl font-bold">PBS</span>
               </div>
             )}
           </div>
