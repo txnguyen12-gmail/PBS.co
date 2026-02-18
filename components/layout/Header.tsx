@@ -241,7 +241,7 @@ export default function Header() {
                   <Link href="/sign-up" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
                     Sign Up
                   </Link>
-                  <Link href="/login" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
+                  <Link href="/sign-up" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
                     Log In
                   </Link>
                 </div>
@@ -340,13 +340,13 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-1">
               <Link
-                href="/surfaces"
+                href="/sign-up"
                 className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Fabricators Index
               </Link>
               <Link
-                href="/surfaces"
+                href="/sign-up"
                 className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 Vendors Portal
@@ -465,7 +465,7 @@ export default function Header() {
                 Sign Up
               </Link>
               <Link
-                href="/login"
+                href="/sign-up"
                 className="flex-1 text-center px-4 py-2.5 text-sm font-medium border border-gray-200 text-charcoal rounded-lg"
                 onClick={() => setMobileOpen(false)}
               >
