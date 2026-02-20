@@ -2,33 +2,33 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { LayoutGrid, Layers, ArrowUpFromLine, ArrowRight } from "lucide-react";
+import { LayoutGrid, Layers, Droplets, ArrowRight } from "lucide-react";
 
 const categories = [
   {
     icon: LayoutGrid,
-    title: "Cabinets",
+    title: "Kitchen Cabinets",
     description:
-      "Kitchen and bathroom cabinets in a range of styles — shaker, flat-panel, raised-panel. Bulk pricing for multi-unit projects.",
+      "Shaker, flat-panel, and modern gloss styles. Soft-close hardware, plywood construction, KCMA certified.",
     href: "/collections/cabinets",
     color: "from-accent-orange to-amber-600",
     iconBg: "bg-accent-orange/15",
   },
   {
     icon: Layers,
-    title: "WPC Walls",
+    title: "SPC/LVP Flooring",
     description:
-      "Wood-plastic composite wall panels for interior renovations. Durable, moisture-resistant, and quick to install.",
-    href: "/collections/wpc-walls",
+      "26 colors of waterproof SPC flooring. Click-lock install, 5.5mm thick with IXPE pad attached.",
+    href: "/collections/spc-flooring",
     color: "from-accent-green to-emerald-700",
     iconBg: "bg-accent-green/15",
   },
   {
-    icon: ArrowUpFromLine,
-    title: "Ceilings",
+    icon: Droplets,
+    title: "Sanitaryware",
     description:
-      "Ceiling panels and systems for residential and commercial projects. Custom sizes and finishes available.",
-    href: "/collections/ceilings",
+      "Smart toilets, one-piece and two-piece toilets, basins, and vanity sets. Anti-bacterial glaze, water-saving flush.",
+    href: "/collections/sanitaryware",
     color: "from-accent-gold to-amber-700",
     iconBg: "bg-accent-gold/15",
   },

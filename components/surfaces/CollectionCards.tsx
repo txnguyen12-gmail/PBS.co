@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 
 const collections = [
   {
-    name: "Slabs & Tiles",
+    name: "Cabinets & Quartz",
     image: "/images/surfaces/slab-category.png",
-    href: "/collections/slabs",
-    description: "Quartz, natural stone, porcelain slabs & tiles",
+    href: "/collections/cabinets",
+    description: "Kitchen cabinets and quartz slab countertops",
   },
   {
     name: "Flooring & Walls",
     image: "/images/surfaces/flooring-category.png",
-    href: "/collections/all-flooring",
-    description: "SPC/LVP, hardwood, WPC walls & ceilings",
+    href: "/collections/spc-flooring",
+    description: "SPC/LVP flooring, PVC wall panels, and interior doors",
   },
   {
-    name: "Cabinets & Fixtures",
+    name: "Bath & Kitchen",
     image: "/images/surfaces/tile-category.png",
-    href: "/collections/cabinets",
-    description: "Cabinets, sanitaryware, plumbing & lighting",
+    href: "/collections/sanitaryware",
+    description: "Toilets, basins, faucets, showers, and bath fixtures",
   },
 ];
 

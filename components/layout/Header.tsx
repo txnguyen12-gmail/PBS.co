@@ -23,89 +23,48 @@ interface CategoryNavItem {
 
 const categoryNav: CategoryNavItem[] = [
   {
-    label: "Building Materials",
-    href: "/collections/building-materials",
+    label: "Interior",
+    href: "/collections",
     submenu: [
       {
-        title: "Core Products",
+        title: "Surfaces & Flooring",
         items: [
-          { label: "Cabinets", href: "/collections/cabinets" },
-          { label: "WPC Walls", href: "/collections/wpc-walls" },
-          { label: "Ceilings", href: "/collections/ceilings" },
-          { label: "SPC/LVP Flooring", href: "/collections/spc-lvp-flooring" },
-        ],
-      },
-      {
-        title: "Exterior & More",
-        items: [
-          { label: "Fencing", href: "/collections/fencing" },
-          { label: "Siding & Cladding", href: "/collections/siding-cladding" },
-          { label: "Artificial Turf", href: "/collections/artificial-turf" },
+          { label: "Kitchen Cabinets", href: "/collections/cabinets" },
+          { label: "Quartz Slabs", href: "/collections/quartz-slabs" },
+          { label: "SPC/LVP Flooring", href: "/collections/spc-flooring" },
+          { label: "PVC Wall Panels", href: "/collections/pvc-wall-panels" },
+          { label: "Interior Doors", href: "/collections/interior-doors" },
         ],
       },
     ],
   },
   {
-    label: "Slabs",
-    href: "/collections/slabs",
+    label: "Outdoor",
+    href: "/collections",
     submenu: [
       {
         items: [
-          { label: "All Slabs", href: "/collections/slabs" },
-          { label: "Quartz", href: "/collections/quartz" },
-          { label: "Quartzite", href: "/collections/quartzite" },
-          { label: "Marble", href: "/collections/marble" },
-          { label: "Granite", href: "/collections/granite" },
-          { label: "Porcelain Slabs", href: "/collections/porcelain-slabs" },
+          { label: "WPC Decking", href: "/collections/wpc-outdoor" },
+          { label: "WPC Fencing", href: "/collections/wpc-outdoor" },
+          { label: "WPC Cladding", href: "/collections/wpc-outdoor" },
         ],
       },
     ],
   },
   {
-    label: "Tiles",
-    href: "/collections/tile",
+    label: "Bath & Kitchen",
+    href: "/collections",
     submenu: [
       {
         items: [
-          { label: "All Tiles", href: "/collections/tile" },
-          { label: "Porcelain", href: "/collections/porcelain-tile" },
-          { label: "Ceramic", href: "/collections/ceramic-tile" },
-          { label: "Mosaic", href: "/collections/mosaic-tile" },
-          { label: "Wall Tiles", href: "/collections/wall-tile" },
+          { label: "Sanitaryware", href: "/collections/sanitaryware" },
+          { label: "Faucets & Accessories", href: "/collections/faucets" },
+          { label: "Shower & Bath", href: "/collections/shower-bath" },
         ],
       },
     ],
   },
-  {
-    label: "Flooring",
-    href: "/collections/all-flooring",
-    submenu: [
-      {
-        items: [
-          { label: "All Flooring", href: "/collections/all-flooring" },
-          { label: "Hardwood", href: "/collections/hardwood" },
-          { label: "Vinyl", href: "/collections/vinyl" },
-          { label: "Laminate", href: "/collections/laminate" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Fixtures & Systems",
-    href: "/collections/fixtures",
-    submenu: [
-      {
-        items: [
-          { label: "Sanitaryware & Fixtures", href: "/collections/sanitaryware-fixtures" },
-          { label: "Plumbing", href: "/collections/plumbing" },
-          { label: "Lighting", href: "/collections/lighting" },
-          { label: "Electrical Wires", href: "/collections/electrical-wires" },
-          { label: "Gas & Water Accessories", href: "/collections/gas-water-accessories" },
-        ],
-      },
-    ],
-  },
-  { label: "New Arrivals", href: "/collections/new-arrivals" },
+  { label: "All Collections", href: "/collections" },
 ];
 
 export default function Header() {
