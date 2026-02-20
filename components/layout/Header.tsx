@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight, Sparkles, User, ShoppingCart, Search } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Sparkles, Search } from "lucide-react";
 
 interface SubMenuItem {
   label: string;
@@ -122,15 +122,8 @@ const categoryNav: CategoryNavItem[] = [
   { label: "New Arrivals", href: "/collections/new-arrivals" },
 ];
 
-const resourceLinks = [
-  { label: "Blog", href: "/blog" },
-  { label: "About Us", href: "/about-us" },
-];
-
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [resourcesOpen, setResourcesOpen] = useState(false);
-  const [accountOpen, setAccountOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const [mobileExpandedCategory, setMobileExpandedCategory] = useState<string | null>(null);
   const submenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -154,7 +147,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
-      {/* Row 1 — Logo | Search | AI Sourcing | Resources | Account | Cart */}
+      {/* Row 1 — Logo | Search | AI Sourcing | Blog | About Us | Sign Up */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
@@ -188,64 +181,33 @@ export default function Header() {
               <Sparkles className="w-3.5 h-3.5" />
             </Link>
 
-            {/* Resources dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setResourcesOpen(true)}
-              onMouseLeave={() => setResourcesOpen(false)}
-            >
-              <button className="flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white transition-colors cursor-pointer">
-                Resources
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`} />
-              </button>
-              {resourcesOpen && (
-                <div className="absolute top-full right-0 mt-0 w-44 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
-                  {resourceLinks.map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Account dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setAccountOpen(true)}
-              onMouseLeave={() => setAccountOpen(false)}
-            >
-              <button className="flex items-center gap-1.5 px-3 py-2 text-sm text-white/80 hover:text-white transition-colors cursor-pointer">
-                <User className="w-4 h-4" />
-                Account
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${accountOpen ? "rotate-180" : ""}`} />
-              </button>
-              {accountOpen && (
-                <div className="absolute top-full right-0 mt-0 w-44 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
-                  <Link href="/sign-up" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
-                    Sign Up
-                  </Link>
-                  <Link href="/sign-up" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-charcoal">
-                    Log In
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Cart */}
             <Link
-              href="/surfaces"
-              className="p-2 text-white/80 hover:text-white transition-colors relative"
-              title="Cart"
+              href="/blog"
+              className={`px-3 py-2 text-sm transition-colors ${
+                pathname.startsWith("/blog")
+                  ? "text-white underline decoration-accent-orange underline-offset-4"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
-              <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-accent-orange text-white text-[10px] rounded-full flex items-center justify-center">
-                0
-              </span>
+              Blog
+            </Link>
+
+            <Link
+              href="/about-us"
+              className={`px-3 py-2 text-sm transition-colors ${
+                pathname === "/about-us"
+                  ? "text-white underline decoration-accent-orange underline-offset-4"
+                  : "text-white/80 hover:text-white"
+              }`}
+            >
+              About Us
+            </Link>
+
+            <Link
+              href="/sign-up"
+              className="px-4 py-1.5 text-sm font-medium bg-accent-orange text-white rounded-full hover:bg-accent-orange/90 transition-colors"
+            >
+              Sign Up
             </Link>
           </nav>
 
@@ -261,10 +223,10 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Row 2 — Categories (left) + Fabricators/Vendors (right) */}
+      {/* Row 2 — Categories */}
       <div className="hidden lg:block border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center justify-between h-10">
+          <nav className="flex items-center h-10">
             <div className="flex items-center gap-1">
               {categoryNav.map((item) => (
                 <div
@@ -325,20 +287,6 @@ export default function Header() {
                   )}
                 </div>
               ))}
-            </div>
-            <div className="flex items-center gap-1">
-              <Link
-                href="/sign-up"
-                className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
-              >
-                Fabricators Index
-              </Link>
-              <Link
-                href="/sign-up"
-                className="px-3 py-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
-              >
-                Vendors Portal
-              </Link>
             </div>
           </nav>
         </div>
@@ -441,22 +389,13 @@ export default function Header() {
 
             <div className="border-t border-gray-100 my-2" />
 
-            <div className="flex gap-2 pt-1">
-              <Link
-                href="/sign-up"
-                className="flex-1 text-center px-4 py-2.5 text-sm font-medium bg-charcoal text-white rounded-lg"
-                onClick={() => setMobileOpen(false)}
-              >
-                Sign Up
-              </Link>
-              <Link
-                href="/sign-up"
-                className="flex-1 text-center px-4 py-2.5 text-sm font-medium border border-gray-200 text-charcoal rounded-lg"
-                onClick={() => setMobileOpen(false)}
-              >
-                Log In
-              </Link>
-            </div>
+            <Link
+              href="/sign-up"
+              className="block text-center px-4 py-2.5 text-sm font-medium bg-accent-orange text-white rounded-lg"
+              onClick={() => setMobileOpen(false)}
+            >
+              Sign Up
+            </Link>
           </div>
         </div>
       )}
