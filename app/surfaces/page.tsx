@@ -6,7 +6,6 @@ import FabricatorBanner from "@/components/surfaces/FabricatorBanner";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ContactSection from "@/components/ui/ContactSection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import BlogSection from "@/components/surfaces/BlogSection";
 import { surfacesTestimonials } from "@/data/testimonials";
 import { surfacesFAQ } from "@/data/faq";
 
@@ -51,7 +50,6 @@ export default function SurfacesPage() {
         category="Building Supply FAQs"
         description="Find answers about sourcing building supplies, materials, and logistics through Perfect Building Supply Co."
       />
-      <BlogSection />
     </>
   );
 }

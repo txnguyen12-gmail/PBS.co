@@ -6,7 +6,6 @@ import TrustedPartners from "@/components/home/TrustedPartners";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ContactSection from "@/components/ui/ContactSection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import BlogSection from "@/components/surfaces/BlogSection";
 import { surfacesTestimonials } from "@/data/testimonials";
 import { homepageFAQ } from "@/data/faq";
 
@@ -49,7 +48,6 @@ export default function HomePage() {
         category="Building Materials FAQs"
         description="Find answers about sourcing cabinets, WPC walls, ceilings, and more through Perfect Building Supply Co."
       />
-      <BlogSection />
     </>
   );
 }
