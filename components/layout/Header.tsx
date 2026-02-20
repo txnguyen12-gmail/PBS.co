@@ -50,7 +50,6 @@ const categoryNav: CategoryNavItem[] = [
     href: "/collections/slabs",
     submenu: [
       {
-        title: "By Type",
         items: [
           { label: "All Slabs", href: "/collections/slabs" },
           { label: "Quartz", href: "/collections/quartz" },
@@ -58,19 +57,6 @@ const categoryNav: CategoryNavItem[] = [
           { label: "Marble", href: "/collections/marble" },
           { label: "Granite", href: "/collections/granite" },
           { label: "Porcelain Slabs", href: "/collections/porcelain-slabs" },
-        ],
-      },
-      {
-        title: "By Brand",
-        items: [
-          { label: "MSI", href: "/collections/slabs?brand=msi" },
-          { label: "Caesarstone", href: "/collections/slabs?brand=caesarstone" },
-          { label: "Cambria", href: "/collections/slabs?brand=cambria" },
-          { label: "Silestone", href: "/collections/slabs?brand=silestone" },
-          { label: "Dekton", href: "/collections/slabs?brand=dekton" },
-          { label: "Daltile", href: "/collections/slabs?brand=daltile" },
-          { label: "Raphael Stone", href: "/collections/slabs?brand=raphael-stone" },
-          { label: "LX Hausys", href: "/collections/slabs?brand=lx-hausys" },
         ],
       },
     ],
