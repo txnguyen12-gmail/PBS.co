@@ -3,7 +3,6 @@ import HomeHero from "@/components/home/HomeHero";
 import ProductCategories from "@/components/home/ProductCategories";
 import ValueProps from "@/components/home/ValueProps";
 import TrustedPartners from "@/components/home/TrustedPartners";
-import PBSClubBanner from "@/components/surfaces/PBSClubBanner";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ContactSection from "@/components/ui/ContactSection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
@@ -23,8 +22,6 @@ export default function HomePage() {
       <ProductCategories />
       <ValueProps />
       <TrustedPartners />
-      <PBSClubBanner />
-
       {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

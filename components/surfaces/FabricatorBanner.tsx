@@ -8,7 +8,7 @@ import Button from "@/components/ui/Button";
 const fabricatorPerks = [
   "Dedicated support",
   "Priority shipping",
-  "Cashback on every order",
+  "Volume discounts",
 ];
 
 function FabricatorImage() {
@@ -65,7 +65,7 @@ export default function FabricatorBanner() {
               <Button href="/sign-up" variant="accent" size="lg">
                 Get My Fabricator Discount
               </Button>
-              <Button href="/pbsclub" variant="outline" size="md">
+              <Button href="/about-us" variant="outline" size="md">
                 Learn more
               </Button>
             </div>

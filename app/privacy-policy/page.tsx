@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
           <p className="mb-4">We use the information we collect to:</p>
           <ul className="list-disc pl-6 mb-6 space-y-2">
             <li>Process and fulfill your orders and quote requests</li>
-            <li>Manage your PBS Club membership and PBScash rewards</li>
+            <li>Manage your trade account and order history</li>
             <li>Communicate with you about products, services, and promotions</li>
             <li>Improve and personalize your experience on our platform</li>
             <li>Analyze usage patterns to enhance our services</li>

@@ -7,11 +7,11 @@
 - `npm start` - Start production server
 
 ## Architecture
-Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for construction surfaces, multifamily renovations, and trade loyalty program (TanClub). All data is static TypeScript files in `data/` — no CMS or database yet.
+Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for construction surfaces and multifamily renovations. All data is static TypeScript files in `data/` — no CMS or database yet.
 
 ## Structure
-- `app/` - Pages (surfaces, multifamily, pbsclub, ai-assistant, blog, about-us, sign-up)
-- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `multifamily/`, `pbsclub/`, `blog/`, `home/`
+- `app/` - Pages (surfaces, multifamily, ai-assistant, blog, about-us, sign-up)
+- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `multifamily/`, `blog/`, `home/`
 - `data/` - Static data: blog-posts, brands, faq, pricing, team, testimonials
 - `public/` - Images and videos
 

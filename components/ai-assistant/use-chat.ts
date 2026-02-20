@@ -15,7 +15,7 @@ export const WELCOME_MESSAGE: ChatMessage = {
   id: "welcome",
   role: "assistant",
   content:
-    "Welcome to **PBS Supply Co.**! I'm your AI Sourcing Agent — here to help you find the right building materials at the best prices.\n\nI can help you with:\n- **Product search** — slabs, tiles, flooring, cabinets, fixtures & more\n- **Pricing** — lower prices than your current supplier, guaranteed\n- **PBS Club** — earn PBScash rewards on every order\n- **Quotes** — get a quote with direct trucking to your jobsite\n\nWhat are you looking for today?",
+    "Welcome to **PBS Supply Co.**! I'm your AI Sourcing Agent — here to help you find the right building materials at the best prices.\n\nI can help you with:\n- **Product search** — slabs, tiles, flooring, cabinets, fixtures & more\n- **Pricing** — lower prices than your current supplier, guaranteed\n- **Quotes** — get a quote with direct trucking to your jobsite\n\nWhat are you looking for today?",
   timestamp: new Date(),
   quickActions: [
     "I need cabinets for 20 units",

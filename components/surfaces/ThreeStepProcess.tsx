@@ -32,8 +32,8 @@ const steps = [
   {
     number: "03",
     Icon: Wallet,
-    title: "Order & Earn PBScash",
-    description: "Purchase materials and earn cashback rewards on every order.",
+    title: "Order & Save",
+    description: "Purchase materials at wholesale prices with volume discounts on every order.",
     accent: "#D4883B",
     bgClass: "bg-[#D4883B]/10",
     iconBgClass: "bg-[#D4883B]/15",

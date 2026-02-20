@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sign Up — Perfect Building Supply Co.",
-  description: "Create your free Perfect Building Supply Co. trade account. Access wholesale pricing, earn PBScash rewards, and browse 300,000+ construction materials.",
+  description: "Create your free Perfect Building Supply Co. trade account. Access wholesale pricing, volume discounts, and browse 300,000+ construction materials.",
 };
 
 export default function SignUpLayout({ children }: { children: React.ReactNode }) {

@@ -23,7 +23,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Smart Analytics",
-    description: "Track your spending, PBScash earnings, and project history all in one dashboard.",
+    description: "Track your spending, order savings, and project history all in one dashboard.",
   },
 ];
 
