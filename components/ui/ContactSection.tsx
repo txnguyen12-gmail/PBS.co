@@ -32,7 +32,7 @@ export default function ContactSection({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <a
             href="tel:+17139271500"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
+            className="flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Phone className="w-6 h-6 text-accent-orange" />
@@ -44,7 +44,7 @@ export default function ContactSection({
 
           <a
             href="mailto:LettonLLC@gmail.com"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
+            className="flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Mail className="w-6 h-6 text-accent-orange" />
@@ -56,7 +56,7 @@ export default function ContactSection({
 
           <a
             href="/ai-assistant"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
+            className="flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
             <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <MessageCircle className="w-6 h-6 text-accent-orange" />

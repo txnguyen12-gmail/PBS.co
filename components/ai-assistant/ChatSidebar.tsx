@@ -48,7 +48,7 @@ export function ChatSidebar({
           </Link>
           <button
             onClick={onClose}
-            className="lg:hidden p-1 text-gray-400 hover:text-gray-600 cursor-pointer"
+            className="lg:hidden p-2.5 text-gray-400 hover:text-gray-600 cursor-pointer"
           >
             <svg
               className="w-5 h-5"

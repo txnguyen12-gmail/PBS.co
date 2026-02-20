@@ -179,7 +179,7 @@ export default function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={mobileOpen}
-            className="lg:hidden p-2 text-white cursor-pointer ml-auto"
+            className="lg:hidden p-2.5 text-white cursor-pointer ml-auto"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

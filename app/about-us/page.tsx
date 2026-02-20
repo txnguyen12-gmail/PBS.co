@@ -69,7 +69,7 @@ export default function AboutUsPage() {
   return (
     <>
       {/* Hero - Full-width banner with storefront photo */}
-      <section className="relative h-[220px] md:h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[280px] sm:h-[380px] md:h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/images/logo/pbs-storefront.jpeg"
@@ -167,7 +167,7 @@ export default function AboutUsPage() {
 
       {/* Banner */}
       <section className="relative">
-        <div className="aspect-[3/1] md:aspect-[4/1] overflow-hidden">
+        <div className="aspect-[3/1] sm:aspect-[4/1] overflow-hidden">
           <img
             src="/images/contact/contact-wrap.png"
             alt="Perfect Building Supply Co. banner"
@@ -258,7 +258,7 @@ export default function AboutUsPage() {
               The Team Behind PBS
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8">
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center group">
                 <div className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100 relative">
@@ -299,7 +299,7 @@ export default function AboutUsPage() {
               </div>
               <a
                 href="#"
-                className="text-sm font-medium text-accent-orange hover:underline"
+                className="text-sm font-medium text-accent-orange hover:underline py-2 px-1 -my-2"
               >
                 View details
               </a>
