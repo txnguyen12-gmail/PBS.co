@@ -47,15 +47,15 @@ export default function FabricatorBanner() {
               <Crown className="w-5 h-5" />
               Fabricator Exclusive
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
               Stone fabricator? Unlock your extra discount.
             </h2>
-            <p className="text-navy/70 text-lg mb-6 max-w-lg">
+            <p className="text-charcoal/70 text-lg mb-6 max-w-lg">
               Verified fabricators receive <strong>additional discounts</strong> on all wholesale prices.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               {fabricatorPerks.map((perk) => (
-                <div key={perk} className="flex items-center gap-2 text-navy/80 text-sm">
+                <div key={perk} className="flex items-center gap-2 text-charcoal/80 text-sm">
                   <Check className="w-4 h-4 text-accent-orange" />
                   <span>{perk}</span>
                 </div>

@@ -34,7 +34,7 @@ export default function FeaturesGrid() {
         <p className="text-accent-orange font-semibold text-sm uppercase tracking-wider text-center mb-4">
           A marketplace designed for trade professionals
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">
           A Surface Ordering Experience Like Never Before
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -56,7 +56,7 @@ export default function FeaturesGrid() {
                 <div className="w-14 h-14 bg-accent-orange/10 rounded-xl flex items-center justify-center mb-5">
                   <feature.icon className="w-7 h-7 text-accent-orange" />
                 </div>
-                <h3 className="text-lg font-bold text-navy mb-3">{feature.title}</h3>
+                <h3 className="text-lg font-bold text-charcoal mb-3">{feature.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
