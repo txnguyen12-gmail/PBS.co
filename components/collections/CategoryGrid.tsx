@@ -2,8 +2,31 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  LayoutGrid,
+  Layers,
+  Footprints,
+  PanelLeft,
+  TreePine,
+  Droplets,
+  Droplet,
+  DoorOpen,
+  ShowerHead,
+} from "lucide-react";
 import { ProductCategory } from "@/data/products";
+
+const categoryIcons: Record<string, React.ElementType> = {
+  cabinets: LayoutGrid,
+  "quartz-slabs": Layers,
+  "spc-flooring": Footprints,
+  "pvc-wall-panels": PanelLeft,
+  "wpc-outdoor": TreePine,
+  sanitaryware: Droplets,
+  faucets: Droplet,
+  "interior-doors": DoorOpen,
+  "shower-bath": ShowerHead,
+};
 
 export default function CategoryGrid({
   categories,
@@ -14,7 +37,9 @@ export default function CategoryGrid({
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category, i) => (
+          {categories.map((category, i) => {
+            const Icon = categoryIcons[category.id] || Layers;
+            return (
             <motion.div
               key={category.id}
               initial={{ opacity: 0, y: 30 }}
@@ -26,7 +51,7 @@ export default function CategoryGrid({
                 href={`/collections/${category.slug}`}
                 className="group block rounded-2xl overflow-hidden bg-surface-light border border-gray-100 hover:shadow-xl hover:border-gray-200 transition-all duration-300"
               >
-                <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
                   {category.image ? (
                     <img
                       src={category.image}
@@ -34,8 +59,11 @@ export default function CategoryGrid({
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-gray-400 text-sm">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                      <div className="w-20 h-20 bg-white/80 rounded-2xl shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-10 h-10 text-accent-orange/60" />
+                      </div>
+                      <span className="text-gray-500 text-sm font-medium">
                         {category.name}
                       </span>
                     </div>
@@ -55,7 +83,8 @@ export default function CategoryGrid({
                 </div>
               </Link>
             </motion.div>
-          ))}
+          );
+          })}
         </div>
       </div>
     </section>

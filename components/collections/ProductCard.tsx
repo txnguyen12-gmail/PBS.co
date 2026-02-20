@@ -2,7 +2,30 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import {
+  LayoutGrid,
+  Layers,
+  Footprints,
+  PanelLeft,
+  TreePine,
+  Droplets,
+  Droplet,
+  DoorOpen,
+  ShowerHead,
+} from "lucide-react";
 import { Product } from "@/data/products";
+
+const categoryIcons: Record<string, React.ElementType> = {
+  cabinets: LayoutGrid,
+  "quartz-slabs": Layers,
+  "spc-flooring": Footprints,
+  "pvc-wall-panels": PanelLeft,
+  "wpc-outdoor": TreePine,
+  sanitaryware: Droplets,
+  faucets: Droplet,
+  "interior-doors": DoorOpen,
+  "shower-bath": ShowerHead,
+};
 
 export default function ProductCard({
   product,
@@ -11,6 +34,8 @@ export default function ProductCard({
   product: Product;
   index?: number;
 }) {
+  const Icon = categoryIcons[product.category] || Layers;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -28,25 +53,13 @@ export default function ProductCard({
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-              <div className="text-center p-4">
-                <div className="w-12 h-12 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0 0 22.5 18.75V5.25A2.25 2.25 0 0 0 20.25 3H3.75A2.25 2.25 0 0 0 1.5 5.25v13.5A2.25 2.25 0 0 0 3.75 21Z"
-                    />
-                  </svg>
-                </div>
-                <p className="text-gray-400 text-xs">{product.name}</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-150 p-6">
+              <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-4">
+                <Icon className="w-8 h-8 text-accent-orange/70" />
               </div>
+              <p className="text-gray-400 text-xs text-center font-medium line-clamp-2 max-w-[80%]">
+                {product.name}
+              </p>
             </div>
           )}
 
