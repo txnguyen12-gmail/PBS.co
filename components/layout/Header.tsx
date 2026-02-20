@@ -147,7 +147,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal">
-      {/* Row 1 — Logo | Search | AI Sourcing | Blog | About Us | Sign Up */}
+      {/* Row 1 — Logo | Search | AI Sourcing | About Us | Sign Up */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
@@ -179,17 +179,6 @@ export default function Header() {
             >
               AI Sourcing
               <Sparkles className="w-3.5 h-3.5" />
-            </Link>
-
-            <Link
-              href="/blog"
-              className={`px-3 py-2 text-sm transition-colors ${
-                pathname.startsWith("/blog")
-                  ? "text-white underline decoration-accent-orange underline-offset-4"
-                  : "text-white/80 hover:text-white"
-              }`}
-            >
-              Blog
             </Link>
 
             <Link
@@ -319,9 +308,6 @@ export default function Header() {
             <div className="border-t border-gray-100 my-2" />
 
             {/* Main nav */}
-            <Link href="/blog" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
-              Blog
-            </Link>
             <Link href="/about-us" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               About Us
             </Link>

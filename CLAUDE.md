@@ -7,12 +7,12 @@
 - `npm start` - Start production server
 
 ## Architecture
-Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for construction surfaces and multifamily renovations. All data is static TypeScript files in `data/` — no CMS or database yet.
+Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for construction building materials. All data is static TypeScript files in `data/` — no CMS or database yet.
 
 ## Structure
-- `app/` - Pages (surfaces, multifamily, ai-assistant, blog, about-us, sign-up)
-- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `multifamily/`, `blog/`, `home/`
-- `data/` - Static data: blog-posts, brands, faq, pricing, team, testimonials
+- `app/` - Pages (surfaces, ai-assistant, about-us, sign-up)
+- `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `home/`
+- `data/` - Static data: brands, faq, pricing, team, testimonials
 - `public/` - Images and videos
 
 ## Code Patterns

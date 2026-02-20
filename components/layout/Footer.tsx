@@ -8,8 +8,6 @@ const footerColumns = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about-us" },
-      { label: "Multifamily", href: "/multifamily" },
-      { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/about-us#offices" },
     ],
   },
