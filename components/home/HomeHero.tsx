@@ -13,12 +13,17 @@ const valuePills = [
 export default function HomeHero() {
   return (
     <section className="relative min-h-[550px] md:min-h-[650px] flex items-center overflow-hidden bg-charcoal">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-accent-orange/5 translate-x-48 -translate-y-48" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent-gold/5 -translate-x-24 translate-y-24" />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal/95 to-charcoal/90" />
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-charcoal/70" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
         {/* Logo lockup — desktop only */}
