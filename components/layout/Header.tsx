@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight, Sparkles, Search } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Sparkles } from "lucide-react";
 
 interface SubMenuItem {
   label: string;
@@ -144,18 +144,6 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Search bar */}
-          <div className="hidden lg:flex flex-1 max-w-md">
-            <div className="relative w-full">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-              <input
-                type="text"
-                placeholder="What are you looking for?"
-                className="w-full pl-9 pr-4 py-2 text-sm border border-white/20 rounded-lg bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-white/40 focus:bg-white/15 transition-colors"
-              />
-            </div>
-          </div>
-
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
             {/* AI Sourcing pill */}
@@ -271,16 +259,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-1">
-            {/* Search */}
-            <div className="relative mb-3">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-              <input
-                type="text"
-                placeholder="What are you looking for?"
-                className="w-full pl-9 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:border-gray-300"
-              />
-            </div>
-
             {/* AI Sourcing link */}
             <Link
               href="/ai-assistant"
