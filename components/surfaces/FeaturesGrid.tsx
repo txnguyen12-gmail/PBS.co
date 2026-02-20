@@ -34,7 +34,7 @@ export default function FeaturesGrid() {
         <p className="text-accent-orange font-semibold text-sm uppercase tracking-wider text-center mb-4">
           A marketplace designed for trade professionals
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-charcoal text-center mb-4">
           A Surface Ordering Experience Like Never Before
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -78,7 +78,7 @@ export default function FeaturesGrid() {
 
               {/* Top: logo + label */}
               <div className="relative z-10 flex items-center gap-3">
-                <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-10 w-10 object-contain" />
+                <img src="/images/logo/logo.png" alt="PBS" className="h-10 w-10 object-contain" />
                 <div>
                   <p className="text-white/50 text-xs uppercase tracking-widest">Perfect Building Supply</p>
                   <p className="text-white font-semibold text-sm">Trade Pricing</p>

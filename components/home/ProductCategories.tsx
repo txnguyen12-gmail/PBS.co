@@ -42,7 +42,7 @@ export default function ProductCategories() {
           <p className="text-accent-orange font-semibold text-sm uppercase tracking-wider mb-3">
             Our Core Products
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-charcoal mb-4">
             Everything You Need to Build
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

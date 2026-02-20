@@ -19,14 +19,14 @@ export default function Button({
   className = "",
   onClick,
 }: ButtonProps) {
-  const base = "inline-flex items-center justify-center font-semibold rounded-full transition-all duration-200 cursor-pointer active:scale-[0.98] shadow-md";
+  const base = "inline-flex items-center justify-center font-bold rounded-md transition-all duration-200 cursor-pointer active:scale-[0.98]";
 
   const variants = {
-    primary: "bg-gradient-to-r from-charcoal to-charcoal-light text-white hover:opacity-90",
-    secondary: "bg-white text-charcoal hover:bg-gray-100",
+    primary: "bg-accent-orange text-white hover:bg-brick",
+    secondary: "bg-charcoal text-white border border-accent-orange hover:bg-charcoal-light",
     outline: "border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white",
-    white: "bg-white text-charcoal hover:bg-gray-100 shadow-lg",
-    accent: "bg-gradient-to-r from-accent-orange to-accent-gold text-white hover:opacity-90",
+    white: "bg-white text-charcoal hover:bg-gray-100",
+    accent: "bg-accent-orange text-white hover:bg-brick",
   };
 
   const sizes = {

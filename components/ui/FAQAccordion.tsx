@@ -15,7 +15,7 @@ export default function FAQAccordion({ items, title, category, description }: { 
             {category}
           </p>
         )}
-        <h2 className="text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-charcoal text-center mb-4">
           {title || "Frequently Asked Questions"}
         </h2>
         {description && (

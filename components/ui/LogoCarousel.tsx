@@ -10,7 +10,7 @@ export default function LogoCarousel({ title, logos, speed = "normal" }: LogoCar
   return (
     <section className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-        <h2 className="text-center text-2xl md:text-3xl font-bold text-charcoal">{title}</h2>
+        <h2 className="font-heading text-center text-2xl md:text-3xl font-extrabold text-charcoal">{title}</h2>
       </div>
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />

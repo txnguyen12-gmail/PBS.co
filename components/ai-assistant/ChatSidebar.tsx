@@ -41,7 +41,7 @@ export function ChatSidebar({
         <div className="flex items-center justify-between px-4 pt-5 pb-4">
           <Link href="/" className="flex items-center gap-1">
             <img
-              src="/images/logo/pbs-logo.jpeg"
+              src="/images/logo/logo.png"
               alt="Perfect Building Supply Co."
               className="h-8 w-8 object-contain"
             />

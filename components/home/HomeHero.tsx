@@ -29,7 +29,7 @@ export default function HomeHero() {
           className="hidden sm:flex items-center gap-4 mb-6"
         >
           <img
-            src="/images/logo/pbs-logo.jpeg"
+            src="/images/logo/logo.png"
             alt="Perfect Building Supply Co."
             className="h-16 md:h-20 w-16 md:w-20 object-contain bg-white rounded-lg p-1"
           />
@@ -47,7 +47,7 @@ export default function HomeHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight"
+          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight"
         >
           Cabinets. WPC Walls. Ceilings.
           <br />

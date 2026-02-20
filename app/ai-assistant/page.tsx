@@ -100,7 +100,7 @@ export default function AIAssistantPage() {
           </button>
           <span className="text-sm font-semibold text-charcoal flex items-center gap-2">
             <img
-              src="/images/logo/pbs-logo.jpeg"
+              src="/images/logo/logo.png"
               alt="PBS"
               className="h-6 w-6 object-contain"
             />

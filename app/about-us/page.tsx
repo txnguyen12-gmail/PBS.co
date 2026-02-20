@@ -79,7 +79,7 @@ export default function AboutUsPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-charcoal/20" />
         </div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">About Us</h1>
+          <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-white">About Us</h1>
           <p className="text-white/70 text-lg mt-3 hidden md:block">The Perfect Building Supply Company</p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function AboutUsPage() {
       {/* Main Heading */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Reinvent the way<br />
             construction professionals<br />
             source materials.
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
               <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
                 Our Story
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
                 For Builders, By Builders
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
@@ -177,7 +177,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-20 bg-charcoal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
@@ -191,7 +191,7 @@ export default function AboutUsPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="bg-gray-800/60 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50"
+                className="bg-charcoal-light/60 backdrop-blur-sm p-8 rounded-2xl border border-white/10"
               >
                 <div className="w-12 h-12 bg-accent-orange/15 rounded-xl flex items-center justify-center mb-5">
                   <value.icon className="w-6 h-6 text-accent-orange" />
@@ -207,11 +207,11 @@ export default function AboutUsPage() {
       </section>
 
       {/* Service Area CTA */}
-      <section className="py-20 bg-gray-900 border-t border-gray-800">
+      <section className="py-20 bg-charcoal border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
                 Anywhere in the U.S.<br />Any project.
               </h2>
               <p className="text-gray-400 text-base leading-relaxed mb-8">
@@ -221,8 +221,8 @@ export default function AboutUsPage() {
                 Get Started
               </Button>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center">
-              <MapPin className="w-24 h-24 text-gray-600" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-charcoal-light flex items-center justify-center">
+              <MapPin className="w-24 h-24 text-white/20" />
             </div>
           </div>
         </div>

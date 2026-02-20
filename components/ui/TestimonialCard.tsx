@@ -20,7 +20,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
             className="w-10 h-10 rounded-full object-cover"
           />
         ) : (
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent-orange/20 to-accent-gold/20 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-full bg-accent-orange/15 flex items-center justify-center">
             <span className="text-charcoal font-bold text-sm">
               {testimonial.name.charAt(0)}
             </span>

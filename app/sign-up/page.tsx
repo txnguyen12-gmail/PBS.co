@@ -83,13 +83,13 @@ export default function SignUpPage() {
           <div className="w-16 h-16 bg-accent-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-accent-green" />
           </div>
-          <h1 className="text-3xl font-bold text-charcoal mb-4">Welcome to Perfect Building Supply Co.!</h1>
+          <h1 className="font-heading text-3xl font-extrabold text-charcoal mb-4">Welcome to Perfect Building Supply Co.!</h1>
           <p className="text-gray-600 mb-8">
             Your account request has been received. Our team will reach out shortly to get you set up with trade pricing and full platform access.
           </p>
           <a
             href="/"
-            className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-charcoal to-charcoal-light text-white font-semibold rounded-full hover:opacity-90 transition-all"
+            className="inline-flex items-center justify-center px-6 py-3 bg-accent-orange text-white font-bold rounded-md hover:bg-brick transition-all"
           >
             Back to Home
           </a>
@@ -102,7 +102,7 @@ export default function SignUpPage() {
     <section className="min-h-screen flex">
       {/* Left: Benefits */}
       <div className="hidden lg:flex lg:w-1/2 bg-charcoal text-white p-12 xl:p-16 flex-col justify-center">
-        <h1 className="text-4xl xl:text-5xl font-bold mb-6">
+        <h1 className="font-heading text-4xl xl:text-5xl font-extrabold mb-6">
           Join Perfect Building Supply Co.
         </h1>
         <p className="text-white/70 text-lg mb-10 max-w-md">
@@ -206,8 +206,8 @@ export default function SignUpPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full py-3.5 bg-gradient-to-r from-accent-orange to-accent-gold text-white font-semibold rounded-xl transition-all ${
-                isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:opacity-90 cursor-pointer active:scale-[0.98]"
+              className={`w-full py-3.5 bg-accent-orange text-white font-bold rounded-md transition-all ${
+                isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:bg-brick cursor-pointer active:scale-[0.98]"
               }`}
             >
               {isSubmitting ? "Creating Account..." : "Create Account"}

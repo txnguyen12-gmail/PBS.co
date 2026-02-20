@@ -152,7 +152,7 @@ export default function Header() {
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <img src="/images/logo/pbs-logo.jpeg" alt="Perfect Building Supply Co." className="h-9 w-9 object-contain" />
+            <img src="/images/logo/logo.png" alt="Perfect Building Supply Co." className="h-9 w-9 object-contain" />
             <span className="hidden xl:block text-white font-semibold text-sm tracking-tight leading-tight">
               PBS<span className="text-accent-orange">.</span> Supply Co<span className="text-accent-orange">.</span>
             </span>
@@ -175,7 +175,7 @@ export default function Header() {
             {/* AI Sourcing pill */}
             <Link
               href="/ai-assistant"
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-charcoal bg-yellow-300 border border-yellow-400 rounded-full hover:bg-yellow-200 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white bg-accent-orange rounded-md hover:bg-brick transition-colors"
             >
               AI Sourcing
               <Sparkles className="w-3.5 h-3.5" />
@@ -194,7 +194,7 @@ export default function Header() {
 
             <Link
               href="/sign-up"
-              className="px-4 py-1.5 text-sm font-medium bg-accent-orange text-white rounded-full hover:bg-accent-orange/90 transition-colors"
+              className="px-4 py-1.5 text-sm font-bold bg-accent-orange text-white rounded-md hover:bg-brick transition-colors"
             >
               Sign Up
             </Link>
@@ -377,7 +377,7 @@ export default function Header() {
 
             <Link
               href="/sign-up"
-              className="block text-center px-4 py-2.5 text-sm font-medium bg-accent-orange text-white rounded-lg"
+              className="block text-center px-4 py-2.5 text-sm font-bold bg-accent-orange text-white rounded-md hover:bg-brick transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Sign Up

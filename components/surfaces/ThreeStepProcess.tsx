@@ -10,12 +10,12 @@ const steps = [
     Icon: UserPlus,
     title: "Join PBS Supply Co.",
     description: "Create your free trade account in minutes. No fees, no minimums.",
-    accent: "#E8762B",
-    bgClass: "bg-[#E8762B]/10",
-    iconBgClass: "bg-[#E8762B]/15",
-    iconColorClass: "text-[#E8762B]",
-    numberColorClass: "text-[#E8762B]",
-    borderClass: "border-[#E8762B]/20",
+    accent: "#F37021",
+    bgClass: "bg-[#F37021]/10",
+    iconBgClass: "bg-[#F37021]/15",
+    iconColorClass: "text-[#F37021]",
+    numberColorClass: "text-[#F37021]",
+    borderClass: "border-[#F37021]/20",
   },
   {
     number: "02",
@@ -34,12 +34,12 @@ const steps = [
     Icon: Wallet,
     title: "Order & Save",
     description: "Purchase materials at wholesale prices with volume discounts on every order.",
-    accent: "#D4883B",
-    bgClass: "bg-[#D4883B]/10",
-    iconBgClass: "bg-[#D4883B]/15",
-    iconColorClass: "text-[#D4883B]",
-    numberColorClass: "text-[#D4883B]",
-    borderClass: "border-[#D4883B]/20",
+    accent: "#D35400",
+    bgClass: "bg-[#D35400]/10",
+    iconBgClass: "bg-[#D35400]/15",
+    iconColorClass: "text-[#D35400]",
+    numberColorClass: "text-[#D35400]",
+    borderClass: "border-[#D35400]/20",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function ThreeStepProcess() {
           <p className="text-accent-orange font-semibold text-sm uppercase tracking-wider mb-3">
             How it works
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-charcoal mb-4">
             Start saving in three simple steps
           </h2>
           <p className="text-gray-500 max-w-md mx-auto">

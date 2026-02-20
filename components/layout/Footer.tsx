@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Logo column */}
           <div className="col-span-2 md:col-span-1 mb-4 md:mb-0">
             <Link href="/" className="inline-block">
-              <img src="/images/logo/pbs-logo.jpeg" alt="Perfect Building Supply Co." className="h-12 w-12 object-contain mb-2" />
+              <img src="/images/logo/logo.png" alt="Perfect Building Supply Co." className="h-12 w-12 object-contain mb-2" />
             </Link>
             <p className="text-xs text-white/60 leading-snug mb-3">
               The Perfect Building<br />Supply Company

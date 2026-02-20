@@ -44,10 +44,13 @@ export default function Component() {
 ```
 
 ## Design Tokens
-- Primary dark: `charcoal` (#1C2333)
-- Accent: `accent-orange` (#E8762B), `accent-gold` (#D4883B)
+- Primary dark: `charcoal` (#111111), `charcoal-light` (#222222)
+- Accent: `accent-orange` (#F37021), `accent-gold` (#D35400), `brick` (#C55212)
 - Green: `accent-green` (#4A6B5E)
-- Font: Inter (Google Fonts)
+- Surface: `surface-light` (#F4F4F4)
+- Font body: Inter (Google Fonts)
+- Font headings: Montserrat 700/800 (`font-heading` class)
+- Buttons: `rounded-md`, `font-bold`, solid `bg-accent-orange` (no gradients)
 
 ## Gotchas
 - Remote images: configure allowed domains in next.config.ts remotePatterns if needed

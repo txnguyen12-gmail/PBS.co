@@ -34,7 +34,7 @@ function FabricatorImage() {
 
 export default function FabricatorBanner() {
   return (
-    <section className="py-16 bg-blue-100">
+    <section className="py-16 bg-surface-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export default function FabricatorBanner() {
               <Crown className="w-5 h-5" />
               Fabricator Exclusive
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-charcoal mb-4">
               Stone fabricator? Unlock your extra discount.
             </h2>
             <p className="text-charcoal/70 text-lg mb-6 max-w-lg">

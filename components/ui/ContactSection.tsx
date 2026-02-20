@@ -14,7 +14,7 @@ export default function ContactSection({
   return (
     <section className="relative py-16 overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700">
+      <div className="absolute inset-0 bg-gradient-to-br from-charcoal to-charcoal-light">
         <div
           className="absolute inset-0 opacity-30 bg-cover bg-center"
           style={{
@@ -23,7 +23,7 @@ export default function ContactSection({
         />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white text-center mb-4">
           {title}
         </h2>
         <p className="text-center text-white/70 mb-12 max-w-2xl mx-auto">
@@ -34,7 +34,7 @@ export default function ContactSection({
             href="tel:+17139271500"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
-            <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
+            <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Phone className="w-6 h-6 text-accent-orange" />
             </div>
             <h3 className="font-semibold text-charcoal mb-1">Call Us</h3>
@@ -46,7 +46,7 @@ export default function ContactSection({
             href="mailto:LettonLLC@gmail.com"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
-            <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
+            <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Mail className="w-6 h-6 text-accent-orange" />
             </div>
             <h3 className="font-semibold text-charcoal mb-1">Email Us</h3>
@@ -58,7 +58,7 @@ export default function ContactSection({
             href="/ai-assistant"
             className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow group"
           >
-            <div className="w-14 h-14 bg-gradient-to-br from-accent-orange/10 to-accent-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:from-accent-orange/20 group-hover:to-accent-gold/20 transition-colors">
+            <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <MessageCircle className="w-6 h-6 text-accent-orange" />
             </div>
             <h3 className="font-semibold text-charcoal mb-1">Live Chat</h3>

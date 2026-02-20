@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* PBS Brand Palette — derived from logo system */
-  --color-charcoal: #1C2333;
-  --color-charcoal-light: #2C3E50;
+  /* PBS Brand Palette — 2025 brand guide */
+  --color-charcoal: #111111;
+  --color-charcoal-light: #222222;
   --color-slate: #CBD5E1;
   --color-orange-accent: #FFF3E8;
-  --color-accent-orange: #E8762B;
-  --color-accent-gold: #D4883B;
+  --color-accent-orange: #F37021;
+  --color-accent-gold: #D35400;
   --color-accent-green: #4A6B5E;
   --color-cream: #F5EDE0;
-  --color-brick: #C4652A;
-  /* Unchanged */
-  --color-text-dark: #111827;
+  --color-brick: #C55212;
+  --color-text-dark: #111111;
   --color-text-gray: #6B7280;
-  --color-surface-light: #F8F9FA;
+  --color-surface-light: #F4F4F4;
   --color-surface-lighter: #F3F4F6;
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-heading), 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
