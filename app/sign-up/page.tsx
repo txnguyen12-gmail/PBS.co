@@ -4,11 +4,11 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 
 const benefits = [
-  "Access exclusive wholesale pricing",
+  "Wholesale pricing for contractors and builders",
   "Volume discounts on bulk orders",
-  "Get priority support from sourcing experts",
-  "Browse 300,000+ products in stock",
-  "Lock in prices for up to 14 days",
+  "Dedicated sourcing support",
+  "90+ products across 9 categories",
+  "Fast quotes — usually within 24 hours",
 ];
 
 const roles = [
@@ -30,6 +30,7 @@ export default function SignUpPage() {
     phone: "",
     company: "",
     role: "",
+    message: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -83,9 +84,9 @@ export default function SignUpPage() {
           <div className="w-16 h-16 bg-accent-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-accent-green" />
           </div>
-          <h1 className="font-heading text-3xl font-extrabold text-charcoal mb-4">Welcome to Perfect Building Supply Co.!</h1>
+          <h1 className="font-heading text-3xl font-extrabold text-charcoal mb-4">Message Sent!</h1>
           <p className="text-gray-600 mb-8">
-            Your account request has been received. Our team will reach out shortly to get you set up with trade pricing and full platform access.
+            Thanks for reaching out. Our team will get back to you within 24 hours with pricing and product details.
           </p>
           <a
             href="/"
@@ -103,10 +104,10 @@ export default function SignUpPage() {
       {/* Left: Benefits */}
       <div className="hidden lg:flex lg:w-1/2 bg-charcoal text-white p-12 xl:p-16 flex-col justify-center">
         <h1 className="font-heading text-4xl xl:text-5xl font-extrabold mb-6">
-          Join Perfect Building Supply Co.
+          Get a Quote from PBS
         </h1>
         <p className="text-white/70 text-lg mb-10 max-w-md">
-          Create your free trade account and start sourcing smarter today.
+          Tell us what you need and our team will get back to you with pricing.
         </p>
         <ul className="space-y-4">
           {benefits.map((benefit) => (
@@ -123,9 +124,9 @@ export default function SignUpPage() {
       {/* Right: Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-white">
         <div className="w-full max-w-md">
-          <h2 className="text-2xl lg:hidden font-bold text-charcoal mb-2">Join Perfect Building Supply Co.</h2>
-          <p className="lg:hidden text-gray-600 mb-8">Create your free trade account.</p>
-          <h2 className="hidden lg:block text-2xl font-bold text-charcoal mb-8">Create Your Account</h2>
+          <h2 className="text-2xl lg:hidden font-bold text-charcoal mb-2">Get a Quote from PBS</h2>
+          <p className="lg:hidden text-gray-600 mb-8">Tell us what you need and we&apos;ll follow up with pricing.</p>
+          <h2 className="hidden lg:block text-2xl font-bold text-charcoal mb-8">Request a Quote</h2>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -203,6 +204,17 @@ export default function SignUpPage() {
               {errors.role && <p className="text-red-500 text-xs mt-1">{errors.role}</p>}
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1.5">Message <span className="text-gray-400">(optional)</span></label>
+              <textarea
+                value={formData.message}
+                onChange={(e) => handleChange("message", e.target.value)}
+                rows={3}
+                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-accent-orange focus:border-transparent outline-none transition-all resize-none"
+                placeholder="Tell us about your project or what products you're looking for..."
+              />
+            </div>
+
             <button
               type="submit"
               disabled={isSubmitting}
@@ -210,11 +222,11 @@ export default function SignUpPage() {
                 isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:bg-brick cursor-pointer active:scale-[0.98]"
               }`}
             >
-              {isSubmitting ? "Creating Account..." : "Create Account"}
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
 
             <p className="text-xs text-gray-500 text-center">
-              By signing up, you agree to our{" "}
+              By submitting, you agree to our{" "}
               <a href="/terms-of-service" className="text-accent-orange hover:underline">Terms of Service</a>
               {" "}and{" "}
               <a href="/privacy-policy" className="text-accent-orange hover:underline">Privacy Policy</a>.
