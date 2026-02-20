@@ -12,7 +12,7 @@ const valuePills = [
 
 export default function SurfacesHero() {
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-navy">
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden bg-charcoal">
       {/* Background pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-accent-orange/5 translate-x-48 -translate-y-48" />
@@ -77,7 +77,7 @@ export default function SurfacesHero() {
           <Button href="/sign-up" variant="accent" size="lg">
             Get Started
           </Button>
-          <Button href="tel:+17139271500" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
+          <Button href="tel:+17139271500" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-charcoal">
             Call (713) 927-1500
           </Button>
         </motion.div>

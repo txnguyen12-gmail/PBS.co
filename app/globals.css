@@ -11,11 +11,6 @@
   --color-accent-green: #4A6B5E;
   --color-cream: #F5EDE0;
   --color-brick: #C4652A;
-  /* Legacy aliases */
-  --color-navy: #1C2333;
-  --color-navy-light: #2C3E50;
-  --color-lavender: #CBD5E1;
-  --color-yellow-accent: #FFF3E8;
   /* Unchanged */
   --color-text-dark: #111827;
   --color-text-gray: #6B7280;
@@ -52,32 +47,10 @@ body {
   animation: scroll-left-slow 40s linear infinite;
 }
 
-@keyframes glow-drift {
-  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
-  33% { transform: translate(30px, -20px) scale(1.05); opacity: 0.8; }
-  66% { transform: translate(-20px, 15px) scale(0.95); opacity: 0.5; }
-}
-
-@keyframes glow-drift-reverse {
-  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
-  33% { transform: translate(-25px, 20px) scale(1.08); opacity: 0.7; }
-  66% { transform: translate(15px, -25px) scale(0.92); opacity: 0.4; }
-}
-
-.animate-glow-drift {
-  animation: glow-drift 8s ease-in-out infinite;
-}
-
-.animate-glow-drift-reverse {
-  animation: glow-drift-reverse 10s ease-in-out infinite;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .animate-scroll-left,
-  .animate-scroll-left-slow,
-  .animate-glow-drift,
-  .animate-glow-drift-reverse {
+  .animate-scroll-left-slow {
     animation: none;
   }
 }

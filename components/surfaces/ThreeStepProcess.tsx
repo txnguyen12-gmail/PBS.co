@@ -57,7 +57,7 @@ export default function ThreeStepProcess() {
           <p className="text-accent-orange font-semibold text-sm uppercase tracking-wider mb-3">
             How it works
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
             Start saving in three simple steps
           </h2>
           <p className="text-gray-500 max-w-md mx-auto">
@@ -89,7 +89,7 @@ export default function ThreeStepProcess() {
 
                 {/* Text */}
                 <div>
-                  <h3 className="text-lg font-bold text-navy mb-1.5">{step.title}</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-1.5">{step.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
                 </div>
               </motion.div>

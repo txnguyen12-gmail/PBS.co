@@ -15,7 +15,7 @@ export default function FAQAccordion({ items, title, category, description }: { 
             {category}
           </p>
         )}
-        <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">
           {title || "Frequently Asked Questions"}
         </h2>
         {description && (
@@ -36,9 +36,9 @@ export default function FAQAccordion({ items, title, category, description }: { 
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors cursor-pointer"
               >
-                <span className="font-semibold text-navy pr-4">{item.question}</span>
+                <span className="font-semibold text-charcoal pr-4">{item.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-navy flex-shrink-0 transition-transform duration-200 ${
+                  className={`w-5 h-5 text-charcoal flex-shrink-0 transition-transform duration-200 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />

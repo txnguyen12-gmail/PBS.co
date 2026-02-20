@@ -12,7 +12,7 @@ Next.js 16 App Router (TypeScript) with Tailwind CSS 4. B2B marketplace for cons
 ## Structure
 - `app/` - Pages (surfaces, ai-assistant, about-us, sign-up)
 - `components/` - Organized by feature: `layout/`, `ui/`, `surfaces/`, `home/`
-- `data/` - Static data: brands, faq, pricing, team, testimonials
+- `data/` - Static data: brands, faq, team, testimonials
 - `public/` - Images and videos
 
 ## Code Patterns
@@ -44,8 +44,8 @@ export default function Component() {
 ```
 
 ## Design Tokens
-- Primary dark: `charcoal` (#1A2332)
-- Accent: `accent-orange` (#D97337), `accent-gold` (#D4A574)
+- Primary dark: `charcoal` (#1C2333)
+- Accent: `accent-orange` (#E8762B), `accent-gold` (#D4883B)
 - Green: `accent-green` (#4A6B5E)
 - Font: Inter (Google Fonts)
 

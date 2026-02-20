@@ -27,7 +27,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
           </div>
         )}
         <div>
-          <p className="font-semibold text-sm text-navy">{testimonial.name}</p>
+          <p className="font-semibold text-sm text-charcoal">{testimonial.name}</p>
           <p className="text-xs text-gray-500">{testimonial.role}</p>
         </div>
       </div>

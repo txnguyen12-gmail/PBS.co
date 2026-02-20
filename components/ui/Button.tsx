@@ -23,9 +23,9 @@ export default function Button({
 
   const variants = {
     primary: "bg-gradient-to-r from-charcoal to-charcoal-light text-white hover:opacity-90",
-    secondary: "bg-white text-navy hover:bg-gray-100",
-    outline: "border-2 border-navy text-navy hover:bg-navy hover:text-white",
-    white: "bg-white text-navy hover:bg-gray-100 shadow-lg",
+    secondary: "bg-white text-charcoal hover:bg-gray-100",
+    outline: "border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white",
+    white: "bg-white text-charcoal hover:bg-gray-100 shadow-lg",
     accent: "bg-gradient-to-r from-accent-orange to-accent-gold text-white hover:opacity-90",
   };
 
