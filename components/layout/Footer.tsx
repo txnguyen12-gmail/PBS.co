@@ -9,7 +9,6 @@ const footerColumns = [
     links: [
       { label: "About Us", href: "/about-us" },
       { label: "Multifamily", href: "/multifamily" },
-      { label: "PBS Club™", href: "/pbsclub" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/about-us#offices" },
     ],

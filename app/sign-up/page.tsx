@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 
 const benefits = [
   "Access exclusive wholesale pricing",
-  "Earn PBScash rewards on every order",
+  "Volume discounts on bulk orders",
   "Get priority support from sourcing experts",
   "Browse 300,000+ products in stock",
   "Lock in prices for up to 14 days",

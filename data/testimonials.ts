@@ -46,39 +46,3 @@ export const surfacesTestimonials: Testimonial[] = [
     rating: 5,
   },
 ];
-
-export const tanclubTestimonials: Testimonial[] = [
-  {
-    name: "Tom K.",
-    role: "Developer, Austin, TX",
-    quote: "Fast quotes, fair prices, and on-time delivery — exactly what I need to keep projects moving.",
-    rating: 5,
-    image: "/images/testimonials/testimonial-pbsclub-1.jpeg",
-  },
-  {
-    name: "Luis M.",
-    role: "Remodeler, Miami, FL",
-    quote: "The quoting process was fast, and their sourcing expert helped me find exactly what I needed in minutes.",
-    rating: 5,
-    image: "/images/testimonials/testimonial-pbsclub-2.png",
-  },
-  {
-    name: "Derek T.",
-    role: "Builder, Phoenix, AZ",
-    quote: "I've used a lot of vendors, but Perfect Building Supply Co. consistently has the best pricing on natural stone and prefab slabs.",
-    rating: 5,
-    image: "/images/testimonials/testimonial-pbsclub-3.jpeg",
-  },
-  {
-    name: "Sandra K.",
-    role: "Kitchen & Bath Designer, Denver, CO",
-    quote: "PBS Club rewards actually add up. I reinvest my PBScash into the next project — it's a no-brainer for repeat buyers.",
-    rating: 5,
-  },
-  {
-    name: "Carlos R.",
-    role: "General Contractor, Dallas, TX",
-    quote: "Having a dedicated account manager through PBS Club has saved me countless hours. They handle sourcing so I can focus on building.",
-    rating: 5,
-  },
-];

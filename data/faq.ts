@@ -21,10 +21,6 @@ export const homepageFAQ: FAQItem[] = [
     answer: "Absolutely. We offer volume discounts on large orders — whether you're outfitting 10 units or 100. Our team can provide project-based quotes tailored to your scope.",
   },
   {
-    question: "What is PBS Club?",
-    answer: "PBS Club is our loyalty program for trade professionals. Members earn PBScash on every order, get price locks, priority support, and exclusive deals. Tiers include Member, Gold, and Platinum.",
-  },
-  {
     question: "Do you offer project-based quotes?",
     answer: "Yes. Send us your project specs and our sourcing team will put together a comprehensive quote with trade pricing, delivery timelines, and any custom configuration details.",
   },
@@ -45,19 +41,11 @@ export const surfacesFAQ: FAQItem[] = [
   },
   {
     question: "How does Perfect Building Supply Co. help stone fabricators?",
-    answer: "Perfect Building Supply Co. provides wholesale pricing, reliable delivery, PBScash rewards, and access to top brands and distributors — all in one marketplace.",
+    answer: "Perfect Building Supply Co. provides wholesale pricing, reliable delivery, and access to top brands and distributors — all in one marketplace.",
   },
   {
     question: "Do I get access to multiple brands?",
     answer: "Yes. Perfect Building Supply Co. partners with MSI, Caesarstone, Silestone, Roca, and many others so you can efficiently source from a wide selection.",
-  },
-  {
-    question: "What is PBS Club and how does it benefit me?",
-    answer: "PBS Club is our loyalty program offering cashback on orders, exclusive discounts, and personalized support to help improve your margins on every project.",
-  },
-  {
-    question: "How does PBScash work?",
-    answer: "You earn PBScash on every fulfilled order. Your balance is redeemable for future savings on upcoming purchases.",
   },
   {
     question: "What is your shipping coverage and delivery like?",

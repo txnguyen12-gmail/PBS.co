@@ -27,7 +27,7 @@ export default function TermsOfServicePage() {
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">3. Products and Pricing</h2>
           <p className="mb-6">
-            All product descriptions, images, and specifications are provided for informational purposes. While we strive for accuracy, we do not guarantee that product descriptions or pricing are error-free. We reserve the right to correct any errors and to cancel orders placed at incorrect prices. Prices are subject to change without notice. Trade pricing and PBS Club member pricing are available only to qualifying accounts.
+            All product descriptions, images, and specifications are provided for informational purposes. While we strive for accuracy, we do not guarantee that product descriptions or pricing are error-free. We reserve the right to correct any errors and to cancel orders placed at incorrect prices. Prices are subject to change without notice. Trade pricing is available only to qualifying accounts.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mt-8 mb-4">4. Orders and Payment</h2>
@@ -35,42 +35,37 @@ export default function TermsOfServicePage() {
             By placing an order, you agree to pay the listed price plus any applicable taxes, shipping, and handling fees. We accept major credit cards and approved payment methods. All orders are subject to acceptance and availability. We reserve the right to refuse or cancel any order for any reason, including suspected fraud or unauthorized activity.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">5. PBS Club Membership and PBScash</h2>
-          <p className="mb-6">
-            PBS Club membership is subject to separate terms and conditions. PBScash rewards are earned on qualifying purchases and may be redeemed on future orders. PBScash has no cash value and cannot be transferred to third parties. We reserve the right to modify the PBScash program, including earning rates and redemption terms, at any time with reasonable notice.
-          </p>
-
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">6. Shipping and Delivery</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">5. Shipping and Delivery</h2>
           <p className="mb-6">
             Shipping times and costs vary based on product type, quantity, and delivery location. Estimated delivery dates are provided as a convenience and are not guaranteed. Risk of loss and title for items pass to you upon delivery to the carrier. You are responsible for inspecting deliveries and reporting any damage or discrepancies within 48 hours of receipt.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">7. Returns and Refunds</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">6. Returns and Refunds</h2>
           <p className="mb-6">
             Our return and refund policy is detailed on our Refund Policy page. Custom orders, cut-to-size materials, and special-order items may not be eligible for return. All returns must be authorized in advance. Restocking fees may apply depending on the product and circumstances of the return.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">8. Intellectual Property</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">7. Intellectual Property</h2>
           <p className="mb-6">
             All content on our platform — including text, graphics, logos, images, and software — is the property of PBS Supply Co. or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">9. Limitation of Liability</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">8. Limitation of Liability</h2>
           <p className="mb-6">
             To the fullest extent permitted by law, PBS Supply Co. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Services. Our total liability for any claim arising from these terms shall not exceed the amount you paid to us in the 12 months preceding the claim.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Governing Law</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">9. Governing Law</h2>
           <p className="mb-6">
             These terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of laws principles. Any disputes arising under these terms shall be resolved in the state or federal courts located in Okaloosa County, Florida.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">11. Changes to These Terms</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">10. Changes to These Terms</h2>
           <p className="mb-6">
             We reserve the right to modify these terms at any time. We will provide notice of material changes by posting the updated terms on our website. Your continued use of our Services after changes are posted constitutes your acceptance of the revised terms.
           </p>
 
-          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">12. Contact Us</h2>
+          <h2 className="text-2xl font-bold text-navy mt-8 mb-4">11. Contact Us</h2>
           <p className="mb-6">
             If you have questions about these Terms of Service, please contact us at{" "}
             <a href="mailto:LettonLLC@gmail.com" className="text-accent-orange hover:underline">

@@ -12,8 +12,8 @@ const features = [
   },
   {
     icon: Coins,
-    title: "Earn PBScash",
-    description: "Get instant cashback on every order with Perfect Building Supply Co. — reinvest it in your next project and boost your bottom line.",
+    title: "Volume Discounts",
+    description: "The more you order, the more you save. Unlock deeper wholesale pricing with Perfect Building Supply Co. on every project.",
   },
   {
     icon: Headphones,
@@ -62,7 +62,7 @@ export default function FeaturesGrid() {
             ))}
           </div>
 
-          {/* PBScash rewards card — PBS branded */}
+          {/* Trade pricing card */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -81,15 +81,15 @@ export default function FeaturesGrid() {
                 <img src="/images/logo/pbs-logo.jpeg" alt="PBS" className="h-10 w-10 object-contain" />
                 <div>
                   <p className="text-white/50 text-xs uppercase tracking-widest">Perfect Building Supply</p>
-                  <p className="text-white font-semibold text-sm">PBScash Rewards</p>
+                  <p className="text-white font-semibold text-sm">Trade Pricing</p>
                 </div>
               </div>
 
-              {/* Middle: reward amount */}
+              {/* Middle: savings */}
               <div className="relative z-10 text-center">
-                <p className="text-white/50 text-sm mb-1">Your PBScash Balance</p>
-                <p className="text-5xl font-bold text-accent-orange leading-tight">$456</p>
-                <p className="text-white/60 text-xs mt-2">Earned on every order</p>
+                <p className="text-white/50 text-sm mb-1">Average Savings</p>
+                <p className="text-5xl font-bold text-accent-orange leading-tight">20%</p>
+                <p className="text-white/60 text-xs mt-2">Off retail on every order</p>
               </div>
 
               {/* Bottom: notification */}
@@ -98,8 +98,8 @@ export default function FeaturesGrid() {
                   <span className="text-accent-orange text-base">✓</span>
                 </div>
                 <div>
-                  <p className="text-white text-xs font-semibold">PBScash received!</p>
-                  <p className="text-white/50 text-xs">+$45.00 from your last order</p>
+                  <p className="text-white text-xs font-semibold">Trade pricing unlocked!</p>
+                  <p className="text-white/50 text-xs">Wholesale rates on 300,000+ products</p>
                 </div>
               </div>
             </div>

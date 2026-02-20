@@ -13,7 +13,6 @@ export interface Product {
   unit: string;
   moq: number;
   pricingTiers: PricingTier[];
-  pbsCashPercent: number;
   description: string;
   inStock: boolean;
   leadTimeDays: string;
@@ -154,7 +153,6 @@ export const products: Product[] = [
       { minQty: 201, maxQty: 500, pricePerUnit: 34, label: "Volume" },
       { minQty: 501, maxQty: null, pricePerUnit: 30, label: "Bulk" },
     ],
-    pbsCashPercent: 3,
     description: "Warm white base with dramatic gold veining. Popular for kitchen countertops and waterfall islands.",
     inStock: true,
     leadTimeDays: "3-5",
@@ -171,7 +169,6 @@ export const products: Product[] = [
       { minQty: 201, maxQty: 500, pricePerUnit: 58, label: "Volume" },
       { minQty: 501, maxQty: null, pricePerUnit: 52, label: "Bulk" },
     ],
-    pbsCashPercent: 3,
     description: "Natural stone with soft gold tone. #1 most-requested surface.",
     inStock: true,
     leadTimeDays: "3-7",
@@ -190,7 +187,6 @@ export const products: Product[] = [
       { minQty: 5001, maxQty: 20000, pricePerUnit: 2.45, label: "Volume" },
       { minQty: 20001, maxQty: null, pricePerUnit: 2.10, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "7x48 plank, 5.5mm with IXPE pad. Waterproof, 20mil wear layer.",
     inStock: true,
     leadTimeDays: "5-7",
@@ -207,7 +203,6 @@ export const products: Product[] = [
       { minQty: 5001, maxQty: 20000, pricePerUnit: 1.65, label: "Volume" },
       { minQty: 20001, maxQty: null, pricePerUnit: 1.40, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "6x36 plank, 4mm with backing. Budget-friendly for multifamily.",
     inStock: true,
     leadTimeDays: "5-10",
@@ -226,7 +221,6 @@ export const products: Product[] = [
       { minQty: 51, maxQty: 200, pricePerUnit: 125, label: "Volume" },
       { minQty: 201, maxQty: null, pricePerUnit: 110, label: "Bulk" },
     ],
-    pbsCashPercent: 3,
     description: "Ready-to-assemble shaker style. Soft-close hinges, plywood box.",
     inStock: true,
     leadTimeDays: "7-14",
@@ -243,7 +237,6 @@ export const products: Product[] = [
       { minQty: 21, maxQty: 50, pricePerUnit: 285, label: "Volume" },
       { minQty: 51, maxQty: null, pricePerUnit: 250, label: "Bulk" },
     ],
-    pbsCashPercent: 3,
     description: "36\" single-sink vanity with cultured marble top. Soft-close drawers.",
     inStock: true,
     leadTimeDays: "7-14",
@@ -262,7 +255,6 @@ export const products: Product[] = [
       { minQty: 1001, maxQty: 5000, pricePerUnit: 3.85, label: "Volume" },
       { minQty: 5001, maxQty: null, pricePerUnit: 3.25, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "Waterproof WPC wall panels. Easy click-lock install. Multiple finishes.",
     inStock: true,
     leadTimeDays: "10-14",
@@ -281,7 +273,6 @@ export const products: Product[] = [
       { minQty: 101, maxQty: 500, pricePerUnit: 72, label: "Volume" },
       { minQty: 501, maxQty: null, pricePerUnit: 62, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "6ft tall x 8ft wide privacy fence panel. UV resistant, no painting needed.",
     inStock: true,
     leadTimeDays: "7-10",
@@ -300,7 +291,6 @@ export const products: Product[] = [
       { minQty: 51, maxQty: 200, pricePerUnit: 140, label: "Volume" },
       { minQty: 201, maxQty: null, pricePerUnit: 120, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "Elongated bowl, 1.28 GPF, WaterSense certified. ADA compliant.",
     inStock: true,
     leadTimeDays: "5-7",
@@ -319,7 +309,6 @@ export const products: Product[] = [
       { minQty: 2001, maxQty: 10000, pricePerUnit: 2.75, label: "Volume" },
       { minQty: 10001, maxQty: null, pricePerUnit: 2.40, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "8.25\" exposure lap siding. Pre-primed, 50-year warranty.",
     inStock: true,
     leadTimeDays: "7-14",
@@ -338,7 +327,6 @@ export const products: Product[] = [
       { minQty: 5001, maxQty: 25000, pricePerUnit: 0.36, label: "Volume" },
       { minQty: 25001, maxQty: null, pricePerUnit: 0.31, label: "Bulk" },
     ],
-    pbsCashPercent: 1,
     description: "14 AWG, 2 conductor with ground. UL listed, residential grade.",
     inStock: true,
     leadTimeDays: "3-5",
@@ -357,17 +345,8 @@ export const products: Product[] = [
       { minQty: 501, maxQty: 2000, pricePerUnit: 3.25, label: "Volume" },
       { minQty: 2001, maxQty: null, pricePerUnit: 2.80, label: "Bulk" },
     ],
-    pbsCashPercent: 2,
     description: "24x24 polished porcelain. PEI 4 rated for commercial traffic.",
     inStock: true,
     leadTimeDays: "5-7",
   },
-];
-
-// ── Pricing Tier Labels ─────────────────────────────────────────
-
-export const pbsClubTiers = [
-  { name: "PBS Club Member", minSpend: 0, cashbackPercent: 2, priceLock: 7 },
-  { name: "PBS Club Gold", minSpend: 10000, cashbackPercent: 3, priceLock: 10 },
-  { name: "PBS Club Platinum", minSpend: 100000, cashbackPercent: 5, priceLock: 14 },
 ];
