@@ -137,10 +137,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-14">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <img src="/images/logo/logo.png" alt="Perfect Building Supply Co." className="h-9 w-9 object-contain" />
-            <span className="hidden xl:block text-white font-semibold text-sm tracking-tight leading-tight">
-              PBS<span className="text-accent-orange">.</span> Supply Co<span className="text-accent-orange">.</span>
+            <span className="text-white font-extrabold text-sm sm:text-base tracking-tight leading-tight font-heading">
+              <span className="hidden sm:inline">Perfect Building Supply Co<span className="text-accent-orange">.</span></span>
+              <span className="sm:hidden">PBS<span className="text-accent-orange">.</span></span>
             </span>
           </Link>
 
