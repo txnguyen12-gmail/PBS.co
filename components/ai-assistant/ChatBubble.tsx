@@ -2,13 +2,54 @@
 
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
+import Link from "next/link";
 import type { ChatMessage } from "./types";
 import { QuickActions } from "./QuickActions";
+import { productLinkRegex, getProductUrl } from "@/lib/product-links";
 
 interface ChatBubbleProps {
   message: ChatMessage;
   isLastAssistant: boolean;
   onQuickAction?: (action: string) => void;
+}
+
+/** Turn a plain text segment into fragments with product hyperlinks */
+function linkifyProducts(text: string, keyPrefix: string): React.ReactNode[] {
+  // Reset regex state (global flag)
+  productLinkRegex.lastIndex = 0;
+
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = productLinkRegex.exec(text)) !== null) {
+    const name = match[1];
+    const url = getProductUrl(name);
+    if (!url) continue;
+
+    // Text before match
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+
+    parts.push(
+      <Link
+        key={`${keyPrefix}-link-${match.index}`}
+        href={url}
+        className="text-accent-orange underline decoration-accent-orange/30 hover:decoration-accent-orange transition-colors"
+      >
+        {name}
+      </Link>,
+    );
+    lastIndex = match.index + name.length;
+  }
+
+  // Remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : [text];
 }
 
 function formatContent(text: string): React.ReactNode[] {
@@ -17,10 +58,10 @@ function formatContent(text: string): React.ReactNode[] {
       {line.split(/(\*\*[^*]+\*\*)/).map((part, j) =>
         part.startsWith("**") && part.endsWith("**") ? (
           <strong key={j} className="font-semibold text-charcoal">
-            {part.slice(2, -2)}
+            {linkifyProducts(part.slice(2, -2), `${i}-${j}`)}
           </strong>
         ) : (
-          <span key={j}>{part}</span>
+          <span key={j}>{linkifyProducts(part, `${i}-${j}`)}</span>
         ),
       )}
       {i < arr.length - 1 && <br />}
