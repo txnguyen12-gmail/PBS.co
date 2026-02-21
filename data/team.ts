@@ -28,14 +28,7 @@ export const teamMembers: TeamMember[] = [
     image: "",
     bio: "",
   },
-  {
-    name: "Thang Dang",
-    role: "CIO",
-    location: "Destin, FL",
-    image: "",
-    bio: "",
-  },
-  {
+{
     name: "Sona Tang",
     role: "Director of Logistics",
     location: "Destin, FL",
