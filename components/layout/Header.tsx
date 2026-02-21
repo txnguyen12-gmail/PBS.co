@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 
 interface SubMenuItem {
   label: string;
@@ -105,15 +105,6 @@ export default function Header() {
 
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
-            {/* AI Sourcing pill */}
-            <Link
-              href="/ai-assistant"
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white bg-accent-orange rounded-md hover:bg-brick transition-colors"
-            >
-              AI Sourcing
-              <Sparkles className="w-3.5 h-3.5" />
-            </Link>
-
             <Link
               href="/about-us"
               className={`px-3 py-2 text-sm transition-colors ${
@@ -218,19 +209,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-1">
-            {/* AI Sourcing link */}
-            <Link
-              href="/ai-assistant"
-              className="flex items-center gap-2 px-3 py-3 text-sm font-medium text-charcoal"
-              onClick={() => setMobileOpen(false)}
-            >
-              <Sparkles className="w-4 h-4 text-accent-orange" />
-              AI Sourcing
-            </Link>
-
-            <div className="border-t border-gray-100 my-2" />
-
-            {/* Main nav */}
             <Link href="/about-us" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               About Us
             </Link>
