@@ -19,7 +19,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Islands, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/calacatta-gold.jpg",
+    image: "/images/products/quartz-slabs/calacatta-laza.jpg",
     tags: ["marble-look", "white", "gold", "veined"],
     badge: "Best Seller",
   },
@@ -41,7 +41,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Backsplashes, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/statuario-classico.jpg",
+    image: "/images/products/quartz-slabs/marble-vein.jpg",
     tags: ["marble-look", "white", "grey", "veined"],
   },
   {
@@ -62,7 +62,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Vanities, Feature Walls" },
     ],
-    image: "/images/products/quartz-slabs/carrara-mist.jpg",
+    image: "/images/products/quartz-slabs/carrara-white.jpg",
     tags: ["marble-look", "white", "grey", "subtle"],
   },
   {
@@ -83,7 +83,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Islands, Commercial" },
     ],
-    image: "/images/products/quartz-slabs/pure-white.jpg",
+    image: "/images/products/quartz-slabs/crystal-white.jpg",
     tags: ["solid-color", "white", "minimal"],
   },
   {
@@ -146,7 +146,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Islands, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/emperador-dark.jpg",
+    image: "/images/products/quartz-slabs/emperador-brown.jpg",
     tags: ["veined", "brown", "warm", "luxury"],
   },
   {
@@ -167,7 +167,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Feature Walls, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/grigio-venato.jpg",
+    image: "/images/products/quartz-slabs/ocean-blue.jpg",
     tags: ["veined", "grey", "sophisticated"],
   },
   {
@@ -232,7 +232,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/sahara-beige.jpg",
+    image: "/images/products/quartz-slabs/sahara-gold.jpg",
     tags: ["solid-color", "beige", "warm", "neutral"],
   },
   {
@@ -253,7 +253,7 @@ export const quartzSlabs: Product[] = [
       { label: "Finish", value: "Polished" },
       { label: "Application", value: "Countertops, Islands, Vanities" },
     ],
-    image: "/images/products/quartz-slabs/stormy-grey.jpg",
+    image: "/images/products/quartz-slabs/storm-grey.jpg",
     tags: ["veined", "grey", "modern"],
   },
 ];

@@ -20,7 +20,7 @@ export const faucets: Product[] = [
       { label: "Spray Modes", value: "Stream, Spray" },
       { label: "Cartridge", value: "Ceramic Disc" },
     ],
-    image: "/images/products/faucets/kitchen-single-handle.jpg",
+    image: "",
     tags: ["kitchen", "pull-down", "chrome", "single-handle"],
     badge: "Best Seller",
   },
@@ -43,7 +43,7 @@ export const faucets: Product[] = [
       { label: "Spray Modes", value: "Stream, Spray" },
       { label: "Cartridge", value: "Ceramic Disc" },
     ],
-    image: "/images/products/faucets/kitchen-matte-black.jpg",
+    image: "",
     tags: ["kitchen", "pull-down", "matte-black", "modern"],
     badge: "New",
   },
@@ -66,7 +66,7 @@ export const faucets: Product[] = [
       { label: "Cartridge", value: "Ceramic Disc" },
       { label: "Installation", value: "Single-Hole, Deck Mount" },
     ],
-    image: "/images/products/faucets/basin-mixer-chrome.jpg",
+    image: "",
     tags: ["basin", "mixer", "chrome", "bathroom"],
   },
   {
@@ -88,7 +88,7 @@ export const faucets: Product[] = [
       { label: "Cartridge", value: "Ceramic Disc" },
       { label: "Installation", value: "Single-Hole, Deck Mount" },
     ],
-    image: "/images/products/faucets/basin-mixer-brushed-nickel.jpg",
+    image: "",
     tags: ["basin", "mixer", "brushed-nickel", "bathroom"],
   },
   {
@@ -110,7 +110,7 @@ export const faucets: Product[] = [
       { label: "Cartridge", value: "Ceramic Disc" },
       { label: "Installation", value: "Single-Hole, Deck Mount" },
     ],
-    image: "/images/products/faucets/tall-vessel-faucet.jpg",
+    image: "",
     tags: ["basin", "vessel", "tall", "waterfall"],
   },
   {
@@ -130,7 +130,7 @@ export const faucets: Product[] = [
       { label: "Size", value: '1/2" inlet, 3/8" outlet' },
       { label: "Application", value: "Toilet & Basin Supply Lines" },
     ],
-    image: "/images/products/faucets/angle-valve-set.jpg",
+    image: "",
     tags: ["accessories", "valve", "brass", "chrome"],
   },
   {
@@ -151,7 +151,7 @@ export const faucets: Product[] = [
       { label: "Overflow", value: "Compatible" },
       { label: "Application", value: "Bathroom Basins" },
     ],
-    image: "/images/products/faucets/pop-up-drain.jpg",
+    image: "",
     tags: ["accessories", "drain", "pop-up", "basin"],
   },
 ];

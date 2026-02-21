@@ -21,7 +21,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/smart-toilet-pro.jpg",
+    image: "",
     tags: ["smart", "one-piece", "bidet", "electronic"],
     badge: "New",
   },
@@ -44,7 +44,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/smart-toilet-elite.jpg",
+    image: "",
     tags: ["smart", "one-piece", "massage", "premium"],
   },
   // One-Piece Toilets with Electronic Lid
@@ -67,7 +67,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/one-piece-bidet.jpg",
+    image: "",
     tags: ["one-piece", "bidet", "electronic"],
     badge: "Best Seller",
   },
@@ -91,7 +91,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/one-piece-classic.jpg",
+    image: "/images/products/sanitaryware/one-piece-v1002.png",
     tags: ["one-piece", "classic", "standard"],
   },
   {
@@ -113,7 +113,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '10" (265mm)' },
     ],
-    image: "/images/products/sanitaryware/one-piece-compact.jpg",
+    image: "/images/products/sanitaryware/one-piece-v1005.png",
     tags: ["one-piece", "compact", "small-space"],
   },
   {
@@ -135,7 +135,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (305mm)' },
     ],
-    image: "/images/products/sanitaryware/one-piece-modern.jpg",
+    image: "/images/products/sanitaryware/one-piece-v1015.png",
     tags: ["one-piece", "modern", "low-profile"],
   },
   // Water-Saving
@@ -157,7 +157,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/eco-saver.jpg",
+    image: "/images/products/sanitaryware/one-piece-v1025.png",
     tags: ["one-piece", "eco", "water-saving"],
   },
   // Two-Piece Toilets
@@ -180,7 +180,7 @@ export const sanitaryware: Product[] = [
       { label: "Seat", value: "Soft-Close" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/two-piece-standard.jpg",
+    image: "/images/products/sanitaryware/two-piece-v02.png",
     tags: ["two-piece", "standard", "push-button"],
     badge: "Best Seller",
   },
@@ -203,7 +203,7 @@ export const sanitaryware: Product[] = [
       { label: "Seat", value: "Soft-Close" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "/images/products/sanitaryware/two-piece-value.jpg",
+    image: "/images/products/sanitaryware/two-piece-v07.png",
     tags: ["two-piece", "value", "lever", "bulk"],
   },
   {
@@ -224,7 +224,7 @@ export const sanitaryware: Product[] = [
       { label: "Drain", value: "P-Trap (Wall Outlet)" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "/images/products/sanitaryware/two-piece-p-trap.jpg",
+    image: "/images/products/sanitaryware/two-piece-v113.png",
     tags: ["two-piece", "p-trap", "wall-outlet"],
   },
   // Wall-Hung
@@ -247,7 +247,7 @@ export const sanitaryware: Product[] = [
       { label: "Seat", value: "Slow-Close" },
       { label: "Mounting", value: "Wall-Mounted (frame required)" },
     ],
-    image: "/images/products/sanitaryware/wall-hung-toilet.jpg",
+    image: "/images/products/sanitaryware/wall-hung-ct01.png",
     tags: ["wall-hung", "concealed", "modern", "floating"],
     badge: "New",
   },
@@ -271,7 +271,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "/images/products/sanitaryware/basin-round.jpg",
+    image: "/images/products/sanitaryware/basin-c519.png",
     tags: ["basin", "round", "countertop", "vessel"],
   },
   {
@@ -293,7 +293,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "/images/products/sanitaryware/basin-rectangular.jpg",
+    image: "",
     tags: ["basin", "rectangular", "countertop", "vessel"],
   },
   {
@@ -314,7 +314,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "/images/products/sanitaryware/pedestal-basin.jpg",
+    image: "",
     tags: ["basin", "pedestal", "freestanding", "classic"],
   },
   {
@@ -335,7 +335,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "/images/products/sanitaryware/wall-hung-basin.jpg",
+    image: "",
     tags: ["basin", "wall-hung", "space-saving"],
   },
   // Vanity Sets
@@ -357,7 +357,7 @@ export const sanitaryware: Product[] = [
       { label: "Cabinet", value: "White with Soft-Close Doors" },
       { label: "Material", value: "Vitreous China Basin, MDF Cabinet" },
     ],
-    image: "/images/products/sanitaryware/vanity-24.jpg",
+    image: "/images/products/sanitaryware/vanity-tc519.png",
     tags: ["vanity", "24-inch", "compact", "set"],
   },
   {
@@ -378,7 +378,7 @@ export const sanitaryware: Product[] = [
       { label: "Cabinet", value: "White/Black with Drawers" },
       { label: "Material", value: "Vitreous China Basin, MDF Cabinet" },
     ],
-    image: "/images/products/sanitaryware/vanity-30.jpg",
+    image: "/images/products/sanitaryware/vanity-tc521.png",
     tags: ["vanity", "30-inch", "floating", "set"],
   },
   {
@@ -399,7 +399,7 @@ export const sanitaryware: Product[] = [
       { label: "Cabinet", value: "White with Soft-Close" },
       { label: "Material", value: "Vitreous China Basin, MDF Cabinet" },
     ],
-    image: "/images/products/sanitaryware/vanity-36.jpg",
+    image: "",
     tags: ["vanity", "36-inch", "full-size", "set"],
   },
 ];

@@ -20,7 +20,7 @@ export const showerBath: Product[] = [
       { label: "Handheld", value: "3-Function Spray" },
       { label: "Includes", value: "Valve, Rain Head, Handheld, Slide Bar" },
     ],
-    image: "/images/products/shower-bath/thermostatic-shower-chrome.jpg",
+    image: "",
     tags: ["shower-set", "thermostatic", "chrome", "rain"],
     badge: "Best Seller",
   },
@@ -43,7 +43,7 @@ export const showerBath: Product[] = [
       { label: "Handheld", value: "3-Function Spray" },
       { label: "Includes", value: "Valve, Rain Head, Handheld, Slide Bar" },
     ],
-    image: "/images/products/shower-bath/thermostatic-shower-black.jpg",
+    image: "",
     tags: ["shower-set", "thermostatic", "matte-black", "rain"],
     badge: "New",
   },
@@ -66,7 +66,7 @@ export const showerBath: Product[] = [
       { label: "Flow Rate", value: "2.5 GPM" },
       { label: "Installation", value: "Ceiling Flush-Mount" },
     ],
-    image: "/images/products/shower-bath/ceiling-rain-head.jpg",
+    image: "",
     tags: ["rain-shower", "ceiling", "chrome", "flush-mount"],
   },
   {
@@ -88,7 +88,7 @@ export const showerBath: Product[] = [
       { label: "Capacity", value: "~60 Gallons" },
       { label: "Drain", value: "Center Drain" },
     ],
-    image: "/images/products/shower-bath/freestanding-bathtub.jpg",
+    image: "",
     tags: ["bathtub", "freestanding", "acrylic", "soaking"],
   },
   {
@@ -110,7 +110,7 @@ export const showerBath: Product[] = [
       { label: "Width Options", value: '36", 48", 60"' },
       { label: "Height", value: '72"' },
     ],
-    image: "/images/products/shower-bath/frameless-enclosure.jpg",
+    image: "",
     tags: ["enclosure", "frameless", "glass", "pivot"],
   },
   {
@@ -132,7 +132,7 @@ export const showerBath: Product[] = [
       { label: "Width Options", value: '56-60"' },
       { label: "Height", value: '70"' },
     ],
-    image: "/images/products/shower-bath/sliding-shower-door.jpg",
+    image: "",
     tags: ["enclosure", "sliding", "bypass", "alcove"],
   },
 ];

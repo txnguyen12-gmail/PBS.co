@@ -28,7 +28,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/citrine.jpg",
+    image: "/images/products/spc-flooring/n4001-citrine.jpg",
     tags: ["light", "oak", "warm", "golden"],
   },
   {
@@ -44,7 +44,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/sage.jpg",
+    image: "/images/products/spc-flooring/n4002-sage.jpg",
     tags: ["light", "grey", "cool", "knotty"],
   },
   {
@@ -60,7 +60,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/sandy.jpg",
+    image: "/images/products/spc-flooring/n4003-sandy.jpg",
     tags: ["light", "greige", "neutral"],
     badge: "Best Seller",
   },
@@ -77,7 +77,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/mocha.jpg",
+    image: "/images/products/spc-flooring/n4004-mocha.jpg",
     tags: ["dark", "brown", "rustic"],
   },
   {
@@ -93,7 +93,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/bronco.jpg",
+    image: "/images/products/spc-flooring/n4005-bronco.jpg",
     tags: ["dark", "charcoal", "weathered"],
   },
   {
@@ -109,7 +109,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/hazel.jpg",
+    image: "/images/products/spc-flooring/n4006-hazel.jpg",
     tags: ["wood-look", "oak", "natural", "light"],
   },
   {
@@ -125,7 +125,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/monsoon.jpg",
+    image: "/images/products/spc-flooring/n4007-monsoon.jpg",
     tags: ["light", "grey", "silver", "modern"],
   },
   {
@@ -141,7 +141,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/barley.jpg",
+    image: "/images/products/spc-flooring/n4008-barley.jpg",
     tags: ["wood-look", "oak", "warm", "medium"],
     badge: "Best Seller",
   },
@@ -158,7 +158,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/silk.jpg",
+    image: "",
     tags: ["light", "blush", "grey", "subtle"],
   },
   {
@@ -174,7 +174,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/hurricane.jpg",
+    image: "",
     tags: ["dark", "grey", "swirl", "contemporary"],
   },
   {
@@ -190,7 +190,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/sandrift.jpg",
+    image: "",
     tags: ["light", "oak", "golden", "coastal"],
   },
   {
@@ -206,7 +206,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/almond.jpg",
+    image: "",
     tags: ["wood-look", "brown", "warm", "prominent-grain"],
   },
   {
@@ -222,7 +222,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/flint.jpg",
+    image: "",
     tags: ["light", "honey", "tan", "soft"],
   },
   {
@@ -238,7 +238,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/muesli.jpg",
+    image: "",
     tags: ["wood-look", "golden", "oak", "rustic"],
   },
   {
@@ -254,7 +254,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/beige.jpg",
+    image: "/images/products/spc-flooring/n4015-beige.jpg",
     tags: ["light", "beige", "maple", "neutral"],
   },
   {
@@ -270,7 +270,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/chestnut.jpg",
+    image: "/images/products/spc-flooring/n4016-chestnut.jpg",
     tags: ["dark", "brown", "warm", "muted"],
   },
   {
@@ -286,7 +286,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/nebula.jpg",
+    image: "",
     tags: ["light", "cream", "blonde", "scandinavian"],
   },
   {
@@ -305,7 +305,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.5mm (Commercial Grade)" },
     ],
-    image: "/images/products/spc-flooring/equinox.jpg",
+    image: "",
     tags: ["stone-look", "grey", "commercial", "premium"],
     badge: "New",
   },
@@ -322,7 +322,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/vega.jpg",
+    image: "",
     tags: ["dark", "grey", "bold", "contemporary"],
   },
   {
@@ -338,7 +338,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/aurora.jpg",
+    image: "",
     tags: ["light", "taupe", "warm", "elegant"],
   },
   {
@@ -354,7 +354,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/umbra.jpg",
+    image: "",
     tags: ["stone-look", "cream", "travertine", "linear"],
   },
   {
@@ -370,7 +370,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/noctis.jpg",
+    image: "",
     tags: ["wood-look", "grey-beige", "oak", "neutral"],
   },
   {
@@ -386,7 +386,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.3mm" },
     ],
-    image: "/images/products/spc-flooring/zodiac.jpg",
+    image: "",
     tags: ["wood-look", "golden", "oak", "clean"],
   },
   {
@@ -405,7 +405,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.5mm (Commercial Grade)" },
     ],
-    image: "/images/products/spc-flooring/sidra.jpg",
+    image: "",
     tags: ["wood-look", "brown", "oak", "commercial", "premium"],
   },
   {
@@ -424,7 +424,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.5mm (Commercial Grade)" },
     ],
-    image: "/images/products/spc-flooring/cyra.jpg",
+    image: "",
     tags: ["light", "sandy", "oak", "commercial", "premium"],
   },
   {
@@ -443,7 +443,7 @@ export const spcFlooring: Product[] = [
       ...commonSpecs,
       { label: "Wear Layer", value: "0.5mm (Commercial Grade)" },
     ],
-    image: "/images/products/spc-flooring/comet.jpg",
+    image: "",
     tags: ["wood-look", "natural", "oak", "commercial", "premium"],
     badge: "New",
   },

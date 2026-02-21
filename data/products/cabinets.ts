@@ -68,7 +68,7 @@ export const cabinets: Product[] = [
       { label: "Drawer Glides", value: "Full Extension Soft-Close" },
       { label: "Hinges", value: "Concealed Soft-Close" },
     ],
-    image: "/images/products/cabinets/shaker-navy.jpg",
+    image: "/images/products/cabinets/shaker-navy.png",
     tags: ["shaker", "navy", "blue"],
     badge: "New",
   },
@@ -115,7 +115,7 @@ export const cabinets: Product[] = [
       { label: "Drawer Glides", value: "Full Extension Soft-Close" },
       { label: "Hinges", value: "Concealed Soft-Close" },
     ],
-    image: "/images/products/cabinets/shaker-slate.jpg",
+    image: "/images/products/cabinets/shaker-slate.png",
     tags: ["shaker", "slate", "dark"],
   },
   {

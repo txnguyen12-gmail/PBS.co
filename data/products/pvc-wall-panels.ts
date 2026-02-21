@@ -88,7 +88,7 @@ export const pvcWallPanels: Product[] = [
       { label: "Profile", value: "3 Big Waves" },
       { label: "Application", value: "Feature Walls, Architectural Accents" },
     ],
-    image: "/images/products/pvc-wall-panels/large-wave.jpg",
+    image: "/images/products/pvc-wall-panels/big-wave.jpg",
     tags: ["v-groove", "dramatic", "architectural", "deep"],
   },
 ];

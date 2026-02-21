@@ -20,7 +20,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Colors", value: "Brown, Grey, Teak, Charcoal" },
       { label: "Application", value: "Pool Decks, Patios, Terraces" },
     ],
-    image: "/images/products/wpc-outdoor/standard-decking.jpg",
+    image: "/images/products/wpc-outdoor/decking-standard.png",
     tags: ["decking", "hollow", "outdoor", "pool"],
     badge: "Best Seller",
   },
@@ -43,7 +43,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Colors", value: "Natural/Dark, Brown/Dark, Teak/Brown" },
       { label: "Application", value: "Premium Decks, Commercial, Hospitality" },
     ],
-    image: "/images/products/wpc-outdoor/coextrusion-decking.jpg",
+    image: "/images/products/wpc-outdoor/decking-coex.jpg",
     tags: ["decking", "premium", "coextrusion", "commercial"],
     badge: "New",
   },
@@ -66,7 +66,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Colors", value: "Walnut, Teak, Rosewood, Grey" },
       { label: "Application", value: "Exterior Facades, Feature Walls" },
     ],
-    image: "/images/products/wpc-outdoor/wall-cladding.jpg",
+    image: "/images/products/wpc-outdoor/cladding.png",
     tags: ["cladding", "exterior", "facade"],
   },
   {
@@ -88,7 +88,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Includes", value: "Posts, Caps, Clips, Hardware" },
       { label: "Application", value: "Residential Privacy Fencing" },
     ],
-    image: "/images/products/wpc-outdoor/diy-fence.jpg",
+    image: "/images/products/wpc-outdoor/fence-diy.png",
     tags: ["fencing", "diy", "privacy", "horizontal"],
   },
   {
@@ -110,7 +110,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Includes", value: "Pickets, Posts, Brackets, Hardware" },
       { label: "Application", value: "Property Boundaries, Commercial" },
     ],
-    image: "/images/products/wpc-outdoor/fixed-fence.jpg",
+    image: "",
     tags: ["fencing", "fixed", "privacy", "vertical"],
   },
   {
@@ -132,7 +132,7 @@ export const wpcOutdoor: Product[] = [
       { label: "Colors", value: "Brown, Grey, Teak, Charcoal" },
       { label: "Application", value: "Balconies, Rooftops, Patios" },
     ],
-    image: "/images/products/wpc-outdoor/deck-tiles.jpg",
+    image: "/images/products/wpc-outdoor/decking-tiles.jpg",
     tags: ["decking", "tiles", "interlocking", "balcony"],
   },
 ];

@@ -20,7 +20,7 @@ export const interiorDoors: Product[] = [
       { label: "Core", value: "Hollow WPC Core" },
       { label: "Sizes Available", value: '28", 30", 32", 36" x 80"' },
     ],
-    image: "/images/products/interior-doors/wpc-panel-white.jpg",
+    image: "",
     tags: ["panel", "white", "wpc", "waterproof"],
     badge: "Best Seller",
     variants: [
@@ -49,7 +49,7 @@ export const interiorDoors: Product[] = [
       { label: "Core", value: "Hollow WPC Core" },
       { label: "Sizes Available", value: '28", 30", 32", 36" x 80"' },
     ],
-    image: "/images/products/interior-doors/wpc-panel-grey.jpg",
+    image: "",
     tags: ["panel", "grey", "wpc", "modern"],
     variants: [
       { name: '28" x 80"', sku: "PBS-DOR-002-28" },
@@ -77,7 +77,7 @@ export const interiorDoors: Product[] = [
       { label: "Core", value: "Hollow WPC Core" },
       { label: "Sizes Available", value: '28", 30", 32", 36" x 80"' },
     ],
-    image: "/images/products/interior-doors/wpc-flush-white.jpg",
+    image: "",
     tags: ["flush", "white", "wpc", "minimalist"],
     variants: [
       { name: '28" x 80"', sku: "PBS-DOR-003-28" },
@@ -105,7 +105,7 @@ export const interiorDoors: Product[] = [
       { label: "Core", value: "Hollow Core" },
       { label: "Sizes Available", value: '30", 32", 36" x 80"' },
     ],
-    image: "/images/products/interior-doors/abs-panel-wood-grain.jpg",
+    image: "",
     tags: ["panel", "wood-grain", "abs", "textured"],
     badge: "New",
     variants: [
@@ -133,7 +133,7 @@ export const interiorDoors: Product[] = [
       { label: "Core", value: "Hollow WPC Core" },
       { label: "Sizes Available", value: '28", 30", 32", 36" x 80"' },
     ],
-    image: "/images/products/interior-doors/wpc-panel-walnut.jpg",
+    image: "",
     tags: ["panel", "walnut", "wpc", "warm"],
     variants: [
       { name: '28" x 80"', sku: "PBS-DOR-005-28" },
