@@ -4,7 +4,6 @@ import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
-import { useSession } from "@/components/ai-assistant/use-session";
 import { useChat } from "@/components/ai-assistant/use-chat";
 import { useLeadCapture } from "@/components/ai-assistant/use-lead-capture";
 import { ChatSidebar } from "@/components/ai-assistant/ChatSidebar";
@@ -15,9 +14,8 @@ const isQuoteIntent = (msg: string) =>
   /\b(quote|get a quote|pricing|price list)\b/i.test(msg);
 
 export default function AIAssistantPage() {
-  const { sessionId, resetSession } = useSession();
   const { messages, isTyping, sendMessage, addLocalMessage, clearChat } =
-    useChat(sessionId);
+    useChat();
   const {
     leadStep,
     leadCaptured,
@@ -28,11 +26,10 @@ export default function AIAssistantPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleNewChat = useCallback(() => {
-    resetSession();
     clearChat();
     resetLeadCapture();
     setSidebarOpen(false);
-  }, [resetSession, clearChat, resetLeadCapture]);
+  }, [clearChat, resetLeadCapture]);
 
   const handleSend = useCallback(
     async (text: string) => {
@@ -55,7 +52,7 @@ export default function AIAssistantPage() {
         return;
       }
 
-      // 3. Normal message — send to SourceAI
+      // 3. Normal message — send to Claude
       sendMessage(text);
     },
     [

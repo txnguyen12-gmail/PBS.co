@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import type { ChatMessage } from "./types";
-import { ProductCard } from "./ProductCard";
 import { QuickActions } from "./QuickActions";
 
 interface ChatBubbleProps {
@@ -49,7 +48,6 @@ export function ChatBubble({
         </div>
       )}
       <div className="max-w-[85%] sm:max-w-[75%]">
-        {/* Text bubble — hidden when content is empty (e.g. cards-only response) */}
         {message.content && (
           <div
             className={`rounded-2xl px-4 py-3 text-sm leading-relaxed ${
@@ -59,15 +57,6 @@ export function ChatBubble({
             }`}
           >
             {formatContent(message.content)}
-          </div>
-        )}
-
-        {/* Product cards */}
-        {message.cards && message.cards.length > 0 && (
-          <div className="mt-2 grid gap-2 grid-cols-1 sm:grid-cols-2">
-            {message.cards.map((card) => (
-              <ProductCard key={card.product_id} product={card} />
-            ))}
           </div>
         )}
 

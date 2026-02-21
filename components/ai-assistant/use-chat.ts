@@ -1,252 +1,93 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
-import type {
-  ChatMessage,
-  ProductCard,
-  SSEEvent,
-  HistoryResponse,
-} from "./types";
+import { useCallback, useMemo } from "react";
+import { useChat as useAIChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
+import type { ChatMessage } from "./types";
 
-const API_BASE = "/api/sourceai";
-const TENANT_ID = "pbs";
+const transport = new DefaultChatTransport({ api: "/api/chat" });
 
 export const WELCOME_MESSAGE: ChatMessage = {
   id: "welcome",
   role: "assistant",
   content:
-    "Welcome to **PBS Supply Co.**! I'm your AI Sourcing Agent — here to help you find the right building materials at the best prices.\n\nI can help you with:\n- **Product search** — slabs, tiles, flooring, cabinets, fixtures & more\n- **Pricing** — lower prices than your current supplier, guaranteed\n- **Quotes** — get a quote with direct trucking to your jobsite\n\nWhat are you looking for today?",
+    "Welcome to **PBS Supply Co.**! I'm your AI assistant — here to help you find the right building materials at the best prices.\n\nI can help you with:\n- **Product search** — cabinets, flooring, quartz, fixtures & more\n- **Pricing** — wholesale pricing direct from manufacturers\n- **Quotes** — get a quote with direct trucking to your jobsite\n\nWhat are you looking for today?",
   timestamp: new Date(),
   quickActions: [
     "I need cabinets for 20 units",
     "SPC flooring pricing",
     "What brands do you carry?",
-    "Talk to sales",
+    "Get a quote",
   ],
 };
 
-// SSE stream parser — adapted from SourceAI chat-widget.tsx
-async function* streamChatResponse(
-  message: string,
-  sessionId: string,
-): AsyncGenerator<SSEEvent> {
-  const response = await fetch(`${API_BASE}/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      tenant_id: TENANT_ID,
-      session_id: sessionId,
-      message,
-      context: {
-        page_url:
-          typeof window !== "undefined" ? window.location.href : undefined,
-        referrer:
-          typeof document !== "undefined" ? document.referrer : undefined,
-      },
-    }),
-  });
-
-  if (!response.ok || !response.body) {
-    throw new Error(`Chat API error: ${response.status}`);
-  }
-
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder();
-  let buffer = "";
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-
-    buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() ?? "";
-
-    let currentEvent = "";
-    for (const line of lines) {
-      if (line.startsWith("event: ")) {
-        currentEvent = line.slice(7).trim();
-      } else if (line.startsWith("data: ") && currentEvent) {
-        yield {
-          type: currentEvent as SSEEvent["type"],
-          data: JSON.parse(line.slice(6)),
-        };
-        currentEvent = "";
-      }
-    }
-  }
+/** Extract text content from a UIMessage parts array */
+function getTextFromParts(parts: Array<{ type: string; text?: string }>): string {
+  return parts
+    .filter((p) => p.type === "text" && p.text)
+    .map((p) => p.text!)
+    .join("");
 }
 
-export function useChat(sessionId: string) {
-  const [messages, setMessages] = useState<ChatMessage[]>([WELCOME_MESSAGE]);
-  const [isTyping, setIsTyping] = useState(false);
-  const [historyLoaded, setHistoryLoaded] = useState(false);
+export function useChat() {
+  const {
+    messages: aiMessages,
+    status,
+    sendMessage,
+    setMessages: setAIMessages,
+  } = useAIChat({ transport });
 
-  // Load conversation history on mount
-  useEffect(() => {
-    if (!sessionId) return;
+  const isLoading = status === "submitted" || status === "streaming";
 
-    fetch(
-      `${API_BASE}/chat/history?tenant_id=${TENANT_ID}&session_id=${sessionId}`,
-    )
-      .then((res) => res.json())
-      .then((data: HistoryResponse) => {
-        if (data.messages && data.messages.length > 0) {
-          setMessages(
-            data.messages.map((m) => ({
-              ...m,
-              timestamp: new Date(),
-            })),
-          );
-        }
-      })
-      .catch((err) => console.error("Failed to load history:", err))
-      .finally(() => setHistoryLoaded(true));
-  }, [sessionId]);
+  // Map AI SDK UIMessage[] → ChatMessage[], prepend welcome message
+  const messages: ChatMessage[] = useMemo(() => {
+    const mapped = aiMessages.map((m) => ({
+      id: m.id,
+      role: m.role as "user" | "assistant",
+      content: getTextFromParts(m.parts),
+      timestamp: new Date(),
+    }));
+    return [WELCOME_MESSAGE, ...mapped];
+  }, [aiMessages]);
 
-  // Process SSE events and update message state
-  const handleEvents = useCallback(
-    async (
-      stream: AsyncGenerator<SSEEvent>,
-      assistantId: string,
-    ) => {
-      let fullText = "";
-
-      for await (const event of stream) {
-        switch (event.type) {
-          case "token":
-            fullText += event.data as string;
-            setMessages((prev) => {
-              const existing = prev.find((m) => m.id === assistantId);
-              if (existing) {
-                return prev.map((m) =>
-                  m.id === assistantId ? { ...m, content: fullText } : m,
-                );
-              }
-              return [
-                ...prev,
-                {
-                  id: assistantId,
-                  role: "assistant" as const,
-                  content: fullText,
-                  timestamp: new Date(),
-                },
-              ];
-            });
-            break;
-          case "cards": {
-            const cards = event.data as ProductCard[];
-            setMessages((prev) => {
-              const existing = prev.find((m) => m.id === assistantId);
-              if (existing) {
-                return prev.map((m) =>
-                  m.id === assistantId ? { ...m, cards } : m,
-                );
-              }
-              return [
-                ...prev,
-                {
-                  id: assistantId,
-                  role: "assistant" as const,
-                  content: fullText,
-                  cards,
-                  timestamp: new Date(),
-                },
-              ];
-            });
-            break;
-          }
-          case "quick_actions": {
-            const quickActions = event.data as string[];
-            setMessages((prev) => {
-              const existing = prev.find((m) => m.id === assistantId);
-              if (existing) {
-                return prev.map((m) =>
-                  m.id === assistantId ? { ...m, quickActions } : m,
-                );
-              }
-              return [
-                ...prev,
-                {
-                  id: assistantId,
-                  role: "assistant" as const,
-                  content: fullText,
-                  quickActions,
-                  timestamp: new Date(),
-                },
-              ];
-            });
-            break;
-          }
-          case "done":
-            break;
-        }
-      }
-    },
-    [],
-  );
-
-  const sendMessage = useCallback(
+  const send = useCallback(
     async (text: string) => {
-      if (isTyping || !text.trim() || !sessionId) return;
-
-      const userMsg: ChatMessage = {
-        id: `user_${Date.now()}`,
-        role: "user",
-        content: text,
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, userMsg]);
-      setIsTyping(true);
-
-      const assistantId = `assistant_${Date.now()}`;
-
-      try {
-        const stream = streamChatResponse(text, sessionId);
-        await handleEvents(stream, assistantId);
-      } catch (error) {
-        console.error("Chat stream error:", error);
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: assistantId,
-            role: "assistant",
-            content:
-              "I'm sorry, I'm having trouble connecting right now. Please try again or call us at **(713) 927-1500**.",
-            timestamp: new Date(),
-          },
-        ]);
-      } finally {
-        setIsTyping(false);
-      }
+      if (isLoading || !text.trim()) return;
+      sendMessage({ text });
     },
-    [isTyping, sessionId, handleEvents],
+    [isLoading, sendMessage],
   );
 
   // Add a local message (for lead capture flow)
   const addLocalMessage = useCallback(
     (role: "user" | "assistant", content: string) => {
-      const msg: ChatMessage = {
-        id: `${role}_${Date.now()}_${Math.random()}`,
+      const id = `${role}_${Date.now()}_${Math.random()}`;
+      setAIMessages((prev) => [
+        ...prev,
+        {
+          id,
+          role,
+          parts: [{ type: "text" as const, text: content }],
+        },
+      ]);
+      return {
+        id,
         role,
         content,
         timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, msg]);
-      return msg;
+      } as ChatMessage;
     },
-    [],
+    [setAIMessages],
   );
 
   const clearChat = useCallback(() => {
-    setMessages([WELCOME_MESSAGE]);
-  }, []);
+    setAIMessages([]);
+  }, [setAIMessages]);
 
   return {
     messages,
-    isTyping,
-    historyLoaded,
-    sendMessage,
+    isTyping: isLoading,
+    sendMessage: send,
     addLocalMessage,
     clearChat,
   };
