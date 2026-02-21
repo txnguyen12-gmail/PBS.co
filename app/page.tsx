@@ -10,7 +10,7 @@ import { surfacesTestimonials } from "@/data/testimonials";
 import { homepageFAQ } from "@/data/faq";
 
 export const metadata: Metadata = {
-  title: "Perfect Building Supply Co. — Cabinets, WPC Walls & Ceilings for Trade Pros",
+  title: "Perfect Building Supply Co. — Wholesale Cabinets, Flooring & Building Materials",
   description: "Wholesale building materials for contractors and builders. Trade pricing on cabinets, WPC wall panels, and ceiling systems. Custom configurations, bulk orders, and dedicated support.",
 };
 
