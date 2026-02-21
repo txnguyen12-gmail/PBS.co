@@ -21,7 +21,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/smart-toilet-0203.png",
     tags: ["smart", "one-piece", "bidet", "electronic"],
     badge: "New",
   },
@@ -44,7 +44,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/smart-toilet-0205.png",
     tags: ["smart", "one-piece", "massage", "premium"],
   },
   // One-Piece Toilets with Electronic Lid
@@ -67,7 +67,7 @@ export const sanitaryware: Product[] = [
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
       { label: "Rough-In", value: '12" (300mm)' },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/one-piece-bidet-v1001.png",
     tags: ["one-piece", "bidet", "electronic"],
     badge: "Best Seller",
   },
@@ -293,7 +293,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/basin-rect-c519.png",
     tags: ["basin", "rectangular", "countertop", "vessel"],
   },
   {
@@ -314,7 +314,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/pedestal-basin-c01.png",
     tags: ["basin", "pedestal", "freestanding", "classic"],
   },
   {
@@ -335,7 +335,7 @@ export const sanitaryware: Product[] = [
       { label: "Material", value: "Vitreous China" },
       { label: "Glaze", value: "Anti-Bacterial Non-Stick" },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/wall-hung-basin-c308.png",
     tags: ["basin", "wall-hung", "space-saving"],
   },
   // Vanity Sets
@@ -399,7 +399,7 @@ export const sanitaryware: Product[] = [
       { label: "Cabinet", value: "White with Soft-Close" },
       { label: "Material", value: "Vitreous China Basin, MDF Cabinet" },
     ],
-    image: "",
+    image: "/images/products/sanitaryware/vanity-tc521-901.png",
     tags: ["vanity", "36-inch", "full-size", "set"],
   },
 ];
