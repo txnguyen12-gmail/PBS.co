@@ -21,14 +21,12 @@ const footerColumns = [
   {
     title: "Categories",
     links: [
-      { label: "Slabs", href: "/collections/slabs" },
-      { label: "Tiles", href: "/collections/tile" },
-      { label: "Flooring", href: "/collections/all-flooring" },
-      { label: "Cabinets", href: "/collections/cabinets" },
-      { label: "Sanitaryware", href: "/collections/sanitaryware-fixtures" },
-      { label: "Siding & Cladding", href: "/collections/siding-cladding" },
-      { label: "Fencing", href: "/collections/fencing" },
-      { label: "Electrical", href: "/collections/electrical-wires" },
+      { label: "Kitchen Cabinets", href: "/collections/cabinets" },
+      { label: "Quartz Slabs", href: "/collections/quartz-slabs" },
+      { label: "SPC/LVP Flooring", href: "/collections/spc-flooring" },
+      { label: "PVC Wall Panels", href: "/collections/pvc-wall-panels" },
+      { label: "WPC Outdoor", href: "/collections/wpc-outdoor" },
+      { label: "Sanitaryware", href: "/collections/sanitaryware" },
     ],
   },
   {
