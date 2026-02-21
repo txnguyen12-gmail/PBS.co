@@ -65,9 +65,9 @@ export default function AIAssistantPage() {
   );
 
   return (
-    <div className="flex h-screen flex-col bg-[#f9fafb]">
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-white border-b border-gray-200">
+    <div className="flex h-dvh flex-col overflow-hidden bg-[#f9fafb]">
+      {/* Header — always visible, never scrolls */}
+      <div className="flex-shrink-0 flex items-center justify-between px-4 sm:px-6 py-3 bg-white border-b border-gray-200">
         <Link
           href="/"
           className="flex items-center gap-2 text-sm font-semibold text-charcoal"
