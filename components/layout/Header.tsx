@@ -33,7 +33,6 @@ const categoryNav: CategoryNavItem[] = [
           { label: "Quartz Slabs", href: "/collections/quartz-slabs" },
           { label: "SPC/LVP Flooring", href: "/collections/spc-flooring" },
           { label: "PVC Wall Panels", href: "/collections/pvc-wall-panels" },
-          { label: "Interior Doors", href: "/collections/interior-doors" },
         ],
       },
     ],
@@ -58,8 +57,6 @@ const categoryNav: CategoryNavItem[] = [
       {
         items: [
           { label: "Sanitaryware", href: "/collections/sanitaryware" },
-          { label: "Faucets & Accessories", href: "/collections/faucets" },
-          { label: "Shower & Bath", href: "/collections/shower-bath" },
         ],
       },
     ],

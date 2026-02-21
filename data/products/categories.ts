@@ -60,36 +60,4 @@ export const productCategories: ProductCategory[] = [
       "Basin",
     ],
   },
-  {
-    id: "faucets",
-    name: "Faucets & Accessories",
-    slug: "faucets",
-    description:
-      "Kitchen and bathroom faucets, mixer taps, and accessories. Chrome, brushed nickel, and matte black finishes.",
-    image: "/images/products/faucets/category.jpg",
-    subcategories: ["Kitchen Faucet", "Basin Faucet", "Accessories"],
-  },
-  {
-    id: "interior-doors",
-    name: "Interior Doors",
-    slug: "interior-doors",
-    description:
-      "WPC and ABS interior doors in multiple sizes and panel designs. Waterproof core, termite-resistant, and ready to install.",
-    image: "/images/products/interior-doors/category.jpg",
-    subcategories: ["Panel Door", "Flush Door"],
-  },
-  {
-    id: "shower-bath",
-    name: "Shower & Bath",
-    slug: "shower-bath",
-    description:
-      "Shower systems, bathtubs, and enclosures. Complete solutions for residential and hospitality projects.",
-    image: "/images/products/shower-bath/category.jpg",
-    subcategories: [
-      "Shower Set",
-      "Rain Shower",
-      "Bathtub",
-      "Shower Enclosure",
-    ],
-  },
 ];

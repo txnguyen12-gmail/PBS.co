@@ -92,28 +92,6 @@ export const wpcOutdoor: Product[] = [
     tags: ["fencing", "diy", "privacy", "horizontal"],
   },
   {
-    id: "PBS-WPC-005",
-    name: "Fixed Privacy Fence",
-    slug: "wpc-fixed-privacy-fence",
-    category: "wpc-outdoor",
-    subcategory: "Fencing",
-    description:
-      "Vertical-picket style WPC fencing for permanent installation. Heavy-duty construction for property boundaries and commercial projects.",
-    highlights: [
-      "Heavy-duty permanent installation",
-      "Full privacy or semi-privacy styles",
-    ],
-    specs: [
-      { label: "Material", value: "WPC Pickets + Aluminum Posts" },
-      { label: "Style", value: "Vertical Picket / Full Privacy" },
-      { label: "Colors", value: "Dark Grey, Charcoal" },
-      { label: "Includes", value: "Pickets, Posts, Brackets, Hardware" },
-      { label: "Application", value: "Property Boundaries, Commercial" },
-    ],
-    image: "",
-    tags: ["fencing", "fixed", "privacy", "vertical"],
-  },
-  {
     id: "PBS-WPC-006",
     name: "Interlocking Deck Tiles",
     slug: "wpc-interlocking-deck-tiles",
