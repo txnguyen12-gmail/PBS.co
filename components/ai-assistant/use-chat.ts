@@ -29,6 +29,23 @@ function getTextFromParts(parts: Array<{ type: string; text?: string }>): string
     .join("");
 }
 
+const FOLLOW_UP_MARKER = "<<FOLLOW_UP>>";
+
+/** Parse content into display text + follow-up questions */
+function parseFollowUps(raw: string): { content: string; quickActions?: string[] } {
+  const idx = raw.indexOf(FOLLOW_UP_MARKER);
+  if (idx === -1) return { content: raw };
+
+  const content = raw.slice(0, idx).trimEnd();
+  const questions = raw
+    .slice(idx + FOLLOW_UP_MARKER.length)
+    .split("\n")
+    .map((q) => q.trim())
+    .filter((q) => q.length > 0);
+
+  return { content, quickActions: questions.length > 0 ? questions : undefined };
+}
+
 export function useChat() {
   const {
     messages: aiMessages,
@@ -41,12 +58,15 @@ export function useChat() {
 
   // Map AI SDK UIMessage[] → ChatMessage[], prepend welcome message
   const messages: ChatMessage[] = useMemo(() => {
-    const mapped = aiMessages.map((m) => ({
-      id: m.id,
-      role: m.role as "user" | "assistant",
-      content: getTextFromParts(m.parts),
-      timestamp: new Date(),
-    }));
+    const mapped = aiMessages.map((m) => {
+      const raw = getTextFromParts(m.parts);
+      const role = m.role as "user" | "assistant";
+      if (role === "assistant") {
+        const { content, quickActions } = parseFollowUps(raw);
+        return { id: m.id, role, content, timestamp: new Date(), quickActions };
+      }
+      return { id: m.id, role, content: raw, timestamp: new Date() };
+    });
     return [WELCOME_MESSAGE, ...mapped];
   }, [aiMessages]);
 
