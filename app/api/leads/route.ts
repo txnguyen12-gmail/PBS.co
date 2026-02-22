@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { writeFile, readFile, mkdir } from "fs/promises";
 import { join } from "path";
+import { notifyNewLead } from "@/lib/notify";
 
 const DATA_DIR = join(process.cwd(), ".data");
 const LEADS_FILE = join(DATA_DIR, "leads.json");
@@ -54,6 +55,14 @@ export async function POST(req: NextRequest) {
     const leads = await getLeads();
     leads.push(lead);
     await saveLeads(leads);
+
+    await notifyNewLead({
+      type: "lead",
+      name: lead.name,
+      email: lead.email,
+      phone: lead.phone,
+      details: lead.chatSummary || undefined,
+    });
 
     return NextResponse.json({ success: true, id: lead.id });
   } catch {

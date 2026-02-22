@@ -44,7 +44,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Holly Youngblood",
-    role: "General Contractor",
+    role: "Project Manager",
     location: "Destin, FL",
     image: "",
     bio: "",
@@ -60,6 +60,13 @@ export const teamMembers: TeamMember[] = [
     name: "Wade Thompson",
     role: "Sales Representative",
     location: "Destin, FL",
+    image: "",
+    bio: "",
+  },
+  {
+    name: "Trang Nguyen",
+    role: "Vietnam Suppliers Manager",
+    location: "Vietnam",
     image: "",
     bio: "",
   },

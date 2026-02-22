@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { writeFile, readFile, mkdir } from "fs/promises";
 import { join } from "path";
+import { notifyNewLead } from "@/lib/notify";
 
 const DATA_DIR = join(process.cwd(), ".data");
 const QUOTES_FILE = join(DATA_DIR, "quotes.json");
@@ -69,6 +70,26 @@ export async function POST(req: NextRequest) {
     const quotes = await getQuotes();
     quotes.push(quote);
     await saveQuotes(quotes);
+
+    const itemsSummary = (quote.items || [])
+      .map((i: QuoteItem) => `${i.productName} — ${i.quantity} ${i.unit}`)
+      .join("\n");
+
+    await notifyNewLead({
+      type: "quote",
+      name: quote.name,
+      email: quote.email,
+      phone: quote.phone,
+      details: [
+        quote.company ? `Company: ${quote.company}` : "",
+        quote.projectType ? `Project: ${quote.projectType}` : "",
+        quote.deliveryLocation ? `Delivery: ${quote.deliveryLocation}` : "",
+        itemsSummary,
+        quote.notes ? `Notes: ${quote.notes}` : "",
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    });
 
     return NextResponse.json({ success: true, id: quote.id });
   } catch {
