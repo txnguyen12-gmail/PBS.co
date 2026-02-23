@@ -1,45 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { writeFile, readFile, mkdir } from "fs/promises";
-import { join } from "path";
 import { notifyNewLead } from "@/lib/notify";
-
-const DATA_DIR = join(process.cwd(), ".data");
-const QUOTES_FILE = join(DATA_DIR, "quotes.json");
-
-interface QuoteItem {
-  productId: string;
-  productName: string;
-  quantity: number;
-  unit: string;
-}
-
-interface Quote {
-  id: string;
-  name: string;
-  email: string;
-  phone: string;
-  company?: string;
-  projectType?: string;
-  deliveryLocation?: string;
-  items: QuoteItem[];
-  notes?: string;
-  status: "pending" | "quoted" | "accepted" | "declined";
-  createdAt: string;
-}
-
-async function getQuotes(): Promise<Quote[]> {
-  try {
-    const data = await readFile(QUOTES_FILE, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
-}
-
-async function saveQuotes(quotes: Quote[]): Promise<void> {
-  await mkdir(DATA_DIR, { recursive: true });
-  await writeFile(QUOTES_FILE, JSON.stringify(quotes, null, 2));
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -53,54 +13,33 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const quote: Quote = {
-      id: `quote-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      name,
-      email,
-      phone,
-      company: company || "",
-      projectType: projectType || "",
-      deliveryLocation: deliveryLocation || "",
-      items: items || [],
-      notes: notes || "",
-      status: "pending",
-      createdAt: new Date().toISOString(),
-    };
-
-    const quotes = await getQuotes();
-    quotes.push(quote);
-    await saveQuotes(quotes);
-
-    const itemsSummary = (quote.items || [])
-      .map((i: QuoteItem) => `${i.productName} — ${i.quantity} ${i.unit}`)
+    const itemsSummary = (items || [])
+      .map((i: { productName: string; quantity: number; unit: string }) =>
+        `${i.productName} — ${i.quantity} ${i.unit}`
+      )
       .join("\n");
 
     await notifyNewLead({
       type: "quote",
-      name: quote.name,
-      email: quote.email,
-      phone: quote.phone,
+      name,
+      email,
+      phone,
       details: [
-        quote.company ? `Company: ${quote.company}` : "",
-        quote.projectType ? `Project: ${quote.projectType}` : "",
-        quote.deliveryLocation ? `Delivery: ${quote.deliveryLocation}` : "",
+        company ? `Company: ${company}` : "",
+        projectType ? `Project: ${projectType}` : "",
+        deliveryLocation ? `Delivery: ${deliveryLocation}` : "",
         itemsSummary,
-        quote.notes ? `Notes: ${quote.notes}` : "",
+        notes ? `Notes: ${notes}` : "",
       ]
         .filter(Boolean)
         .join("\n"),
     });
 
-    return NextResponse.json({ success: true, id: quote.id });
+    return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json(
-      { error: "Failed to save quote" },
+      { error: "Failed to process quote request" },
       { status: 500 }
     );
   }
-}
-
-export async function GET() {
-  const quotes = await getQuotes();
-  return NextResponse.json(quotes);
 }
