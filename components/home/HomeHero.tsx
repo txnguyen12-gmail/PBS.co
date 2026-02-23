@@ -26,28 +26,6 @@ export default function HomeHero() {
       <div className="absolute inset-0 bg-charcoal/70" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
-        {/* Logo lockup — desktop only */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="hidden sm:flex items-center gap-4 mb-6"
-        >
-          <img
-            src="/images/logo/logo.png"
-            alt="Perfect Building Supply Co."
-            className="h-16 md:h-20 w-16 md:w-20 object-contain bg-white rounded-lg p-1"
-          />
-          <div>
-            <p className="text-white/60 text-sm font-medium tracking-wider uppercase">
-              The Perfect
-            </p>
-            <p className="text-white text-lg md:text-xl font-bold leading-tight">
-              Building Supply Co.
-            </p>
-          </div>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
