@@ -70,11 +70,33 @@ export default function SignUpPage() {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
-      setIsSubmitting(true);
-      await new Promise((resolve) => setTimeout(resolve, 500));
-      setIsSubmitting(false);
+    if (Object.keys(newErrors).length > 0) return;
+
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("/api/quotes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`.trim(),
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          projectType: formData.role,
+          notes: formData.message,
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.error || "Something went wrong");
+      }
       setSubmitted(true);
+    } catch (err) {
+      setErrors({
+        form: err instanceof Error ? err.message : "Failed to send. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -403,6 +425,20 @@ export default function SignUpPage() {
                 />
               </div>
             </div>
+
+            {/* Form error */}
+            <AnimatePresence>
+              {errors.form && (
+                <motion.p
+                  initial={{ opacity: 0, y: -4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -4 }}
+                  className="text-red-500 text-sm text-center"
+                >
+                  {errors.form}
+                </motion.p>
+              )}
+            </AnimatePresence>
 
             {/* Submit */}
             <button

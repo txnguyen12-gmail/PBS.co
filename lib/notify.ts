@@ -34,7 +34,7 @@ export async function notifyNewLead(data: LeadNotification) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
-      from: "Perfect Building Supply <notifications@theperfectbuildingsupplycompany.com>",
+      from: "Perfect Building Supply <notifications@perfectbuildingsupply.com>",
       to: NOTIFICATION_EMAIL,
       subject,
       html,

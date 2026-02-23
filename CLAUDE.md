@@ -1,5 +1,11 @@
 # Project: TanWinWin
 
+## Deployment
+- **Production:** https://www.perfectbuildingsupply.com (branch: `main`)
+- **Staging:** https://pbs-co-git-staging-letton-llcs-projects.vercel.app (branch: `staging`)
+- **Hosting:** Vercel (Letton LLC's project)
+- **Repo:** https://github.com/txnguyen12-gmail/PBS.co.git
+
 ## Commands
 - `npm run dev` - Start dev server (Turbopack)
 - `npm run build` - Build production
