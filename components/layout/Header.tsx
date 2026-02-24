@@ -106,6 +106,16 @@ export default function Header() {
           {/* Nav items */}
           <nav className="hidden lg:flex items-center gap-1 ml-auto">
             <Link
+              href="/surfaces"
+              className={`px-3 py-2 text-sm transition-colors ${
+                pathname === "/surfaces"
+                  ? "text-white underline decoration-accent-orange underline-offset-4"
+                  : "text-white/80 hover:text-white"
+              }`}
+            >
+              Surfaces
+            </Link>
+            <Link
               href="/about-us"
               className={`px-3 py-2 text-sm transition-colors ${
                 pathname === "/about-us"
@@ -209,6 +219,9 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-1">
+            <Link href="/surfaces" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
+              Surfaces
+            </Link>
             <Link href="/about-us" className="block px-3 py-3 text-sm text-gray-600 hover:text-charcoal" onClick={() => setMobileOpen(false)}>
               About Us
             </Link>

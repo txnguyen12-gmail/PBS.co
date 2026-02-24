@@ -298,10 +298,10 @@ export default function AboutUsPage() {
                 <h3 className="font-semibold text-gray-900">Sales Manager</h3>
               </div>
               <a
-                href="#"
+                href="mailto:LettonLLC@gmail.com?subject=Sales Manager Position Inquiry"
                 className="text-sm font-medium text-accent-orange hover:underline py-2 px-1 -my-2"
               >
-                View details
+                Apply now
               </a>
             </div>
           </div>
