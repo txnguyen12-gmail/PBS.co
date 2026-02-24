@@ -13,8 +13,29 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Perfect Building Supply Co. — America's #1 Building Supply Source",
+  metadataBase: new URL("https://www.perfectbuildingsupply.com"),
+  title: {
+    default: "Perfect Building Supply Co. — America's #1 Building Supply Source",
+    template: "%s | Perfect Building Supply Co.",
+  },
   description: "Lower prices than your current supplier, guaranteed. Direct trucking to your jobsite. Building supplies for large and small builders.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Perfect Building Supply Co.",
+    title: "Perfect Building Supply Co. — America's #1 Building Supply Source",
+    description: "Wholesale building materials for contractors, builders, and trade professionals. Trade pricing on cabinets, WPC wall panels, flooring, and more.",
+    images: [{ url: "/images/logo/logo.png", width: 1200, height: 630, alt: "Perfect Building Supply Co." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Perfect Building Supply Co. — America's #1 Building Supply Source",
+    description: "Wholesale building materials for contractors, builders, and trade professionals. Trade pricing on cabinets, WPC wall panels, flooring, and more.",
+    images: ["/images/logo/logo.png"],
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
