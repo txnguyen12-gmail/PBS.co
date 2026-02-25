@@ -60,4 +60,22 @@ export const productCategories: ProductCategory[] = [
       "Basin",
     ],
   },
+  {
+    id: "faucets",
+    name: "Faucets",
+    slug: "faucets",
+    description:
+      "Kitchen and bathroom faucets. Single-handle, pullout, and sensor-activated designs with ceramic cartridge technology.",
+    image: "/images/products/faucets/category.jpg",
+    subcategories: ["Kitchen Mixer", "Pullout Mixer"],
+  },
+  {
+    id: "showers",
+    name: "Showers",
+    slug: "showers",
+    description:
+      "Shower mixers and concealed systems. Thermostatic controls, rainfall heads, and wall-mounted configurations for modern bathrooms.",
+    image: "/images/products/showers/category.png",
+    subcategories: ["Shower Mixer", "Concealed Shower Mixer"],
+  },
 ];

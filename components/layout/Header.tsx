@@ -57,6 +57,8 @@ const categoryNav: CategoryNavItem[] = [
       {
         items: [
           { label: "Sanitaryware", href: "/collections/sanitaryware" },
+          { label: "Faucets", href: "/collections/faucets" },
+          { label: "Showers", href: "/collections/showers" },
         ],
       },
     ],

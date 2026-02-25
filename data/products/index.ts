@@ -9,6 +9,8 @@ import { spcFlooring } from "./spc-flooring";
 import { pvcWallPanels } from "./pvc-wall-panels";
 import { wpcOutdoor } from "./wpc-outdoor";
 import { sanitaryware } from "./sanitaryware";
+import { faucets } from "./faucets";
+import { showers } from "./showers";
 
 const allProducts: Product[] = [
   ...cabinets,
@@ -17,6 +19,8 @@ const allProducts: Product[] = [
   ...pvcWallPanels,
   ...wpcOutdoor,
   ...sanitaryware,
+  ...faucets,
+  ...showers,
 ];
 
 export function getAllProducts(): Product[] {
