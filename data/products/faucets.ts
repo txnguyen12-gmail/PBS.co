@@ -4,8 +4,8 @@ export const faucets: Product[] = [
   // Kitchen Mixers
   {
     id: "PBS-FAU-001",
-    name: "Kitchen Mixer Ta-769L",
-    slug: "kitchen-mixer-ta-769l",
+    name: "Kitchen Mixer High-Arc",
+    slug: "kitchen-mixer-high-arc",
     category: "faucets",
     subcategory: "Kitchen Mixer",
     description:
@@ -27,8 +27,8 @@ export const faucets: Product[] = [
   },
   {
     id: "PBS-FAU-002",
-    name: "Kitchen Mixer Ta-6963",
-    slug: "kitchen-mixer-ta-6963",
+    name: "Kitchen Mixer Geometric",
+    slug: "kitchen-mixer-geometric",
     category: "faucets",
     subcategory: "Kitchen Mixer",
     description:
@@ -49,8 +49,8 @@ export const faucets: Product[] = [
   },
   {
     id: "PBS-FAU-003",
-    name: "Kitchen Mixer Ta-8293",
-    slug: "kitchen-mixer-ta-8293",
+    name: "Kitchen Mixer Commercial",
+    slug: "kitchen-mixer-commercial",
     category: "faucets",
     subcategory: "Kitchen Mixer",
     description:
@@ -72,8 +72,8 @@ export const faucets: Product[] = [
   // Pullout Mixers
   {
     id: "PBS-FAU-004",
-    name: "Pullout Mixer Ta-623A",
-    slug: "pullout-mixer-ta-623a",
+    name: "Pullout Mixer Magnetic",
+    slug: "pullout-mixer-magnetic",
     category: "faucets",
     subcategory: "Pullout Mixer",
     description:
@@ -95,8 +95,8 @@ export const faucets: Product[] = [
   },
   {
     id: "PBS-FAU-005",
-    name: "Pullout Mixer Ta-7653",
-    slug: "pullout-mixer-ta-7653",
+    name: "Pullout Mixer Compact",
+    slug: "pullout-mixer-compact",
     category: "faucets",
     subcategory: "Pullout Mixer",
     description:
@@ -117,8 +117,8 @@ export const faucets: Product[] = [
   },
   {
     id: "PBS-FAU-006",
-    name: "Pullout Mixer Ta-632A",
-    slug: "pullout-mixer-ta-632a",
+    name: "Pullout Mixer Tall",
+    slug: "pullout-mixer-tall",
     category: "faucets",
     subcategory: "Pullout Mixer",
     description:

@@ -4,8 +4,8 @@ export const showers: Product[] = [
   // Shower Mixers
   {
     id: "PBS-SHW-001",
-    name: "Shower Mixer Ta-8094",
-    slug: "shower-mixer-ta-8094",
+    name: "Exposed Shower Mixer",
+    slug: "exposed-shower-mixer",
     category: "showers",
     subcategory: "Shower Mixer",
     description:
@@ -27,8 +27,8 @@ export const showers: Product[] = [
   },
   {
     id: "PBS-SHW-002",
-    name: "Shower Mixer Ta-603M",
-    slug: "shower-mixer-ta-603m",
+    name: "Rainfall Shower Combo",
+    slug: "rainfall-shower-combo",
     category: "showers",
     subcategory: "Shower Mixer",
     description:
@@ -50,8 +50,8 @@ export const showers: Product[] = [
   },
   {
     id: "PBS-SHW-003",
-    name: "Shower Mixer Ta-7914",
-    slug: "shower-mixer-ta-7914",
+    name: "Thermostatic Shower Mixer",
+    slug: "thermostatic-shower-mixer",
     category: "showers",
     subcategory: "Shower Mixer",
     description:
@@ -73,8 +73,8 @@ export const showers: Product[] = [
   // Concealed Shower Mixers
   {
     id: "PBS-SHW-004",
-    name: "Concealed Mixer Ta-7915",
-    slug: "concealed-mixer-ta-7915",
+    name: "Concealed Mixer Single-Lever",
+    slug: "concealed-mixer-single-lever",
     category: "showers",
     subcategory: "Concealed Shower Mixer",
     description:
@@ -95,8 +95,8 @@ export const showers: Product[] = [
   },
   {
     id: "PBS-SHW-005",
-    name: "Concealed Mixer Ta-6134",
-    slug: "concealed-mixer-ta-6134",
+    name: "Concealed Mixer Two-Function",
+    slug: "concealed-mixer-two-function",
     category: "showers",
     subcategory: "Concealed Shower Mixer",
     description:
@@ -117,8 +117,8 @@ export const showers: Product[] = [
   },
   {
     id: "PBS-SHW-006",
-    name: "Concealed Mixer Ta-6054",
-    slug: "concealed-mixer-ta-6054",
+    name: "Concealed Mixer Three-Function",
+    slug: "concealed-mixer-three-function",
     category: "showers",
     subcategory: "Concealed Shower Mixer",
     description:
