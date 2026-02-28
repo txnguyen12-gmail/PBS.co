@@ -93,8 +93,16 @@ export async function POST(request: Request) {
   }
 
   const result = streamText({
-    model: anthropic("claude-haiku-4-5-20251001"),
-    system: getSystemPrompt(),
+    model: anthropic("claude-haiku-4-5-latest"),
+    system: [
+      {
+        type: "text" as const,
+        text: getSystemPrompt(),
+        providerOptions: {
+          anthropic: { cacheControl: { type: "ephemeral" } },
+        },
+      },
+    ],
     messages: await convertToModelMessages(messages as UIMessage[]),
   });
 
