@@ -93,7 +93,7 @@ export async function POST(request: Request) {
   }
 
   const result = streamText({
-    model: anthropic("claude-haiku-4-5-latest"),
+    model: anthropic("claude-haiku-4-5"),
     system: {
       role: "system",
       content: getSystemPrompt(),
