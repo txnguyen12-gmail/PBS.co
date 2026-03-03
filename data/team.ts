@@ -8,15 +8,8 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "TJ Nobles",
-    role: "CEO",
-    location: "Destin, FL",
-    image: "",
-    bio: "",
-  },
-  {
     name: "Thanh Nguyen",
-    role: "Co-Founder",
+    role: "CEO & Co-Founder",
     location: "Destin, FL",
     image: "",
     bio: "",
