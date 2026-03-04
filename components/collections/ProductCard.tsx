@@ -37,6 +37,24 @@ export default function ProductCard({
 }) {
   const Icon = categoryIcons[product.category] || Layers;
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    category: product.subcategory,
+    ...(product.image && { image: `https://www.perfectbuildingsupply.com${product.image}` }),
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "USD",
+      seller: {
+        "@type": "Organization",
+        name: "Perfect Building Supply Co.",
+      },
+    },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -44,6 +62,10 @@ export default function ProductCard({
       viewport={{ once: true }}
       transition={{ delay: Math.min(index * 0.05, 0.3) }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="group rounded-xl overflow-hidden bg-white border border-gray-100 hover:shadow-lg hover:border-gray-200 transition-all duration-300 h-full flex flex-col">
         {/* Image */}
         <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden">
