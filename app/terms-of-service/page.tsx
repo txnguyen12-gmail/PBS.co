@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Terms of Service | Perfect Building Supply Co.",
   description: "Perfect Building Supply Co.'s terms of service — the rules and guidelines for using our platform.",
+  alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

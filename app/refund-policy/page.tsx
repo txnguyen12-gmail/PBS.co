@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Refund Policy | Perfect Building Supply Co.",
   description: "Perfect Building Supply Co.'s refund and return policy for construction materials and building supplies.",
+  alternates: { canonical: "/refund-policy" },
 };
 
 export default function RefundPolicyPage() {

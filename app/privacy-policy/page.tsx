@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Privacy Policy | Perfect Building Supply Co.",
   description: "Perfect Building Supply Co.'s privacy policy — how we collect, use, and protect your information.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

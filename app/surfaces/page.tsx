@@ -12,6 +12,7 @@ import { surfacesFAQ } from "@/data/faq";
 export const metadata = {
   title: "Surfaces & Building Materials | Perfect Building Supply Co.",
   description: "Shop slabs, tiles, flooring, cabinets, fixtures & more with exclusive trade pricing. Direct to your jobsite.",
+  alternates: { canonical: "/surfaces" },
 };
 
 export default function SurfacesPage() {

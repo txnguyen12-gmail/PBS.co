@@ -27,6 +27,7 @@ export async function generateMetadata({
   return {
     title: `${category.name} | Perfect Building Supply`,
     description: category.description,
+    alternates: { canonical: `/collections/${slug[0]}` },
   };
 }
 

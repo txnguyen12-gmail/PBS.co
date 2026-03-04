@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Collections | Perfect Building Supply",
   description:
     "Browse our full catalog of building materials — cabinets, quartz slabs, SPC flooring, sanitaryware, and more. Trade-grade products for contractors and builders.",
+  alternates: { canonical: "/collections" },
 };
 
 export default function CollectionsPage() {

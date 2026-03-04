@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Silica Safety | Perfect Building Supply Co.",
   description: "Important safety information about crystalline silica exposure when working with natural and engineered stone products.",
+  alternates: { canonical: "/silica-safety" },
 };
 
 export default function SilicaSafetyPage() {

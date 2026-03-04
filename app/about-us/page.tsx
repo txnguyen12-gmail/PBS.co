@@ -20,6 +20,7 @@ export const metadata = {
   title: "About Us | Perfect Building Supply Co.",
   description:
     "Learn about Perfect Building Supply Co.'s mission to transform construction materials sourcing with AI-powered technology and trade-focused service.",
+  alternates: { canonical: "/about-us" },
 };
 
 const values = [
