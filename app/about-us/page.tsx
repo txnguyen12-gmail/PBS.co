@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { teamMembers } from "@/data/team";
 import Button from "@/components/ui/Button";
+import USMap from "@/components/ui/USMap";
 
 export const metadata = {
   title: "About Us | Perfect Building Supply Co.",
@@ -221,8 +222,8 @@ export default function AboutUsPage() {
                 Get Started
               </Button>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-charcoal-light flex items-center justify-center">
-              <MapPin className="w-24 h-24 text-white/20" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-charcoal-light flex items-center justify-center p-8 md:p-12">
+              <USMap className="w-full h-auto" />
             </div>
           </div>
         </div>
