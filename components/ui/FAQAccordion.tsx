@@ -7,8 +7,25 @@ import type { FAQItem } from "@/data/faq";
 export default function FAQAccordion({ items, title, category, description }: { items: FAQItem[]; title?: string; category?: string; description?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <section className="py-16 bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {category && (
           <p className="text-center text-accent-orange font-semibold text-sm uppercase tracking-wider mb-4">
