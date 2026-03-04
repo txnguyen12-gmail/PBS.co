@@ -54,6 +54,55 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('config', 'G-ME1LG5WRJJ');
         `}
       </Script>
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BuildingMaterialStore",
+            name: "Perfect Building Supply Co.",
+            url: "https://www.perfectbuildingsupply.com",
+            logo: "https://www.perfectbuildingsupply.com/images/logo/logo.png",
+            image: "https://www.perfectbuildingsupply.com/images/logo/pbs-storefront.jpeg",
+            telephone: "+1-713-927-1500",
+            email: "LettonLLC@gmail.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "515 Mountain Dr",
+              addressLocality: "Destin",
+              addressRegion: "FL",
+              postalCode: "32541",
+              addressCountry: "US",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 30.3935,
+              longitude: -86.4958,
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "United States",
+            },
+            description:
+              "Wholesale building materials for contractors and builders. SPC & LVP flooring, cabinets, quartz countertops, WPC/PVC wall panels & ceilings, kitchen & bath fixtures, plumbing, doors, and more.",
+            priceRange: "$$",
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+              ],
+              opens: "08:00",
+              closes: "17:00",
+            },
+            sameAs: [],
+          }),
+        }}
+      />
       <body className={`${inter.className} ${montserrat.variable}`}>
         <Header />
         <main>{children}</main>
