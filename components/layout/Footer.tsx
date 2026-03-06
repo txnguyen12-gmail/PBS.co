@@ -72,12 +72,12 @@ export default function Footer() {
               <p>Destin, FL 32541</p>
               <p>
                 <a href="tel:+18503987361" className="hover:text-white transition-colors">
-                  (850) 398-7361
+                  James: (850) 398-7361
                 </a>
               </p>
               <p>
                 <a href="tel:+17139271500" className="hover:text-white transition-colors">
-                  (713) 927-1500
+                  Thanh: (713) 927-1500
                 </a>
               </p>
               <p>

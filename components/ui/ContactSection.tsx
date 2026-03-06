@@ -49,7 +49,7 @@ export default function ContactSection({
             <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Phone className="w-6 h-6 text-accent-orange" />
             </div>
-            <h3 className="font-semibold text-charcoal mb-1">Call Tan</h3>
+            <h3 className="font-semibold text-charcoal mb-1">Call Thanh</h3>
             <p className="text-sm text-gray-500 mb-2">Speak with our sourcing pros</p>
             <span className="text-charcoal font-semibold">(713) 927-1500</span>
           </a>
@@ -73,7 +73,7 @@ export default function ContactSection({
             <div className="w-14 h-14 bg-accent-orange/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent-orange/20 transition-colors">
               <Mail className="w-6 h-6 text-accent-orange" />
             </div>
-            <h3 className="font-semibold text-charcoal mb-1">Email Tan</h3>
+            <h3 className="font-semibold text-charcoal mb-1">Email Thanh</h3>
             <p className="text-sm text-gray-500 mb-2">Get detailed information</p>
             <span className="text-charcoal font-semibold">LettonLLC@gmail.com</span>
           </a>

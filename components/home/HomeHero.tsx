@@ -80,7 +80,7 @@ export default function HomeHero() {
             size="lg"
             className="border-white text-white hover:bg-white hover:text-charcoal"
           >
-            Call (850) 398-7361
+            James: (850) 398-7361
           </Button>
           <Button
             href="tel:+17139271500"
@@ -88,7 +88,7 @@ export default function HomeHero() {
             size="lg"
             className="border-white text-white hover:bg-white hover:text-charcoal"
           >
-            Call (713) 927-1500
+            Thanh: (713) 927-1500
           </Button>
         </motion.div>
       </div>
